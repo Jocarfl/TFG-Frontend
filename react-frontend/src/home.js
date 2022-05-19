@@ -1,11 +1,17 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import { StyledEngineProvider } from '@mui/material/styles';
-import LoginBox from "./components/LoginBox";
+import TopMenu from "./components/TopMenu";
+import RetosDiarios from "./components/RetosDiarios";
 import { Container } from '@mui/material';
 
 ReactDOM.createRoot(document.querySelector("#root")).render(
   <StyledEngineProvider injectFirst>
-    <LoginBox/>
+    <TopMenu />
+    <Container fixed sx={ 'flex-grow: 5' }>
+    <RetosDiarios />
+    </Container>
+    <Container sx={'flex-grow: 2'}>
+    </Container>
   </StyledEngineProvider>
 );
