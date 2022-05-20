@@ -89,9 +89,9 @@ export function Login() {
               margin="normal"
               required
               fullWidth
-              name="contraseña"
+              name="password"
               label="Contraseña"
-              type="contraseña"
+              type="password"
               id="password"
               onChange={handleChange}
               autoComplete="current-password"

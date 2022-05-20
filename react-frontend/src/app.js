@@ -11,9 +11,7 @@ return(
 
    <AuthProvider>
       <Routes>
-
       <Route path='/login' element={<Login/>} />
-
       <Route
             path="/"
             element={
@@ -22,9 +20,8 @@ return(
               </ProtectedRoute>
             }
           />
-
       <Route path='/admin' element={<Admin/>} />
-      
+   
       </Routes>
    </AuthProvider>
 
