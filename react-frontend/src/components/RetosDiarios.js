@@ -13,7 +13,7 @@ import Container from '@mui/material/Container';
 import { padding } from '@mui/system';
 
 
-export default function RowAndColumnSpacing() {
+export default function RetosDiarios() {
   return (
     
     <Box sx={{ width: '100%' , pt:'8px' }}>
