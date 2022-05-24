@@ -11,8 +11,15 @@ $client = new BedcaClient();
 //echo $client->getFood(893, true);
 
 
+$jsonData = json_encode($client->getFood(2461));
 
-echo "<pre>";
+//echo $jsonData;
+
+
+echo"<pre>";
+//echo $client->getFoodGroups();
 //var_dump($client->getFoodGroups());
-var_dump($client->getFood(893));
+var_dump($client->getFood(2461)); 
+//var_dump($client->getFoodsInGroup(3));
+//json_encode($client->getFood(2461));
 echo "</pre>";
