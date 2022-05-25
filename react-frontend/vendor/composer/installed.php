@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e9abb5b3fe8b9b14a163c193b88d895ab515aeab',
+        'reference' => '179f65348bec082542cd27db72c754cfeb76254a',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e9abb5b3fe8b9b14a163c193b88d895ab515aeab',
+            'reference' => '179f65348bec082542cd27db72c754cfeb76254a',
             'dev_requirement' => false,
         ),
         'statickidz/bedca-api' => array(
