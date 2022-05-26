@@ -8,16 +8,17 @@ header('Content-Type: text/html; charset=utf-8');
 
 $client = new BedcaClient();
 
-//echo $client->getFood(893, true);
+$comida = new stdClass();
 
 
-$jsonData = json_encode($client->getFoodGroups());
 
 
-echo $jsonData;
+$h = var_dump($client->getFood(2461));
 
-$fp = fopen('results1.json', 'w');
-fwrite($fp, $jsonData);
+
+
+$fp = fopen('results4.json', 'w');
+fwrite($fp, serialize($client->getFood(2713)));
 fclose($fp);
 
 
@@ -27,4 +28,4 @@ echo"<pre>";
 //var_dump($client->getFood(2461)); 
 //var_dump($client->getFoodsInGroup(3));
 //json_encode($client->getFood(2461));
-echo "</pre>";
+echo "</pre>";  ?>

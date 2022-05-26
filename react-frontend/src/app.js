@@ -21,7 +21,6 @@ return(
             }
           />
       <Route path='/admin' element={<Admin/>} />
-   
       </Routes>
    </AuthProvider>
 

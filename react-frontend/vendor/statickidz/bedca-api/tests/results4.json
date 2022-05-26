@@ -1,0 +1,2489 @@
+O : 8 : "stdClass" : 2 : {
+    s: 4: "food";
+    O: 8: "stdClass": 18: {
+        s: 4: "f_id";
+        s: 4: "2713";
+        s: 10: "f_ori_name";
+        s: 32: "Cordero ligero, costillar, asado";
+        s: 10: "f_eng_name";
+        s: 25: "Light lamb, ribs, roasted";
+        s: 8: "sci_name";
+        O: 8: "stdClass": 0: {}
+        s: 7: "langual";
+        s: 119: "A0794 B2396 C0285 E0150 F0014 G0005 H0003 J0003 K0003 M0003 N0036 N0044 P0003 " +
+                "R0212 R0366 R0367 R0500 Z0019 Z0215 Z0258";
+        s: 10: "foodexcode";
+        O: 8: "stdClass": 0: {}
+        s: 13: "mainlevelcode";
+        O: 8: "stdClass": 0: {}
+        s: 9: "codlevel1";
+        O: 8: "stdClass": 0: {}
+        s: 10: "namelevel1";
+        O: 8: "stdClass": 0: {}
+        s: 11: "codsublevel";
+        O: 8: "stdClass": 0: {}
+        s: 9: "codlevel2";
+        O: 8: "stdClass": 0: {}
+        s: 10: "namelevel2";
+        O: 8: "stdClass": 0: {}
+        s: 9: "f_des_esp";
+        s: 50: "Razas Merino, Manchega, Segureña y Rasa Aragonesa";
+        s: 9: "f_des_ing";
+        O: 8: "stdClass": 0: {}
+        s: 5: "photo";
+        O: 8: "stdClass": 0: {}
+        s: 14: "edible_portion";
+        s: 8: "1.000000";
+        s: 8: "f_origen";
+        s: 6: "BEDCA2";
+        s: 9: "foodvalue";
+        a: 40: {
+            i: 0;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "410";
+                s: 10: "c_ori_name";
+                s: 30: "grasa, total (lipidos totales)";
+                s: 10: "c_eng_name";
+                s: 24: "fat, total (total lipid)";
+                s: 8: "eur_name";
+                s: 3: "FAT";
+                s: 17: "componentgroup_id";
+                s: 1: "1";
+                s: 8: "glos_esp";
+                s: 431: "La grasa es un macronutriente que aporta gran cantidad de energía (9Kcal/g) e " +
+                        "interviene en numerosas funciones del organismo. Por su alta densidad en energ" +
+                        "ía debe suponer solo el 30-35% de las calorías totales diarias. No solo es imp" +
+                        "ortante la cantidad de grasa consumida, sino su calidad, es decir el tipo de á" +
+                        "cidos grasos que forman parte de ella. Ambas, cantidad y calidad son important" +
+                        "es para conseguir una dieta saludable";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 10: "Proximales";
+                s: 14: "cg_description";
+                s: 10: "Proximates";
+                s: 13: "best_location";
+                s: 5: "20.93";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 3: "334";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 46: "Grasa total (Informe Certificado, Laboratorio)";
+                s: 9: "m_nom_ing";
+                s: 43: "Total Fat (Certification Report, Laboratoy)";
+                s: 15: "mhd_descripcion";
+                s: 27: "Cromatografía gas-líquido";
+                s: 15: "mhd_description";
+                s: 25: "Gas-liquid chromatography";
+            }
+            i: 1;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "416";
+                s: 10: "c_ori_name";
+                s: 15: "proteina, total";
+                s: 10: "c_eng_name";
+                s: 14: "protein, total";
+                s: 8: "eur_name";
+                s: 4: "PROT";
+                s: 17: "componentgroup_id";
+                s: 1: "1";
+                s: 8: "glos_esp";
+                s: 199: "La proteína es un macronutriente cuya principal función es estructural. Es nec" +
+                        "esaria para la síntesis de proteínas corporales propias, tanto estructurales c" +
+                        "omo enzimáticas y con otras funciones.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 10: "Proximales";
+                s: 14: "cg_description";
+                s: 10: "Proximates";
+                s: 13: "best_location";
+                s: 5: "21.59";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 3: "326";
+                s: 14: "mt_descripcion";
+                s: 46: "cálculos que incluyen factores de conversión";
+                s: 14: "mt_description";
+                s: 41: "calculations including conversion factors";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 49: "Proteina total (Informe Certificado, Laboratorio)";
+                s: 9: "m_nom_ing";
+                s: 48: "Total protein (Certification Report (Laboratory)";
+                s: 15: "mhd_descripcion";
+                s: 40: "Proteína calculada del nitrógeno total";
+                s: 15: "mhd_description";
+                s: 38: "Protein calculated from total nitrogen";
+            }
+            i: 2;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "417";
+                s: 10: "c_ori_name";
+                s: 14: "agua (humedad)";
+                s: 10: "c_eng_name";
+                s: 16: "water (moisture)";
+                s: 8: "eur_name";
+                s: 5: "WATER";
+                s: 17: "componentgroup_id";
+                s: 1: "1";
+                s: 8: "glos_esp";
+                s: 243: "El contenido de agua de un alimento determina su densidad calórica. Cuanto may" +
+                        "or es el contenido de agua menor es su contenido calórico. Así por ejemplo, la" +
+                        "s frutas y verduras son alimentos muy ricos en agua y con un bajo valor energé" +
+                        "tico.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 10: "Proximales";
+                s: 14: "cg_description";
+                s: 10: "Proximates";
+                s: 13: "best_location";
+                s: 5: "56.44";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 3: "356";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                s: 150: "La humedad del alimento se ha establecido por diferencia en la pesada del alim" +
+                        "ento fresco y sometido a desecacion hasta peso constante ( Padmore 1990)";
+                s: 13: "m_description";
+                s: 146: "The moisture content of food has been established by weighing the difference i" +
+                        "n fresh food and taken for drying to constant weight ( Padmore 1990)";
+                s: 9: "m_nom_esp";
+                s: 22: "Determinacion de agua ";
+                s: 9: "m_nom_ing";
+                s: 19: "Water determination";
+                s: 15: "mhd_descripcion";
+                s: 30: "Agua por diferencia, genérico";
+                s: 15: "mhd_description";
+                s: 28: "Water by difference, generic";
+            }
+            i: 3;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "409";
+                s: 10: "c_ori_name";
+                s: 15: "energía, total";
+                s: 10: "c_eng_name";
+                s: 76: "energy, total metabolisable calculated from energy-producing food components";
+                s: 8: "eur_name";
+                s: 5: "ENERC";
+                s: 17: "componentgroup_id";
+                s: 1: "1";
+                s: 8: "glos_esp";
+                s: 323: "La energía expresa las calorías que un determinado alimento o receta nos aport" +
+                        "a cuando en utilizado por nuestro organismo. Esta energía se emplea en atender" +
+                        " las necesidades y funciones de nuestros órganos, a producir calor para manten" +
+                        "er la temperatura corporal, y el resto se almacena en el organismo en forma de" +
+                        " grasa.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 10: "Proximales";
+                s: 14: "cg_description";
+                s: 10: "Proximates";
+                s: 13: "best_location";
+                s: 7: "1141.44";
+                s: 6: "v_unit";
+                s: 2: "kJ";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "kJ";
+                s: 13: "u_descripcion";
+                s: 10: "kilojulios";
+                s: 13: "u_description";
+                s: 9: "kilojoule";
+                s: 10: "value_type";
+                s: 2: "BE";
+                s: 14: "vt_descripcion";
+                s: 17: "mejor estimación";
+                s: 14: "vt_description";
+                s: 13: "best estimate";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "236";
+                s: 8: "citation";
+                s: 117: "BEDCA. Base de Datos Española de Composición de Alimentos [computer file]. Ava" +
+                        "ilable from: URL:http://www.bedca.net";
+                s: 14: "at_descripcion";
+                s: 33: "valor compilado mediante software";
+                s: 14: "at_description";
+                s: 32: "value created within host-system";
+                s: 14: "pt_descripcion";
+                s: 11: "página web";
+                s: 14: "pt_description";
+                s: 8: "web page";
+                s: 9: "method_id";
+                s: 3: "341";
+                s: 14: "mt_descripcion";
+                s: 46: "cálculos que incluyen factores de conversión";
+                s: 14: "mt_description";
+                s: 41: "calculations including conversion factors";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                s: 90: "Energy calculation: Carbohydrates (17 kJ), Proteins (17 kJ), Alcohol (29 kJ), " +
+                        "Fats (37 kJ)";
+                s: 9: "m_nom_esp";
+                s: 36: "Determinación de Energía (Atwater)";
+                s: 9: "m_nom_ing";
+                s: 28: "Energy calculation (Atwater)";
+                s: 15: "mhd_descripcion";
+                s: 65: "Energía calculada de acuerdo con Atwater (factores específicos)";
+                s: 15: "mhd_description";
+                s: 57: "Energy calculated according to Atwater (specific factors)";
+            }
+            i: 4;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 2: "53";
+                s: 10: "c_ori_name";
+                s: 13: "carbohidratos";
+                s: 10: "c_eng_name";
+                s: 12: "carbohydrate";
+                s: 8: "eur_name";
+                s: 3: "CHO";
+                s: 17: "componentgroup_id";
+                s: 1: "2";
+                s: 8: "glos_esp";
+                s: 384: "Este componente es uno de los macronutrientes e incluye todos los hidratos de " +
+                        "carbono (carbohidratos) que son utilizados por nuestro organismo como los mono" +
+                        "sacáridos (glucosa, fructosa, etc.), disacáridos (sacarosa, lactosa), oligosac" +
+                        "áridos y polisacáridos (almidón, glucógeno). Aportan 4 Kcal/g. Deben suponer a" +
+                        "l menos el 50% de las calorías totales que consumimos en un día.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 19: "Hidratos de Carbono";
+                s: 14: "cg_description";
+                s: 23: "Carbohydrate components";
+                s: 13: "best_location";
+                s: 1: "0";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 3: "205";
+                s: 14: "mt_descripcion";
+                s: 44: "calculado a partir del perfil del componente";
+                s: 14: "mt_description";
+                s: 31: "calculated on component profile";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 44: "calculado a partir del perfil del componente";
+                s: 9: "m_nom_ing";
+                s: 31: "calculated on component profile";
+                s: 15: "mhd_descripcion";
+                s: 42: "Metodo analitico o de cálculo no conocido";
+                s: 15: "mhd_description";
+                s: 42: "Analytical or calculation method not known";
+            }
+            i: 5;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "307";
+                s: 10: "c_ori_name";
+                s: 22: "fibra, dietetica total";
+                s: 10: "c_eng_name";
+                s: 20: "fibre, total dietary";
+                s: 8: "eur_name";
+                s: 4: "FIBT";
+                s: 17: "componentgroup_id";
+                s: 1: "2";
+                s: 8: "glos_esp";
+                s: 428: "La fibra dietética es un componente de los alimentos que, aunque no es asimila" +
+                        "do por el organismo ya que no se digiere en el aparato digestivo, tiene una gr" +
+                        "an importancia en la regulación de la motilidad del sistema digestivo y en otr" +
+                        "as funciones como en la absorción de colesterol. Su presencia en la dieta, en " +
+                        "determinadas cantidades, es necesaria para el mantenimiento de la salud y la p" +
+                        "revención de ciertas enfermedades.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 19: "Hidratos de Carbono";
+                s: 14: "cg_description";
+                s: 23: "Carbohydrate components";
+                s: 13: "best_location";
+                s: 1: "0";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 3: "205";
+                s: 14: "mt_descripcion";
+                s: 44: "calculado a partir del perfil del componente";
+                s: 14: "mt_description";
+                s: 31: "calculated on component profile";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 44: "calculado a partir del perfil del componente";
+                s: 9: "m_nom_ing";
+                s: 31: "calculated on component profile";
+                s: 15: "mhd_descripcion";
+                s: 42: "Metodo analitico o de cálculo no conocido";
+                s: 15: "mhd_description";
+                s: 42: "Analytical or calculation method not known";
+            }
+            i: 6;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "116";
+                s: 10: "c_ori_name";
+                s: 28: "ácido graso 12:0 (láurico)";
+                s: 10: "c_eng_name";
+                s: 29: "fatty acid 12:0 (lauric acid)";
+                s: 8: "eur_name";
+                s: 5: "F12:0";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.04";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 7;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "123";
+                s: 10: "c_ori_name";
+                s: 37: "ácido graso 14:0 (ácido mirístico)";
+                s: 10: "c_eng_name";
+                s: 31: "fatty acid 14:0 (myristic acid)";
+                s: 8: "eur_name";
+                s: 5: "F14:0";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.48";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 8;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "136";
+                s: 10: "c_ori_name";
+                s: 37: "ácido graso 16:0 (ácido palmítico)";
+                s: 10: "c_eng_name";
+                s: 31: "fatty acid 16:0 (palmitic acid)";
+                s: 8: "eur_name";
+                s: 5: "F16:0";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "3.39";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 9;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "157";
+                s: 10: "c_ori_name";
+                s: 37: "ácido graso 18:0 (ácido esteárico)";
+                s: 10: "c_eng_name";
+                s: 30: "fatty acid 18:0 (stearic acid)";
+                s: 8: "eur_name";
+                s: 5: "F18:0";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "2.21";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 10;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "172";
+                s: 10: "c_ori_name";
+                s: 42: "ácido graso 18:1 n-9 cis (ácido oléico)";
+                s: 10: "c_eng_name";
+                s: 36: "fatty acid 18:1 n-9 cis (oleic acid)";
+                s: 8: "eur_name";
+                s: 8: "F18:1CN9";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "5.95";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 11;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "189";
+                s: 10: "c_ori_name";
+                s: 17: "ácido graso 18:2";
+                s: 10: "c_eng_name";
+                s: 15: "fatty acid 18:2";
+                s: 8: "eur_name";
+                s: 5: "F18:2";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.61";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 12;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "199";
+                s: 10: "c_ori_name";
+                s: 17: "ácido graso 18:3";
+                s: 10: "c_eng_name";
+                s: 15: "fatty acid 18:3";
+                s: 8: "eur_name";
+                s: 5: "F18:3";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.06";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 13;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "230";
+                s: 10: "c_ori_name";
+                s: 45: "ácido graso 20:4 n-6  (ácido araquidónico)";
+                s: 10: "c_eng_name";
+                s: 38: "fatty acid 20:4 n-6 (arachidonic acid)";
+                s: 8: "eur_name";
+                s: 7: "F20:4N6";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.07";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 14;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "231";
+                s: 10: "c_ori_name";
+                s: 45: "ácido graso 20:5 (ácido eicosapentaenóico)";
+                s: 10: "c_eng_name";
+                s: 37: "fatty acid 20:5 (eicopentaenoic acid)";
+                s: 8: "eur_name";
+                s: 5: "F20:5";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.01";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 15;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "260";
+                s: 10: "c_ori_name";
+                s: 48: "ácido graso 22:6 n-3 (ácido docosahexaenóico)";
+                s: 10: "c_eng_name";
+                s: 42: "fatty acid 22:6 n-3 (docosahexaenoic acid)";
+                s: 8: "eur_name";
+                s: 7: "F22:6N3";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                O: 8: "stdClass": 0: {}
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.01";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 16;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "282";
+                s: 10: "c_ori_name";
+                s: 39: "ácidos grasos, monoinsaturados totales";
+                s: 10: "c_eng_name";
+                s: 34: "fatty acids, total monounsaturated";
+                s: 8: "eur_name";
+                s: 4: "FAMS";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                s: 124: "Son componentes de las grasas de los alimentos. Se encuentran, de forma mayori" +
+                        "taria, en el aceite de oliva y en el de colza.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "6.48";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 17;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "287";
+                s: 10: "c_ori_name";
+                s: 39: "ácidos grasos, poliinsaturados totales";
+                s: 10: "c_eng_name";
+                s: 34: "fatty acids, total polyunsaturated";
+                s: 8: "eur_name";
+                s: 4: "FAPU";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                s: 143: "Son componentes de las grasas que se encuentran de forma mayoritaria en aceite" +
+                        "s de semillas (girasol, maíz, soja, etc.) y en grasa de pescado.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "0.91";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 18;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "299";
+                s: 10: "c_ori_name";
+                s: 32: "ácidos grasos saturados totales";
+                s: 10: "c_eng_name";
+                s: 28: "fatty acids, total saturated";
+                s: 8: "eur_name";
+                s: 5: "FASAT";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                s: 301: "Son componentes de las grasas que se encuentran de forma mayoritaria en la gra" +
+                        "sa de los animales terrestres (sebo, tocino, etc.), en la grasa de la leche (n" +
+                        "ata, mantequilla) y en algunos aceites de origen vegetal (coco y palma) y en t" +
+                        "odos los productos industriales elaborados con este tipo de grasas.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 4: "6.72";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 19;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "302";
+                s: 10: "c_ori_name";
+                s: 29: "ácidos grasos, trans totales";
+                s: 10: "c_eng_name";
+                s: 24: "fatty acids, total trans";
+                s: 8: "eur_name";
+                s: 5: "FATRS";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                s: 263: "Son componentes de las grasas que encuentran de forma mayoritaria en alimentos" +
+                        " procesados (frituras, aperitivos, palomitas de maíz) y en grasas hidrogenadas" +
+                        " (margarinas). Tienen un efecto negativo sobre la salud semejante o mayor que " +
+                        "los ácidos grasos saturados";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 3: "0.6";
+                s: 6: "v_unit";
+                s: 1: "g";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 1: "g";
+                s: 13: "u_descripcion";
+                s: 6: "gramos";
+                s: 13: "u_description";
+                s: 4: "gram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 20;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "433";
+                s: 10: "c_ori_name";
+                s: 10: "colesterol";
+                s: 10: "c_eng_name";
+                s: 11: "cholesterol";
+                s: 8: "eur_name";
+                s: 5: "CHORL";
+                s: 17: "componentgroup_id";
+                s: 1: "3";
+                s: 8: "glos_esp";
+                s: 236: "El colesterol es un lípido presente en los alimentos de origen animal precurso" +
+                        "r de algunas hormonas y otros compuestos de importancia biológica. Su  exceso " +
+                        "en plasma se ha relacionado con la incidencia de enfermedades cardiovasculares";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 6: "Grasas";
+                s: 14: "cg_description";
+                s: 14: "Fat components";
+                s: 13: "best_location";
+                s: 5: "71.09";
+                s: 6: "v_unit";
+                s: 2: "mg";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "mg";
+                s: 13: "u_descripcion";
+                s: 10: "miligramos";
+                s: 13: "u_description";
+                s: 9: "milligram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1376";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 27: "Cromatografía de Gases FID";
+                s: 9: "m_nom_ing";
+                s: 44: "Gas Chromatography Flame Ionization Detector";
+                s: 15: "mhd_descripcion";
+                s: 13: "Cromatografia";
+                s: 15: "mhd_description";
+                s: 14: "Chromatography";
+            }
+            i: 21;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "102";
+                s: 10: "c_ori_name";
+                s: 10: "Vitamina D";
+                s: 10: "c_eng_name";
+                s: 9: "vitamin D";
+                s: 8: "eur_name";
+                s: 4: "VITD";
+                s: 17: "componentgroup_id";
+                s: 1: "6";
+                s: 8: "glos_esp";
+                s: 262: "La vitamina D es una vitamina liposoluble importante por su participación en e" +
+                        "l metabolismo del hueso. Es necesaria para la absorción de calcio en el organi" +
+                        "smo. Se puede formar a partir de colesterol por acción de los rayos ultraviole" +
+                        "ta del sol sobre la piel.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 9: "Vitaminas";
+                s: 14: "cg_description";
+                s: 8: "Vitamins";
+                s: 13: "best_location";
+                s: 2: "20";
+                s: 6: "v_unit";
+                s: 2: "ug";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "ug";
+                s: 13: "u_descripcion";
+                s: 11: "microgramos";
+                s: 13: "u_description";
+                s: 9: "microgram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1378";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 57: "Cromatografía líquida con detector de diodos (HPLC-DAD)";
+                s: 9: "m_nom_ing";
+                s: 76: "High-Performance Liquid Chromatography with Diode-Array Detection (HPLC-DAD)";
+                s: 15: "mhd_descripcion";
+                s: 50: "Cromatografía líquida de alta resolución (HPLC)";
+                s: 15: "mhd_description";
+                s: 38: "High-performance liquid chromatography";
+            }
+            i: 22;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "472";
+                s: 10: "c_ori_name";
+                s: 13: "folato, total";
+                s: 10: "c_eng_name";
+                s: 13: "folate, total";
+                s: 8: "eur_name";
+                s: 3: "FOL";
+                s: 17: "componentgroup_id";
+                s: 1: "6";
+                s: 8: "glos_esp";
+                s: 350: "El Ácido Fólico o vitamina B9 (en los alimentos esta en forma de folato) es un" +
+                        "a vitamina hidrosoluble del grupo B que interviene en numerosos procesos de gr" +
+                        "an importancia funcional como la síntesis de hemoglobina, el desarrollo del si" +
+                        "stema nervioso, etc. Su déficit en mujeres fértiles puede causar malformacione" +
+                        "s del feto durante la gestación.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 9: "Vitaminas";
+                s: 14: "cg_description";
+                s: 8: "Vitamins";
+                s: 13: "best_location";
+                s: 4: "1.25";
+                s: 6: "v_unit";
+                s: 2: "ug";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "ug";
+                s: 13: "u_descripcion";
+                s: 11: "microgramos";
+                s: 13: "u_description";
+                s: 9: "microgram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1377";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 58: "Cromatografía líquida-espectrometría de masas (HPLC-MS)";
+                s: 9: "m_nom_ing";
+                s: 49: "Liquid chromatography?mass spectrometry (HPLC-MS)";
+                s: 15: "mhd_descripcion";
+                s: 50: "Cromatografía líquida de alta resolución (HPLC)";
+                s: 15: "mhd_description";
+                s: 38: "High-performance liquid chromatography";
+            }
+            i: 23;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "475";
+                s: 10: "c_ori_name";
+                s: 32: "equivalentes de niacina, totales";
+                s: 10: "c_eng_name";
+                s: 25: "niacin equivalents, total";
+                s: 8: "eur_name";
+                s: 5: "NIAEQ";
+                s: 17: "componentgroup_id";
+                s: 1: "6";
+                s: 8: "glos_esp";
+                s: 199: "La Niacina o Vitamina B3 o PP es una vitamina hidrosoluble que interviene de f" +
+                        "orma importante en el metabolismo energético y en los procesos de síntesis de " +
+                        "hormonas esteroides y de detoxificación.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 9: "Vitaminas";
+                s: 14: "cg_description";
+                s: 8: "Vitamins";
+                s: 13: "best_location";
+                s: 4: "2.22";
+                s: 6: "v_unit";
+                s: 2: "mg";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "mg";
+                s: 13: "u_descripcion";
+                s: 10: "miligramos";
+                s: 13: "u_description";
+                s: 9: "milligram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1377";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 58: "Cromatografía líquida-espectrometría de masas (HPLC-MS)";
+                s: 9: "m_nom_ing";
+                s: 49: "Liquid chromatography?mass spectrometry (HPLC-MS)";
+                s: 15: "mhd_descripcion";
+                s: 50: "Cromatografía líquida de alta resolución (HPLC)";
+                s: 15: "mhd_description";
+                s: 38: "High-performance liquid chromatography";
+            }
+            i: 24;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "478";
+                s: 10: "c_ori_name";
+                s: 33: "ácido pantoténico (vitamina B5)";
+                s: 10: "c_eng_name";
+                s: 29: "pantothenic acid (vitamin B5)";
+                s: 8: "eur_name";
+                s: 6: "PANTAC";
+                s: 17: "componentgroup_id";
+                s: 1: "6";
+                s: 8: "glos_esp";
+                s: 226: "El Ácido Pantoténico o Vitamina B5 es otra vitamina hidrosoluble que intervien" +
+                        "e en el metabolismo de los macronutrientes (proteínas, lípidos e hidratos de c" +
+                        "arbono). Se encuentra ampliamente distribuido en muchos alimentos.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 9: "Vitaminas";
+                s: 14: "cg_description";
+                s: 8: "Vitamins";
+                s: 13: "best_location";
+                s: 4: "0.03";
+                s: 6: "v_unit";
+                s: 2: "mg";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "mg";
+                s: 13: "u_descripcion";
+                s: 10: "miligramos";
+                s: 13: "u_description";
+                s: 9: "milligram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1377";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 58: "Cromatografía líquida-espectrometría de masas (HPLC-MS)";
+                s: 9: "m_nom_ing";
+                s: 49: "Liquid chromatography?mass spectrometry (HPLC-MS)";
+                s: 15: "mhd_descripcion";
+                s: 50: "Cromatografía líquida de alta resolución (HPLC)";
+                s: 15: "mhd_description";
+                s: 38: "High-performance liquid chromatography";
+            }
+            i: 25;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "482";
+                s: 10: "c_ori_name";
+                s: 11: "riboflavina";
+                s: 10: "c_eng_name";
+                s: 10: "riboflavin";
+                s: 8: "eur_name";
+                s: 4: "RIBF";
+                s: 17: "componentgroup_id";
+                s: 1: "6";
+                s: 8: "glos_esp";
+                s: 278: "La Riboflavina o Vitamina B2 es una vitamina necesaria para la integridad de l" +
+                        "a piel y las mucosas y la correcta visión. Sus necesidades van en relación con" +
+                        " la cantidad de calorías que consumimos ya que interviene en la obtención de e" +
+                        "nergía a partir de los macronutrientes.";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 9: "Vitaminas";
+                s: 14: "cg_description";
+                s: 8: "Vitamins";
+                s: 13: "best_location";
+                s: 4: "0.06";
+                s: 6: "v_unit";
+                s: 2: "mg";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "mg";
+                s: 13: "u_descripcion";
+                s: 10: "miligramos";
+                s: 13: "u_description";
+                s: 9: "milligram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1377";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                O: 8: "stdClass": 0: {}
+                s: 9: "m_nom_esp";
+                s: 58: "Cromatografía líquida-espectrometría de masas (HPLC-MS)";
+                s: 9: "m_nom_ing";
+                s: 49: "Liquid chromatography?mass spectrometry (HPLC-MS)";
+                s: 15: "mhd_descripcion";
+                s: 50: "Cromatografía líquida de alta resolución (HPLC)";
+                s: 15: "mhd_description";
+                s: 38: "High-performance liquid chromatography";
+            }
+            i: 26;
+            O: 8: "stdClass": 40: {
+                s: 4: "c_id";
+                s: 3: "483";
+                s: 10: "c_ori_name";
+                s: 7: "tiamina";
+                s: 10: "c_eng_name";
+                s: 7: "thiamin";
+                s: 8: "eur_name";
+                s: 4: "THIA";
+                s: 17: "componentgroup_id";
+                s: 1: "6";
+                s: 8: "glos_esp";
+                s: 198: "La Tiamina o Vitamina B1 es una vitamina necesaria para la obtención de energí" +
+                        "a a partir de los hidratos de carbono. Es importante para un correcto funciona" +
+                        "miento del  sistema nervioso y corazón ";
+                s: 8: "glos_ing";
+                O: 8: "stdClass": 0: {}
+                s: 14: "cg_descripcion";
+                s: 9: "Vitaminas";
+                s: 14: "cg_description";
+                s: 8: "Vitamins";
+                s: 13: "best_location";
+                s: 3: "0.1";
+                s: 6: "v_unit";
+                s: 2: "mg";
+                s: 4: "moex";
+                s: 1: "W";
+                s: 4: "stdv";
+                O: 8: "stdClass": 0: {}
+                s: 3: "min";
+                O: 8: "stdClass": 0: {}
+                s: 3: "max";
+                O: 8: "stdClass": 0: {}
+                s: 3: "v_n";
+                O: 8: "stdClass": 0: {}
+                s: 4: "u_id";
+                s: 2: "mg";
+                s: 13: "u_descripcion";
+                s: 10: "miligramos";
+                s: 13: "u_description";
+                s: 9: "milligram";
+                s: 10: "value_type";
+                s: 2: "AR";
+                s: 14: "vt_descripcion";
+                s: 25: "como aparece en la fuente";
+                s: 14: "vt_description";
+                s: 11: "as reported";
+                s: 5: "mu_id";
+                s: 1: "W";
+                s: 14: "mu_descripcion";
+                s: 32: "por 100 g de porción comestible";
+                s: 14: "mu_description";
+                s: 24: "per 100 g edible portion";
+                s: 6: "ref_id";
+                s: 3: "372";
+                s: 8: "citation";
+                O: 8: "stdClass": 0: {}
+                s: 14: "at_descripcion";
+                s: 28: "laboratorio de una industria";
+                s: 14: "at_description";
+                s: 19: "industry laboratory";
+                s: 14: "pt_descripcion";
+                s: 7: "informe";
+                s: 14: "pt_description";
+                s: 6: "report";
+                s: 9: "method_id";
+                s: 4: "1371";
+                s: 14: "mt_descripcion";
+                s: 25: "analítico de resultado/s";
+                s: 14: "mt_description";
+                s: 21: "analytical, result(s)";
+                s: 13: "m_descripcion";
+                O: 8: "stdClass": 0: {}
+                s: 13: "m_description";
+                s: 736: "It is an instrumental technique, comprising a gas chromatograph (GC) coupled t" +
+                        "o a mass spectrometer (MS), by which complex mixtures of chemicals may be sepa" +
+                        "rated, identfied and quantified." The sample solution is injected into the GC inlet where it is vaporized and swept onto a chromatographic column by the carrier gas(
+                    usually helium
+                ).The sample flows through the column and the compounds comprising the mixture of interest are separated by virtue of their relative interaction with the coating of the column(
+                    stationary phase
+                )and the carrier gas(mobile phase).The latter part of the column passes through a heated transfer line and ends at the entrance to ion source where compounds eluting from the column are converted to ions.";s:9:" m_nom_esp ";s:56:" Cromatografía de gases - espectrometría de masas(
+                    GC - MS
+                )";s:9:" m_nom_ing ";s:44:" Gas chromatography? mass spectrometry(GC - MS)";s:15:" mhd_descripcion ";s:47:" Cromatografía de gases - espectrometria de masas ";s:15:" mhd_description ";s:36:" Gas chromatography mass spectroscopy ";}i:27;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 484 ";s:10:" c_ori_name ";s:13:" Vitamina B - 12 ";s:10:" c_eng_name ";s:12:" vitamin B - 12 ";s:8:" eur_name ";s:6:" VITB12 ";s:17:" componentgroup_id ";s:1:" 6 ";s:8:" glos_esp ";s:301:" La Vitamina B12 denominada Cianocobalamina.Se encuentra,
+                de forma mayoritaria,
+                en los alimentos de origen animal aunque hay algunas fuentes vegetales pero escasas de esta vitamina.Es importante por su papel esencial en la formación de los glóbulos rojos y en la funcionalidad del sistema nervioso.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Vitaminas ";s:14:" cg_description ";s:8:" Vitamins ";s:13:" best_location ";s:4:" 2.19 ";s:6:" v_unit ";s:2:" ug ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" ug ";s:13:" u_descripcion ";s:11:" microgramos ";s:13:" u_description ";s:9:" microgram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1377 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:58:" Cromatografía líquida - espectrometría de masas(
+                    HPLC - MS
+                )";s:9:" m_nom_ing ";s:49:" Liquid chromatography? mass spectrometry(HPLC - MS)";s:15:" mhd_descripcion ";s:50:" Cromatografía líquida de alta resolución(
+                    HPLC
+                )";s:15:" mhd_description ";s:38:" High - performance liquid chromatography ";}i:28;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 485 ";s:10:" c_ori_name ";s:19:" Vitamina B - 6,
+                Total ";s:10:" c_eng_name ";s:18:" vitamin B - 6,
+                total ";s:8:" eur_name ";s:5:" VITB6 ";s:17:" componentgroup_id ";s:1:" 6 ";s:8:" glos_esp ";s:148:" La Vitamina B6 esta compuesta de varios compuestos y se conoce también por Piridoxina.Juegan un papel clave en el metabolismo de los aminoácidos.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Vitaminas ";s:14:" cg_description ";s:8:" Vitamins ";s:13:" best_location ";s:3:" 0.4 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1377 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:58:" Cromatografía líquida - espectrometría de masas(
+                    HPLC - MS
+                )";s:9:" m_nom_ing ";s:49:" Liquid chromatography? mass spectrometry(HPLC - MS)";s:15:" mhd_descripcion ";s:50:" Cromatografía líquida de alta resolución(
+                    HPLC
+                )";s:15:" mhd_description ";s:38:" High - performance liquid chromatography ";}i:29;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 100 ";s:10:" c_ori_name ";s:75:" Vitamina A equivalentes de retinol de actividades de retinos y carotenoides ";s:10:" c_eng_name ";s:62:" vitamin A retinol equiv from retinol and carotenoid activities ";s:8:" eur_name ";s:4:" VITA ";s:17:" componentgroup_id ";s:1:" 6 ";s:8:" glos_esp ";s:333:" La vitamina A es una vitamina liposoluble importante para la función visual y el mantenimiento de ciertas estructuras del organismo.En este componente de los alimentos no solo se incluye la vitamina A preformada(
+                    presente en animales : retinol
+                )sino los compuestos que al ser ingeridos pueden transformarse en Vitamina A(
+                    carotenos
+                )";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Vitaminas ";s:14:" cg_description ";s:8:" Vitamins ";s:13:" best_location ";O:8:" stdClass ":0:{}s:6:" v_unit ";s:2:" ug ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" ug ";s:13:" u_descripcion ";s:11:" microgramos ";s:13:" u_description ";s:9:" microgram ";s:10:" value_type ";s:2:" TR ";s:14:" vt_descripcion ";s:5:" traza ";s:14:" vt_description ";s:5:" trace ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1378 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:57:" Cromatografía líquida con detector de diodos(
+                    HPLC - DAD
+                )";s:9:" m_nom_ing ";s:76:" High - Performance Liquid Chromatography with Diode - Array Detection(
+                    HPLC - DAD
+                )";s:15:" mhd_descripcion ";s:50:" Cromatografía líquida de alta resolución(
+                    HPLC
+                )";s:15:" mhd_description ";s:38:" High - performance liquid chromatography ";}i:30;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 103 ";s:10:" c_ori_name ";s:71:" Viamina E equivalentes de alfa tocoferol de actividades de vitámeros E ";s:10:" c_eng_name ";s:58:" vitamin E alpha - tocopherol equiv from E vitamer activities ";s:8:" eur_name ";s:4:" VITE ";s:17:" componentgroup_id ";s:1:" 6 ";s:8:" glos_esp ";s:124:" La vitamina E es una vitamina liposoluble que tienen especial importancia como antioxidante de los lípidos en el organismo.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Vitaminas ";s:14:" cg_description ";s:8:" Vitamins ";s:13:" best_location ";O:8:" stdClass ":0:{}s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" TR ";s:14:" vt_descripcion ";s:5:" traza ";s:14:" vt_description ";s:5:" trace ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1380 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:86:" Cromatografía líquida de alta resolución con detección de fluorescencia(
+                    HPLC - FLD
+                )";s:9:" m_nom_ing ";s:77:" High - performance liquid chromatography with fluorescence detection(
+                    HPLC - FLD
+                )";s:15:" mhd_descripcion ";s:50:" Cromatografía líquida de alta resolución(
+                    HPLC
+                )";s:15:" mhd_description ";s:38:" High - performance liquid chromatography ";}i:31;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 468 ";s:10:" c_ori_name ";s:7:" biotina ";s:10:" c_eng_name ";s:6:" biotin ";s:8:" eur_name ";s:4:" BIOT ";s:17:" componentgroup_id ";s:1:" 6 ";s:8:" glos_esp ";s:195:" La Biotina,
+                llamada también Vitamina H es hidrosoluble e interviene en distintos procesos del metabolismo energético.Es sintetizada por la flora intestinal y está presente en muchos alimentos ";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Vitaminas ";s:14:" cg_description ";s:8:" Vitamins ";s:13:" best_location ";O:8:" stdClass ":0:{}s:6:" v_unit ";s:2:" ug ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" ug ";s:13:" u_descripcion ";s:11:" microgramos ";s:13:" u_description ";s:9:" microgram ";s:10:" value_type ";s:2:" TR ";s:14:" vt_descripcion ";s:5:" traza ";s:14:" vt_description ";s:5:" trace ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1377 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:58:" Cromatografía líquida - espectrometría de masas(
+                    HPLC - MS
+                )";s:9:" m_nom_ing ";s:49:" Liquid chromatography? mass spectrometry(HPLC - MS)";s:15:" mhd_descripcion ";s:50:" Cromatografía líquida de alta resolución(
+                    HPLC
+                )";s:15:" mhd_description ";s:38:" High - performance liquid chromatography ";}i:32;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 317 ";s:10:" c_ori_name ";s:6:" calcio ";s:10:" c_eng_name ";s:7:" calcium ";s:8:" eur_name ";s:2:" CA ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:274:" El calcio es un mineral de extraordinaria importancia nutricional que es clave en el desarrollo del hueso y los dietes y además participa en el correcto funcionamiento del sistema nervioso y muscular.Las fuentes más ricas de calcio son los productos lácteos y derivados.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:5:" 13.15 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1379 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:79:" Espectroscopia de emisión atómica de plasma acoplado por inducción(
+                    ICP - AES
+                )";s:9:" m_nom_ing ";s:65:" Inductively coupled plasma atomic emission spectroscopy(
+                    ICP - AES
+                )";s:15:" mhd_descripcion ";s:36:" Espectroscopía de emisión atómica ";s:15:" mhd_description ";s:28:" Atomic emission spectroscopy ";}i:33;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 319 ";s:10:" c_ori_name ";s:13:" hierro,
+                total ";s:10:" c_eng_name ";s:11:" iron,
+                total ";s:8:" eur_name ";s:2:" FE ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:194:" El hierro es un mineral imprescindible para la síntesis de hemoglobina de la sangre y por tanto,
+                para el transporte de oxigeno a todas las células del organismo.Su deficiencia provoca anemia.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:4:" 1.05 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1379 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:79:" Espectroscopia de emisión atómica de plasma acoplado por inducción(
+                    ICP - AES
+                )";s:9:" m_nom_ing ";s:65:" Inductively coupled plasma atomic emission spectroscopy(
+                    ICP - AES
+                )";s:15:" mhd_descripcion ";s:36:" Espectroscopía de emisión atómica ";s:15:" mhd_description ";s:28:" Atomic emission spectroscopy ";}i:34;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 321 ";s:10:" c_ori_name ";s:7:" potasio ";s:10:" c_eng_name ";s:9:" potassium ";s:8:" eur_name ";s:1:" K ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:230:" El potasio es un electrolito que se encuentra en el interior de las células y es importante para un mantenimiento correcto de la hidratación celular,
+                el funcionamiento del músculo esquelético y cardiaco y del sistema nervioso.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:6:" 224.66 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1379 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:79:" Espectroscopia de emisión atómica de plasma acoplado por inducción(
+                    ICP - AES
+                )";s:9:" m_nom_ing ";s:65:" Inductively coupled plasma atomic emission spectroscopy(
+                    ICP - AES
+                )";s:15:" mhd_descripcion ";s:36:" Espectroscopía de emisión atómica ";s:15:" mhd_description ";s:28:" Atomic emission spectroscopy ";}i:35;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 322 ";s:10:" c_ori_name ";s:8:" magnesio ";s:10:" c_eng_name ";s:9:" magnesium ";s:8:" eur_name ";s:2:" MG ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:190:" El magnesio es un mineral implicado en numerosos procesos del organismo cono la actividad muscular esquelética y nerviosa.También es importante en el mantenimiento de la estructura ósea.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:5:" 15.78 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1379 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:79:" Espectroscopia de emisión atómica de plasma acoplado por inducción(
+                    ICP - AES
+                )";s:9:" m_nom_ing ";s:65:" Inductively coupled plasma atomic emission spectroscopy(
+                    ICP - AES
+                )";s:15:" mhd_descripcion ";s:36:" Espectroscopía de emisión atómica ";s:15:" mhd_description ";s:28:" Atomic emission spectroscopy ";}i:36;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 323 ";s:10:" c_ori_name ";s:5:" sodio ";s:10:" c_eng_name ";s:6:" sodium ";s:8:" eur_name ";s:2:" NA ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:255:" El sodio es el electrolito mayoritario en el líquido extracelular.Tiene un papel importante en la hidratación del organismo y en el mantenimiento de la osmolaridad de los líquidos corporales.Su consumo excesivo se ha relacionado con la hipertensión.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:5:" 76.29 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1379 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:79:" Espectroscopia de emisión atómica de plasma acoplado por inducción(
+                    ICP - AES
+                )";s:9:" m_nom_ing ";s:65:" Inductively coupled plasma atomic emission spectroscopy(
+                    ICP - AES
+                )";s:15:" mhd_descripcion ";s:36:" Espectroscopía de emisión atómica ";s:15:" mhd_description ";s:28:" Atomic emission spectroscopy ";}i:37;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 326 ";s:10:" c_ori_name ";s:8:" fósforo ";s:10:" c_eng_name ";s:10:" phosphorus ";s:8:" eur_name ";s:1:" P ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:293:" El fósforo es un mineral que junto con el calcio y el magnesio forma parte del hueso.También está presente en moléculas tan importantes como el ATP que aporta energía a las células y en el ADN de nuestros cromosomas.Se encuentra ampliamente distribuido en los alimentos que consumimos.";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:6:" 145.77 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1379 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:79:" Espectroscopia de emisión atómica de plasma acoplado por inducción(
+                    ICP - AES
+                )";s:9:" m_nom_ing ";s:65:" Inductively coupled plasma atomic emission spectroscopy(
+                    ICP - AES
+                )";s:15:" mhd_descripcion ";s:36:" Espectroscopía de emisión atómica ";s:15:" mhd_description ";s:28:" Atomic emission spectroscopy ";}i:38;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 462 ";s:10:" c_ori_name ";s:14:" selenio,
+                total ";s:10:" c_eng_name ";s:15:" selenium,
+                total ";s:8:" eur_name ";s:2:" SE ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:174:" El selenio es un elemento mineral traza(
+                    que está en muy bajas cantidades en el organismo
+                )que tiene una acción antioxidante importante y estimula el sistema inmunológico ";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:5:" 12.29 ";s:6:" v_unit ";s:2:" ug ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" ug ";s:13:" u_descripcion ";s:11:" microgramos ";s:13:" u_description ";s:9:" microgram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:3:" 333 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:60:" Determinación de Selenio(
+                    Informe Certificado,
+                    Laboratorio
+                )";s:9:" m_nom_ing ";s:58:" Determination of Selenium(
+                    Certificate Report,
+                    Laboratory
+                )";s:15:" mhd_descripcion ";s:37:" Espectroscopía de absoción atómica ";s:15:" mhd_description ";s:30:" Atomic absorption spectroscopy ";}i:39;O:8:" stdClass ":40:{s:4:" c_id ";s:3:" 464 ";s:10:" c_ori_name ";s:11:" zinc(
+                    cinc
+                )";s:10:" c_eng_name ";s:4:" zinc ";s:8:" eur_name ";s:2:" ZN ";s:17:" componentgroup_id ";s:1:" 7 ";s:8:" glos_esp ";s:252:" El zinc es un mineral que forma parte de enzimas relacionados con el sistema inmunológico,
+                el metabolismo de los hidratos de carbono y de los ácidos nucléicos.Su déficit afecta al crecimiento durante la pubertad y disminuye las defensas corporales ";s:8:" glos_ing ";O:8:" stdClass ":0:{}s:14:" cg_descripcion ";s:9:" Minerales ";s:14:" cg_description ";s:8:" Minerals ";s:13:" best_location ";s:4:" 2.91 ";s:6:" v_unit ";s:2:" mg ";s:4:" moex ";s:1:" W ";s:4:" stdv ";O:8:" stdClass ":0:{}s:3:" min ";O:8:" stdClass ":0:{}s:3:" max ";O:8:" stdClass ":0:{}s:3:" v_n ";O:8:" stdClass ":0:{}s:4:" u_id ";s:2:" mg ";s:13:" u_descripcion ";s:10:" miligramos ";s:13:" u_description ";s:9:" milligram ";s:10:" value_type ";s:2:" AR ";s:14:" vt_descripcion ";s:25:" como aparece en la fuente ";s:14:" vt_description ";s:11:" as reported ";s:5:" mu_id ";s:1:" W ";s:14:" mu_descripcion ";s:32:" por 100 g de porción comestible ";s:14:" mu_description ";s:24:" per 100 g edible portion ";s:6:" ref_id ";s:3:" 372 ";s:8:" citation ";O:8:" stdClass ":0:{}s:14:" at_descripcion ";s:28:" laboratorio de una industria ";s:14:" at_description ";s:19:" industry laboratory ";s:14:" pt_descripcion ";s:7:" informe ";s:14:" pt_description ";s:6:" report ";s:9:" method_id ";s:4:" 1379 ";s:14:" mt_descripcion ";s:25:" analítico de resultado / s ";s:14:" mt_description ";s:21:" analytical,
+                result(s)";s:13:" m_descripcion ";O:8:" stdClass ":0:{}s:13:" m_description ";O:8:" stdClass ":0:{}s:9:" m_nom_esp ";s:79:" Espectroscopia de emisión atómica de plasma acoplado por inducción(
+                    ICP - AES
+                )";s:9:" m_nom_ing ";s:65:" Inductively coupled plasma atomic emission spectroscopy(
+                    ICP - AES
+                )";s:15:" mhd_descripcion ";s:36:" Espectroscopía de emisión atómica ";s:15:" mhd_description ";s:28:" Atomic emission spectroscopy ";}}}s:13:" componentList ";O:8:" stdClass ":1:{s:9:" component ";a:40:{i:0;O:8:" stdClass ":4:{s:2:" id ";s:3:" 404 ";s:8:" name_esp ";s:16:" alcohol(
+                    etanol
+                )";s:5:" group ";s:10:" Proximales ";s:8:" name_ing ";s:17:" alcohol(ethanol)";}i:1;O:8:" stdClass ":4:{s:2:" id ";s:3:" 409 ";s:8:" name_esp ";s:15:" energía,
+                total ";s:5:" group ";s:10:" Proximales ";s:8:" name_ing ";s:76:" energy,
+                total metabolisable calculated from energy - producing food components ";}i:2;O:8:" stdClass ":4:{s:2:" id ";s:3:" 410 ";s:8:" name_esp ";s:30:" grasa,
+                total(lipidos totales)";s:5:" group ";s:10:" Proximales ";s:8:" name_ing ";s:24:" fat,
+                total(total lipid)";}i:3;O:8:" stdClass ":4:{s:2:" id ";s:3:" 416 ";s:8:" name_esp ";s:15:" proteina,
+                total ";s:5:" group ";s:10:" Proximales ";s:8:" name_ing ";s:14:" protein,
+                total ";}i:4;O:8:" stdClass ":4:{s:2:" id ";s:3:" 417 ";s:8:" name_esp ";s:14:" agua(
+                    humedad
+                )";s:5:" group ";s:10:" Proximales ";s:8:" name_ing ";s:16:" water(moisture)";}i:5;O:8:" stdClass ":4:{s:2:" id ";s:3:" 307 ";s:8:" name_esp ";s:22:" fibra,
+                dietetica total ";s:5:" group ";s:19:" Hidratos de Carbono ";s:8:" name_ing ";s:20:" fibre,
+                total dietary ";}i:6;O:8:" stdClass ":4:{s:2:" id ";s:2:" 53 ";s:8:" name_esp ";s:13:" carbohidratos ";s:5:" group ";s:19:" Hidratos de Carbono ";s:8:" name_ing ";s:12:" carbohydrate ";}i:7;O:8:" stdClass ":4:{s:2:" id ";s:3:" 260 ";s:8:" name_esp ";s:48:" ácido graso 22: 6 n - 3 (
+                    ácido docosahexaenóico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:42:" fatty acid 22: 6 n - 3 (
+                    docosahexaenoic acid
+                )";}i:8;O:8:" stdClass ":4:{s:2:" id ";s:3:" 282 ";s:8:" name_esp ";s:39:" ácidos grasos,
+                monoinsaturados totales ";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:34:" fatty acids,
+                total monounsaturated ";}i:9;O:8:" stdClass ":4:{s:2:" id ";s:3:" 287 ";s:8:" name_esp ";s:39:" ácidos grasos,
+                poliinsaturados totales ";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:34:" fatty acids,
+                total polyunsaturated ";}i:10;O:8:" stdClass ":4:{s:2:" id ";s:3:" 299 ";s:8:" name_esp ";s:32:" ácidos grasos saturados totales ";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:28:" fatty acids,
+                total saturated ";}i:11;O:8:" stdClass ":4:{s:2:" id ";s:3:" 116 ";s:8:" name_esp ";s:28:" ácido graso 12: 0 (
+                    láurico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:29:" fatty acid 12: 0 (
+                    lauric acid
+                )";}i:12;O:8:" stdClass ":4:{s:2:" id ";s:3:" 123 ";s:8:" name_esp ";s:37:" ácido graso 14: 0 (
+                    ácido mirístico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:31:" fatty acid 14: 0 (
+                    myristic acid
+                )";}i:13;O:8:" stdClass ":4:{s:2:" id ";s:3:" 136 ";s:8:" name_esp ";s:37:" ácido graso 16: 0 (
+                    ácido palmítico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:31:" fatty acid 16: 0 (
+                    palmitic acid
+                )";}i:14;O:8:" stdClass ":4:{s:2:" id ";s:3:" 157 ";s:8:" name_esp ";s:37:" ácido graso 18: 0 (
+                    ácido esteárico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:30:" fatty acid 18: 0 (
+                    stearic acid
+                )";}i:15;O:8:" stdClass ":4:{s:2:" id ";s:3:" 172 ";s:8:" name_esp ";s:42:" ácido graso 18: 1 n - 9 cis(
+                    ácido oléico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:36:" fatty acid 18: 1 n - 9 cis(
+                    oleic acid
+                )";}i:16;O:8:" stdClass ":4:{s:2:" id ";s:3:" 433 ";s:8:" name_esp ";s:10:" colesterol ";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:11:" cholesterol ";}i:17;O:8:" stdClass ":4:{s:2:" id ";s:3:" 189 ";s:8:" name_esp ";s:17:" ácido graso 18: 2 ";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:15:" fatty acid 18: 2 ";}i:18;O:8:" stdClass ":4:{s:2:" id ";s:3:" 199 ";s:8:" name_esp ";s:17:" ácido graso 18: 3 ";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:15:" fatty acid 18: 3 ";}i:19;O:8:" stdClass ":4:{s:2:" id ";s:3:" 230 ";s:8:" name_esp ";s:45:" ácido graso 20: 4 n - 6 (
+                    ácido araquidónico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:38:" fatty acid 20: 4 n - 6 (
+                    arachidonic acid
+                )";}i:20;O:8:" stdClass ":4:{s:2:" id ";s:3:" 231 ";s:8:" name_esp ";s:45:" ácido graso 20: 5 (
+                    ácido eicosapentaenóico
+                )";s:5:" group ";s:6:" Grasas ";s:8:" name_ing ";s:37:" fatty acid 20: 5 (
+                    eicopentaenoic acid
+                )";}i:21;O:8:" stdClass ":4:{s:2:" id ";s:3:" 100 ";s:8:" name_esp ";s:75:" Vitamina A equivalentes de retinol de actividades de retinos y carotenoides ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:62:" vitamin A retinol equiv from retinol and carotenoid activities ";}i:22;O:8:" stdClass ":4:{s:2:" id ";s:3:" 102 ";s:8:" name_esp ";s:10:" Vitamina D ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:9:" vitamin D ";}i:23;O:8:" stdClass ":4:{s:2:" id ";s:3:" 103 ";s:8:" name_esp ";s:71:" Viamina E equivalentes de alfa tocoferol de actividades de vitámeros E ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:58:" vitamin E alpha - tocopherol equiv from E vitamer activities ";}i:24;O:8:" stdClass ":4:{s:2:" id ";s:3:" 472 ";s:8:" name_esp ";s:13:" folato,
+                total ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:13:" folate,
+                total ";}i:25;O:8:" stdClass ":4:{s:2:" id ";s:3:" 475 ";s:8:" name_esp ";s:32:" equivalentes de niacina,
+                totales ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:25:" niacin equivalents,
+                total ";}i:26;O:8:" stdClass ":4:{s:2:" id ";s:3:" 482 ";s:8:" name_esp ";s:11:" riboflavina ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:10:" riboflavin ";}i:27;O:8:" stdClass ":4:{s:2:" id ";s:3:" 483 ";s:8:" name_esp ";s:7:" tiamina ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:7:" thiamin ";}i:28;O:8:" stdClass ":4:{s:2:" id ";s:3:" 484 ";s:8:" name_esp ";s:13:" Vitamina B - 12 ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:12:" vitamin B - 12 ";}i:29;O:8:" stdClass ":4:{s:2:" id ";s:3:" 485 ";s:8:" name_esp ";s:19:" Vitamina B - 6,
+                Total ";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:18:" vitamin B - 6,
+                total ";}i:30;O:8:" stdClass ":4:{s:2:" id ";s:3:" 486 ";s:8:" name_esp ";s:30:" Vitamina C(
+                    ácido ascórbico
+                )";s:5:" group ";s:9:" Vitaminas ";s:8:" name_ing ";s:25:" vitamin C(
+                    ascorbic acid
+                )";}i:31;O:8:" stdClass ":4:{s:2:" id ";s:3:" 317 ";s:8:" name_esp ";s:6:" calcio ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:7:" calcium ";}i:32;O:8:" stdClass ":4:{s:2:" id ";s:3:" 319 ";s:8:" name_esp ";s:13:" hierro,
+                total ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:11:" iron,
+                total ";}i:33;O:8:" stdClass ":4:{s:2:" id ";s:3:" 321 ";s:8:" name_esp ";s:7:" potasio ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:9:" potassium ";}i:34;O:8:" stdClass ":4:{s:2:" id ";s:3:" 322 ";s:8:" name_esp ";s:8:" magnesio ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:9:" magnesium ";}i:35;O:8:" stdClass ":4:{s:2:" id ";s:3:" 323 ";s:8:" name_esp ";s:5:" sodio ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:6:" sodium ";}i:36;O:8:" stdClass ":4:{s:2:" id ";s:3:" 326 ";s:8:" name_esp ";s:8:" fósforo ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:10:" phosphorus ";}i:37;O:8:" stdClass ":4:{s:2:" id ";s:3:" 456 ";s:8:" name_esp ";s:6:" ioduro ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:6:" iodide ";}i:38;O:8:" stdClass ":4:{s:2:" id ";s:3:" 462 ";s:8:" name_esp ";s:14:" selenio,
+                total ";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:15:" selenium,
+                total ";}i:39;O:8:" stdClass ":4:{s:2:" id ";s:3:" 464 ";s:8:" name_esp ";s:11:" zinc(
+                    cinc
+                )";s:5:" group ";s:9:" Minerales ";s:8:" name_ing ";s:4:" zinc ";}}}}
