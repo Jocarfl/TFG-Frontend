@@ -9,7 +9,8 @@ header('Content-Type: text/html; charset=utf-8');
 $client = new BedcaClient();
 
 $data = array();
-
+$itemsRepeated = array();
+$unique = array();
 //2713
 for ($x = 680; $x <= 2713; $x++) {
 
@@ -47,6 +48,8 @@ if($a["food"]["f_id"] || $a["food"]["f_ori_name"] || $a["food"]["foodvalue"]){
 
 array_push( $data, $comida );
 }
+
+
 
 $myJSON = json_encode($data);
 

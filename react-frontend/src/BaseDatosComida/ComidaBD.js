@@ -1,4 +1,4 @@
-[
+export const Comida = [
     {
         "id": "680",
         "nombre": "Bac\u00f3n, ahumado, a la parrilla",
@@ -13187,7 +13187,8 @@
         "grasaT": "16.49",
         "proteinaT": "21.63",
         "energiaT": "977.84"
-    }, {
+    }, 
+    {
         "id": "2713",
         "nombre": "Cordero ligero, costillar, asado",
         "tipo": [],
