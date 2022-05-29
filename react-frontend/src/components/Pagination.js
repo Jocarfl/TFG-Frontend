@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import { usePagination, DOTS } from '../context/usePagination';
-import './css/Pagination.scss';
+import './css/Pagination.css';
 
 const Pagination = props => {
   const {

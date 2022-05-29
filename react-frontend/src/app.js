@@ -17,7 +17,7 @@ return(
       <Routes>
       <Route path='/login' element={<Login/>} />
       <Route
-            path="/nutricion"
+            path="/"
             element={
               <ProtectedRoute>
                 <StyledEngineProvider injectFirst>
@@ -30,16 +30,15 @@ return(
             }
           />
         <Route
-            path="/"
+            path="/nutricion"
             element={
               <ProtectedRoute>
+              <StyledEngineProvider injectFirst>
 
                 <TopMenuBoo></TopMenuBoo>
-    
-
-                <Nutricion />
-
-              </ProtectedRoute>
+                    <Nutricion />
+                </StyledEngineProvider>
+                </ProtectedRoute>
             }
           />
       <Route path='/admin' element={<Admin/>} />
