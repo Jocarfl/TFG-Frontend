@@ -11,8 +11,8 @@ import CheckCircle from '@mui/icons-material/CheckCircle';
 export default function BasicCard() {
     const [selected, setSelected] = React.useState(true);
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
+    <Card  sx={{ minWidth: 275 }} >
+      <CardContent >
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           RETO DIARIO
         </Typography>

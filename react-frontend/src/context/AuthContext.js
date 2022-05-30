@@ -31,7 +31,6 @@ export const useAuth = () => {
   
     useEffect(() => {
       const unsubuscribe = onAuthStateChanged(auth, (currentUser) => {
-        console.log({ currentUser });
         setUser(currentUser);
         setLoading(false);
       });

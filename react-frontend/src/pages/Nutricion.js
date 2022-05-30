@@ -12,10 +12,6 @@ import { Input } from '@mui/material';
 
 export function Nutricion() {
 
-  let result = Comida.filter((item,index)=>{
-    return Comida.indexOf(item) === index;
-  })
-
     const [query, setQuery] = useState("");
 
     const Search = (data) => {
@@ -26,7 +22,7 @@ export function Nutricion() {
             <input
                 className="search"
                 placeholder="Search..."
-                onChange={(e) => setQuery(e.target.value.toLocaleLowerCase())}/> {<TablaComida data={Search(result)}/>}
+                onChange={(e) => setQuery(e.target.value.toLocaleLowerCase())}/> {<TablaComida data={Search(Comida)}/>}
         </div>
     );
 }

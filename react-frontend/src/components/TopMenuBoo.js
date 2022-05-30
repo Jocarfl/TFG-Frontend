@@ -4,7 +4,9 @@ import Navbar from 'react-bootstrap/Navbar'
 import { useAuth } from "../context/AuthContext";
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import { perfilUsuario } from '../firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,9 +29,6 @@ const ResponsiveAppBar = () => {
 
   const { logout, user } = useAuth();
 
-
-
-  console.log(user);
   const handleLogout = async () => {
     try {
       await logout();
@@ -37,6 +36,8 @@ const ResponsiveAppBar = () => {
       console.error(error.message);
     }
   };
+
+
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
