@@ -1,4 +1,4 @@
-export const Comida = [
+export const Comida =[
     {
         "id": "680",
         "nombre": "Bac\u00f3n, ahumado, a la parrilla",
@@ -20,13 +20,6 @@ export const Comida = [
         "grasaT": "57.5",
         "proteinaT": "8.7",
         "energiaT": "2276.93"
-    }, {
-        "id": "683",
-        "nombre": "Batido l\u00e1cteo de cacao, bajo en calor\u00edas",
-        "tipo": [],
-        "grasaT": "1.9",
-        "proteinaT": "3.1",
-        "energiaT": "201.2"
     }, {
         "id": "683",
         "nombre": "Batido l\u00e1cteo de cacao, bajo en calor\u00edas",
@@ -62,13 +55,6 @@ export const Comida = [
         "proteinaT": "27",
         "energiaT": "987.016",
         "grasaT": "14.2707"
-    }, {
-        "id": "689",
-        "nombre": "Cerdo, pierna, cruda, con grasa separable",
-        "tipo": [],
-        "grasaT": "15.2",
-        "proteinaT": "19",
-        "energiaT": "885.4"
     }, {
         "id": "689",
         "nombre": "Cerdo, pierna, cruda, con grasa separable",
@@ -308,48 +294,6 @@ export const Comida = [
         "energiaT": "1484.51",
         "grasaT": "28.3598"
     }, {
-        "id": "723",
-        "nombre": "Queso Raclette",
-        "tipo": "Milk and dairy products",
-        "proteinaT": "25.6",
-        "energiaT": "1484.51",
-        "grasaT": "28.3598"
-    }, {
-        "id": "723",
-        "nombre": "Queso Raclette",
-        "tipo": "Milk and dairy products",
-        "proteinaT": "25.6",
-        "energiaT": "1484.51",
-        "grasaT": "28.3598"
-    }, {
-        "id": "723",
-        "nombre": "Queso Raclette",
-        "tipo": "Milk and dairy products",
-        "proteinaT": "25.6",
-        "energiaT": "1484.51",
-        "grasaT": "28.3598"
-    }, {
-        "id": "723",
-        "nombre": "Queso Raclette",
-        "tipo": "Milk and dairy products",
-        "proteinaT": "25.6",
-        "energiaT": "1484.51",
-        "grasaT": "28.3598"
-    }, {
-        "id": "723",
-        "nombre": "Queso Raclette",
-        "tipo": "Milk and dairy products",
-        "proteinaT": "25.6",
-        "energiaT": "1484.51",
-        "grasaT": "28.3598"
-    }, {
-        "id": "723",
-        "nombre": "Queso Raclette",
-        "tipo": "Milk and dairy products",
-        "proteinaT": "25.6",
-        "energiaT": "1484.51",
-        "grasaT": "28.3598"
-    }, {
         "id": "730",
         "nombre": "Berenjena, frita, en aceite de girasol",
         "tipo": [],
@@ -370,13 +314,6 @@ export const Comida = [
         "energiaT": "49.9",
         "grasaT": "0.2",
         "proteinaT": "2.2"
-    }, {
-        "id": "733",
-        "nombre": "Achicoria, cruda",
-        "tipo": [],
-        "grasaT": "0.6",
-        "proteinaT": "0.5",
-        "energiaT": "78.3"
     }, {
         "id": "733",
         "nombre": "Achicoria, cruda",
@@ -406,13 +343,6 @@ export const Comida = [
         "energiaT": "821.279",
         "grasaT": "12.7778"
     }, {
-        "id": "737",
-        "nombre": "Anguila, hervida",
-        "tipo": [],
-        "proteinaT": "20.5",
-        "energiaT": "821.279",
-        "grasaT": "12.7778"
-    }, {
         "id": "739",
         "nombre": "Apio, en conserva en salmuera",
         "tipo": [],
@@ -433,20 +363,6 @@ export const Comida = [
         "grasaT": "26",
         "proteinaT": "17",
         "energiaT": "1251"
-    }, {
-        "id": "742",
-        "nombre": "At\u00fan, al horno",
-        "tipo": [],
-        "proteinaT": "29.4",
-        "energiaT": "791.689",
-        "grasaT": "7.88889"
-    }, {
-        "id": "742",
-        "nombre": "At\u00fan, al horno",
-        "tipo": [],
-        "proteinaT": "29.4",
-        "energiaT": "791.689",
-        "grasaT": "7.88889"
     }, {
         "id": "742",
         "nombre": "At\u00fan, al horno",
@@ -587,13 +503,6 @@ export const Comida = [
         "grasaT": "11.9",
         "proteinaT": "13.7",
         "energiaT": "682.5"
-    }, {
-        "id": "764",
-        "nombre": "Huevo de pato, crudo",
-        "tipo": [],
-        "grasaT": "11.8",
-        "proteinaT": "14.3",
-        "energiaT": "679.7"
     }, {
         "id": "764",
         "nombre": "Huevo de pato, crudo",
@@ -812,13 +721,6 @@ export const Comida = [
         "energiaT": "414.814",
         "grasaT": "1.05714"
     }, {
-        "id": "795",
-        "nombre": "Bacalao, fresco, al horno",
-        "tipo": [],
-        "proteinaT": "22.1",
-        "energiaT": "414.814",
-        "grasaT": "1.05714"
-    }, {
         "id": "797",
         "nombre": "Bacalao, salado, remojado, crudo",
         "tipo": [],
@@ -896,20 +798,6 @@ export const Comida = [
         "energiaT": "299.095",
         "proteinaT": "14"
     }, {
-        "id": "807",
-        "nombre": "Calamar, crudo",
-        "tipo": [],
-        "grasaT": "1.47",
-        "energiaT": "299.095",
-        "proteinaT": "14"
-    }, {
-        "id": "807",
-        "nombre": "Calamar, crudo",
-        "tipo": [],
-        "grasaT": "1.47",
-        "energiaT": "299.095",
-        "proteinaT": "14"
-    }, {
         "id": "810",
         "nombre": "Cangrejo, en conserva",
         "tipo": [],
@@ -923,20 +811,6 @@ export const Comida = [
         "proteinaT": "20.4",
         "energiaT": "621.657",
         "grasaT": "7.42857"
-    }, {
-        "id": "812",
-        "nombre": "Carpa, cruda",
-        "tipo": [],
-        "energiaT": "484.9",
-        "grasaT": "4.95",
-        "proteinaT": "17.75"
-    }, {
-        "id": "812",
-        "nombre": "Carpa, cruda",
-        "tipo": [],
-        "energiaT": "484.9",
-        "grasaT": "4.95",
-        "proteinaT": "17.75"
     }, {
         "id": "812",
         "nombre": "Carpa, cruda",
@@ -965,13 +839,6 @@ export const Comida = [
         "proteinaT": "18",
         "energiaT": "373.129",
         "grasaT": "1.81429"
-    }, {
-        "id": "818",
-        "nombre": "Jurel, crudo",
-        "tipo": [],
-        "grasaT": "1.97",
-        "proteinaT": "15.4",
-        "energiaT": "467.8"
     }, {
         "id": "818",
         "nombre": "Jurel, crudo",
@@ -1071,13 +938,6 @@ export const Comida = [
         "proteinaT": "18.6",
         "energiaT": "375.4"
     }, {
-        "id": "832",
-        "nombre": "Perca, cruda",
-        "tipo": [],
-        "grasaT": "1.6",
-        "proteinaT": "18.6",
-        "energiaT": "375.4"
-    }, {
         "id": "834",
         "nombre": "Pescadilla, rebozada en harina, frita",
         "tipo": [],
@@ -1120,40 +980,12 @@ export const Comida = [
         "proteinaT": "12.7",
         "energiaT": "431.6"
     }, {
-        "id": "839",
-        "nombre": "Salema, cruda",
-        "tipo": [],
-        "grasaT": "0.95",
-        "proteinaT": "12.7",
-        "energiaT": "431.6"
-    }, {
-        "id": "839",
-        "nombre": "Salema, cruda",
-        "tipo": [],
-        "grasaT": "0.95",
-        "proteinaT": "12.7",
-        "energiaT": "431.6"
-    }, {
-        "id": "839",
-        "nombre": "Salema, cruda",
-        "tipo": [],
-        "grasaT": "0.95",
-        "proteinaT": "12.7",
-        "energiaT": "431.6"
-    }, {
         "id": "843",
         "nombre": "Tenca, cruda",
         "tipo": [],
         "grasaT": "4.3",
         "proteinaT": "17.7",
         "energiaT": "384.38"
-    }, {
-        "id": "844",
-        "nombre": "Trucha, ahumada",
-        "tipo": [],
-        "grasaT": "6.7",
-        "proteinaT": "21.9",
-        "energiaT": "826.5"
     }, {
         "id": "844",
         "nombre": "Trucha, ahumada",
@@ -1176,13 +1008,6 @@ export const Comida = [
         "proteinaT": "21",
         "energiaT": "368.1"
     }, {
-        "id": "847",
-        "nombre": "Volador, crudo",
-        "tipo": [],
-        "grasaT": "0.3",
-        "proteinaT": "21",
-        "energiaT": "368.1"
-    }, {
         "id": "849",
         "nombre": "Soja, germinada, en conserva",
         "tipo": [],
@@ -1196,27 +1021,6 @@ export const Comida = [
         "proteinaT": "3",
         "energiaT": "102.725",
         "grasaT": "0.525"
-    }, {
-        "id": "850",
-        "nombre": "Cebollino, crudo",
-        "tipo": [],
-        "proteinaT": "3",
-        "energiaT": "102.725",
-        "grasaT": "0.525"
-    }, {
-        "id": "852",
-        "nombre": "Col rizada, cruda",
-        "tipo": [],
-        "grasaT": "1.6",
-        "proteinaT": "3.4",
-        "energiaT": "140.8"
-    }, {
-        "id": "852",
-        "nombre": "Col rizada, cruda",
-        "tipo": [],
-        "grasaT": "1.6",
-        "proteinaT": "3.4",
-        "energiaT": "140.8"
     }, {
         "id": "852",
         "nombre": "Col rizada, cruda",
@@ -1260,34 +1064,6 @@ export const Comida = [
         "energiaT": "76.175",
         "grasaT": "0.175"
     }, {
-        "id": "859",
-        "nombre": "Coliflor, congelada, cruda",
-        "tipo": [],
-        "proteinaT": "2",
-        "energiaT": "76.175",
-        "grasaT": "0.175"
-    }, {
-        "id": "861",
-        "nombre": "Espinaca, picada, congelada, cruda",
-        "tipo": [],
-        "energiaT": "92.7125",
-        "grasaT": "0.8",
-        "proteinaT": "2.7125"
-    }, {
-        "id": "861",
-        "nombre": "Espinaca, picada, congelada, cruda",
-        "tipo": [],
-        "energiaT": "92.7125",
-        "grasaT": "0.8",
-        "proteinaT": "2.7125"
-    }, {
-        "id": "861",
-        "nombre": "Espinaca, picada, congelada, cruda",
-        "tipo": [],
-        "energiaT": "92.7125",
-        "grasaT": "0.8",
-        "proteinaT": "2.7125"
-    }, {
         "id": "861",
         "nombre": "Espinaca, picada, congelada, cruda",
         "tipo": [],
@@ -1301,27 +1077,6 @@ export const Comida = [
         "proteinaT": "7.23",
         "energiaT": "1883.25",
         "grasaT": "47.4874"
-    }, {
-        "id": "866",
-        "nombre": "Sal de mar",
-        "tipo": [],
-        "proteinaT": "0",
-        "energiaT": "0",
-        "grasaT": []
-    }, {
-        "id": "866",
-        "nombre": "Sal de mar",
-        "tipo": [],
-        "proteinaT": "0",
-        "energiaT": "0",
-        "grasaT": []
-    }, {
-        "id": "866",
-        "nombre": "Sal de mar",
-        "tipo": [],
-        "proteinaT": "0",
-        "energiaT": "0",
-        "grasaT": []
     }, {
         "id": "866",
         "nombre": "Sal de mar",
@@ -1435,13 +1190,6 @@ export const Comida = [
         "grasaT": "7.838",
         "proteinaT": "1.946"
     }, {
-        "id": "884",
-        "nombre": "Patata, salteada con aceite girasol",
-        "tipo": [],
-        "energiaT": "560.952",
-        "grasaT": "7.838",
-        "proteinaT": "1.946"
-    }, {
         "id": "886",
         "nombre": "Pur\u00e9 de patata y queso, en copos",
         "tipo": [],
@@ -1455,20 +1203,6 @@ export const Comida = [
         "proteinaT": "2.2",
         "energiaT": "395.175",
         "grasaT": "3.375"
-    }, {
-        "id": "888",
-        "nombre": "Pur\u00e9 de patata, con verduras, en copos",
-        "tipo": [],
-        "grasaT": "4.5",
-        "proteinaT": "4",
-        "energiaT": "1506.1"
-    }, {
-        "id": "888",
-        "nombre": "Pur\u00e9 de patata, con verduras, en copos",
-        "tipo": [],
-        "grasaT": "4.5",
-        "proteinaT": "4",
-        "energiaT": "1506.1"
     }, {
         "id": "888",
         "nombre": "Pur\u00e9 de patata, con verduras, en copos",
@@ -1575,20 +1309,6 @@ export const Comida = [
         "energiaT": "1607.11",
         "grasaT": "2.63529"
     }, {
-        "id": "904",
-        "nombre": "Arroz integral, crudo",
-        "tipo": [],
-        "proteinaT": "7.5",
-        "energiaT": "1607.11",
-        "grasaT": "2.63529"
-    }, {
-        "id": "904",
-        "nombre": "Arroz integral, crudo",
-        "tipo": [],
-        "proteinaT": "7.5",
-        "energiaT": "1607.11",
-        "grasaT": "2.63529"
-    }, {
         "id": "907",
         "nombre": "Leche condensada, entera, con az\u00facar",
         "tipo": [],
@@ -1602,13 +1322,6 @@ export const Comida = [
         "grasaT": "58",
         "proteinaT": "6.2",
         "energiaT": "2452"
-    }, {
-        "id": "909",
-        "nombre": "Coco, fresco",
-        "tipo": [],
-        "grasaT": "33.5",
-        "proteinaT": "3.3",
-        "energiaT": "1554"
     }, {
         "id": "909",
         "nombre": "Coco, fresco",
@@ -1792,13 +1505,6 @@ export const Comida = [
         "grasaT": "5.3",
         "proteinaT": "4"
     }, {
-        "id": "935",
-        "nombre": "Casta\u00f1a, tostada",
-        "tipo": [],
-        "energiaT": "939",
-        "grasaT": "5.3",
-        "proteinaT": "4"
-    }, {
         "id": "937",
         "nombre": "Zumo de lim\u00f3n, fresco",
         "tipo": [],
@@ -1883,20 +1589,6 @@ export const Comida = [
         "proteinaT": "14.2",
         "energiaT": "590.3"
     }, {
-        "id": "948",
-        "nombre": "Queso para untar, natural, bajo en calor\u00edas",
-        "tipo": [],
-        "grasaT": "13",
-        "proteinaT": "14.2",
-        "energiaT": "590.3"
-    }, {
-        "id": "950",
-        "nombre": "Yogur l\u00edquido, aromatizado sabor s\/e",
-        "tipo": [],
-        "proteinaT": "2.9",
-        "energiaT": "317.799",
-        "grasaT": "1.376"
-    }, {
         "id": "950",
         "nombre": "Yogur l\u00edquido, aromatizado sabor s\/e",
         "tipo": [],
@@ -1910,13 +1602,6 @@ export const Comida = [
         "grasaT": "2",
         "proteinaT": "2.9",
         "energiaT": "476.9"
-    }, {
-        "id": "953",
-        "nombre": "Yogur, b\u00falgaro",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "5",
-        "energiaT": "309.4"
     }, {
         "id": "953",
         "nombre": "Yogur, b\u00falgaro",
@@ -1939,47 +1624,12 @@ export const Comida = [
         "proteinaT": "0.4",
         "energiaT": "219.9"
     }, {
-        "id": "956",
-        "nombre": "N\u00edspero, con piel, crudo",
-        "tipo": [],
-        "grasaT": "0.2",
-        "proteinaT": "0.4",
-        "energiaT": "219.9"
-    }, {
-        "id": "956",
-        "nombre": "N\u00edspero, con piel, crudo",
-        "tipo": [],
-        "grasaT": "0.2",
-        "proteinaT": "0.4",
-        "energiaT": "219.9"
-    }, {
-        "id": "956",
-        "nombre": "N\u00edspero, con piel, crudo",
-        "tipo": [],
-        "grasaT": "0.2",
-        "proteinaT": "0.4",
-        "energiaT": "219.9"
-    }, {
-        "id": "956",
-        "nombre": "N\u00edspero, con piel, crudo",
-        "tipo": [],
-        "grasaT": "0.2",
-        "proteinaT": "0.4",
-        "energiaT": "219.9"
-    }, {
         "id": "961",
         "nombre": "Cerdo, solomillo, asado",
         "tipo": [],
         "proteinaT": "28.8",
         "energiaT": "663.535",
         "grasaT": "4.70094"
-    }, {
-        "id": "962",
-        "nombre": "Ciervo, parte s\/e, crudo, con grasa separable",
-        "tipo": [],
-        "grasaT": "1.6",
-        "proteinaT": "22.2",
-        "energiaT": "436.6"
     }, {
         "id": "962",
         "nombre": "Ciervo, parte s\/e, crudo, con grasa separable",
@@ -2149,13 +1799,6 @@ export const Comida = [
         "proteinaT": "29.9",
         "energiaT": "804.3"
     }, {
-        "id": "986",
-        "nombre": "Liebre, entera, cruda",
-        "tipo": [],
-        "grasaT": "8",
-        "proteinaT": "29.9",
-        "energiaT": "804.3"
-    }, {
         "id": "988",
         "nombre": "Salchicha, tipo pa\u00eds, a la plancha",
         "tipo": [],
@@ -2226,13 +1869,6 @@ export const Comida = [
         "energiaT": "818.268",
         "grasaT": "8.33158"
     }, {
-        "id": "997",
-        "nombre": "Vaca\/buey, parte s\/e, estofado",
-        "tipo": [],
-        "proteinaT": "30",
-        "energiaT": "818.268",
-        "grasaT": "8.33158"
-    }, {
         "id": "999",
         "nombre": "Grosella, cruda",
         "tipo": [],
@@ -2260,13 +1896,6 @@ export const Comida = [
         "proteinaT": "5.6",
         "energiaT": "415.121",
         "grasaT": "6.34921"
-    }, {
-        "id": "1003",
-        "nombre": "Litchi, crudo",
-        "tipo": [],
-        "grasaT": "0.44",
-        "proteinaT": "0.9",
-        "energiaT": "279.78"
     }, {
         "id": "1003",
         "nombre": "Litchi, crudo",
@@ -2352,13 +1981,6 @@ export const Comida = [
         "proteinaT": "0",
         "grasaT": []
     }, {
-        "id": "1015",
-        "nombre": "Agua, con gas, embotellada",
-        "tipo": [],
-        "energiaT": "0",
-        "proteinaT": "0",
-        "grasaT": []
-    }, {
         "id": "1017",
         "nombre": "Uva negra, cruda",
         "tipo": [],
@@ -2400,20 +2022,6 @@ export const Comida = [
         "energiaT": "1104.5",
         "proteinaT": "0",
         "grasaT": []
-    }, {
-        "id": "1022",
-        "nombre": "An\u00eds, seco",
-        "tipo": [],
-        "energiaT": "1104.5",
-        "proteinaT": "0",
-        "grasaT": []
-    }, {
-        "id": "1024",
-        "nombre": "Coraz\u00f3n, de vaca\/buey, crudo",
-        "tipo": [],
-        "proteinaT": "17",
-        "energiaT": "435.312",
-        "grasaT": "3.95437"
     }, {
         "id": "1024",
         "nombre": "Coraz\u00f3n, de vaca\/buey, crudo",
@@ -2471,13 +2079,6 @@ export const Comida = [
         "proteinaT": "6",
         "energiaT": "1586.6"
     }, {
-        "id": "1032",
-        "nombre": "Cereales desayuno base de ma\u00edz y trigo",
-        "tipo": [],
-        "grasaT": "3",
-        "proteinaT": "6",
-        "energiaT": "1586.6"
-    }, {
         "id": "1034",
         "nombre": "Cereales desayuno base de trigo azucarado",
         "tipo": [],
@@ -2499,13 +2100,6 @@ export const Comida = [
         "proteinaT": "8",
         "energiaT": "1528"
     }, {
-        "id": "1036",
-        "nombre": "Cereales desayuno base de trigo y frutas",
-        "tipo": [],
-        "grasaT": "5",
-        "proteinaT": "8",
-        "energiaT": "1528"
-    }, {
         "id": "1038",
         "nombre": "Cereales desayuno base de trigo y miel",
         "tipo": [],
@@ -2519,13 +2113,6 @@ export const Comida = [
         "grasaT": "4.9",
         "proteinaT": "8",
         "energiaT": "1660.3"
-    }, {
-        "id": "1040",
-        "nombre": "Cereales desayuno base de trigo, avena, ma\u00edz, miel y nueces",
-        "tipo": [],
-        "grasaT": "2.4",
-        "proteinaT": "11",
-        "energiaT": "1635.8"
     }, {
         "id": "1040",
         "nombre": "Cereales desayuno base de trigo, avena, ma\u00edz, miel y nueces",
@@ -2638,13 +2225,6 @@ export const Comida = [
         "grasaT": "1.6",
         "proteinaT": "10.5",
         "energiaT": "1504.2"
-    }, {
-        "id": "1057",
-        "nombre": "N\u00e9ctar de frutas ex\u00f3ticas, envasado",
-        "tipo": [],
-        "proteinaT": "0.4",
-        "energiaT": "231.2",
-        "grasaT": []
     }, {
         "id": "1057",
         "nombre": "N\u00e9ctar de frutas ex\u00f3ticas, envasado",
@@ -2814,13 +2394,6 @@ export const Comida = [
         "proteinaT": "0.1",
         "energiaT": "175.7"
     }, {
-        "id": "1081",
-        "nombre": "Zumo de mango",
-        "tipo": "Fruit and vegetable juices and nectars",
-        "grasaT": "0.2",
-        "proteinaT": "0.1",
-        "energiaT": "175.7"
-    }, {
         "id": "1083",
         "nombre": "Quinoa, cruda",
         "tipo": [],
@@ -2841,13 +2414,6 @@ export const Comida = [
         "energiaT": "228.4",
         "grasaT": "0.2",
         "proteinaT": "2"
-    }, {
-        "id": "1086",
-        "nombre": "Sobao",
-        "tipo": [],
-        "grasaT": "25.2",
-        "proteinaT": "5.9",
-        "energiaT": "1826.6"
     }, {
         "id": "1086",
         "nombre": "Sobao",
@@ -2882,13 +2448,6 @@ export const Comida = [
         "tipo": [],
         "proteinaT": "0.8",
         "energiaT": "142.8",
-        "grasaT": []
-    }, {
-        "id": "1092",
-        "nombre": "Vodka",
-        "tipo": "Alcoholic beverages",
-        "energiaT": "971.5",
-        "proteinaT": "0",
         "grasaT": []
     }, {
         "id": "1092",
@@ -3177,36 +2736,8 @@ export const Comida = [
         "energiaT": "291.269",
         "grasaT": "1.16402"
     }, {
-        "id": "1133",
-        "nombre": "Yogur l\u00edquido, natural, azucarado",
-        "tipo": [],
-        "proteinaT": "3",
-        "energiaT": "291.269",
-        "grasaT": "1.16402"
-    }, {
         "id": "1135",
         "nombre": "Yogur, desnatado, con cereza y frambuesa",
-        "tipo": [],
-        "energiaT": "168.387",
-        "grasaT": "0.1333",
-        "proteinaT": "3.965"
-    }, {
-        "id": "1135",
-        "nombre": "Yogur, desnatado, con cereza y frambuesa",
-        "tipo": [],
-        "energiaT": "168.387",
-        "grasaT": "0.1333",
-        "proteinaT": "3.965"
-    }, {
-        "id": "1137",
-        "nombre": "Yogur, desnatado, con frutas del bosque",
-        "tipo": [],
-        "energiaT": "168.387",
-        "grasaT": "0.1333",
-        "proteinaT": "3.965"
-    }, {
-        "id": "1137",
-        "nombre": "Yogur, desnatado, con frutas del bosque",
         "tipo": [],
         "energiaT": "168.387",
         "grasaT": "0.1333",
@@ -3221,13 +2752,6 @@ export const Comida = [
     }, {
         "id": "1140",
         "nombre": "Yogur, desnatado, con frutas tropicales",
-        "tipo": [],
-        "energiaT": "168.387",
-        "grasaT": "0.1333",
-        "proteinaT": "3.965"
-    }, {
-        "id": "1141",
-        "nombre": "Yogur, desnatado, con manzana",
         "tipo": [],
         "energiaT": "168.387",
         "grasaT": "0.1333",
@@ -3261,27 +2785,6 @@ export const Comida = [
         "proteinaT": "3.1",
         "energiaT": "415.4"
     }, {
-        "id": "1145",
-        "nombre": "Yogur, enriquecido, natural, azucarado",
-        "tipo": [],
-        "grasaT": "3.6",
-        "proteinaT": "3.1",
-        "energiaT": "415.4"
-    }, {
-        "id": "1145",
-        "nombre": "Yogur, enriquecido, natural, azucarado",
-        "tipo": [],
-        "grasaT": "3.6",
-        "proteinaT": "3.1",
-        "energiaT": "415.4"
-    }, {
-        "id": "1145",
-        "nombre": "Yogur, enriquecido, natural, azucarado",
-        "tipo": [],
-        "grasaT": "3.6",
-        "proteinaT": "3.1",
-        "energiaT": "415.4"
-    }, {
         "id": "1149",
         "nombre": "Yogur, desnatado, con pi\u00f1a y pomelo",
         "tipo": [],
@@ -3295,48 +2798,6 @@ export const Comida = [
         "grasaT": "3.6",
         "proteinaT": "3.7",
         "energiaT": "825.1"
-    }, {
-        "id": "1150",
-        "nombre": "Yogur, enriquecido, sabor, s\/e",
-        "tipo": [],
-        "grasaT": "3.6",
-        "proteinaT": "3.7",
-        "energiaT": "825.1"
-    }, {
-        "id": "1150",
-        "nombre": "Yogur, enriquecido, sabor, s\/e",
-        "tipo": [],
-        "grasaT": "3.6",
-        "proteinaT": "3.7",
-        "energiaT": "825.1"
-    }, {
-        "id": "1150",
-        "nombre": "Yogur, enriquecido, sabor, s\/e",
-        "tipo": [],
-        "grasaT": "3.6",
-        "proteinaT": "3.7",
-        "energiaT": "825.1"
-    }, {
-        "id": "1150",
-        "nombre": "Yogur, enriquecido, sabor, s\/e",
-        "tipo": [],
-        "grasaT": "3.6",
-        "proteinaT": "3.7",
-        "energiaT": "825.1"
-    }, {
-        "id": "1155",
-        "nombre": "Yogur, l\u00edquido, desnatado, natural",
-        "tipo": [],
-        "grasaT": "0.3",
-        "proteinaT": "3",
-        "energiaT": "271.2"
-    }, {
-        "id": "1155",
-        "nombre": "Yogur, l\u00edquido, desnatado, natural",
-        "tipo": [],
-        "grasaT": "0.3",
-        "proteinaT": "3",
-        "energiaT": "271.2"
     }, {
         "id": "1155",
         "nombre": "Yogur, l\u00edquido, desnatado, natural",
@@ -3429,20 +2890,6 @@ export const Comida = [
         "proteinaT": "16.3",
         "energiaT": "887.6"
     }, {
-        "id": "1169",
-        "nombre": "Angula, cruda",
-        "tipo": [],
-        "grasaT": "16.5",
-        "proteinaT": "16.3",
-        "energiaT": "887.6"
-    }, {
-        "id": "1169",
-        "nombre": "Angula, cruda",
-        "tipo": [],
-        "grasaT": "16.5",
-        "proteinaT": "16.3",
-        "energiaT": "887.6"
-    }, {
         "id": "1172",
         "nombre": "Ciruela, con piel, cruda",
         "tipo": [],
@@ -3506,26 +2953,12 @@ export const Comida = [
         "grasaT": "0.5",
         "proteinaT": "4"
     }, {
-        "id": "1180",
-        "nombre": "Col de bruselas, cruda",
-        "tipo": [],
-        "energiaT": "146",
-        "grasaT": "0.5",
-        "proteinaT": "4"
-    }, {
         "id": "1182",
         "nombre": "Sofrito",
         "tipo": [],
         "energiaT": "874.83",
         "grasaT": "20.97",
         "proteinaT": "1.11"
-    }, {
-        "id": "1183",
-        "nombre": "Calabaza, hervida",
-        "tipo": [],
-        "grasaT": "0.15",
-        "proteinaT": "0.6",
-        "energiaT": "51.45"
     }, {
         "id": "1183",
         "nombre": "Calabaza, hervida",
@@ -3554,13 +2987,6 @@ export const Comida = [
         "grasaT": "2.5",
         "proteinaT": "14.8",
         "energiaT": "1700.7"
-    }, {
-        "id": "1188",
-        "nombre": "Cereales desayuno base de ma\u00edz, trigo y avena",
-        "tipo": [],
-        "grasaT": "6.8",
-        "proteinaT": "6.2",
-        "energiaT": "1732.3"
     }, {
         "id": "1188",
         "nombre": "Cereales desayuno base de ma\u00edz, trigo y avena",
@@ -3628,18 +3054,6 @@ export const Comida = [
         "grasaT": "0.1",
         "proteinaT": "2.3"
     }, {
-        "id": "1199",
-        "nombre": "Alcachofa, congelada, cruda",
-        "tipo": [],
-        "grasaT": "0.1",
-        "proteinaT": "2.3"
-    }, {
-        "id": "1199",
-        "nombre": "Alcachofa, congelada, cruda",
-        "tipo": [],
-        "grasaT": "0.1",
-        "proteinaT": "2.3"
-    }, {
         "id": "1202",
         "nombre": "Alioli, aceite s\/e",
         "tipo": [],
@@ -3669,18 +3083,6 @@ export const Comida = [
         "tipo": [],
         "grasaT": "0.2",
         "proteinaT": "6.7"
-    }, {
-        "id": "1207",
-        "nombre": "Alubia blanca, seca, cruda",
-        "tipo": [],
-        "grasaT": "1.3",
-        "proteinaT": "22.2"
-    }, {
-        "id": "1207",
-        "nombre": "Alubia blanca, seca, cruda",
-        "tipo": [],
-        "grasaT": "1.3",
-        "proteinaT": "22.2"
     }, {
         "id": "1207",
         "nombre": "Alubia blanca, seca, cruda",
@@ -3771,12 +3173,6 @@ export const Comida = [
         "tipo": [],
         "grasaT": "2.42",
         "proteinaT": "75"
-    }, {
-        "id": "1224",
-        "nombre": "Bacon, crudo, con grasa separable",
-        "tipo": [],
-        "grasaT": "46.6",
-        "proteinaT": "12.5"
     }, {
         "id": "1224",
         "nombre": "Bacon, crudo, con grasa separable",
@@ -4678,12 +4074,6 @@ export const Comida = [
         "grasaT": "1.3",
         "proteinaT": "3"
     }, {
-        "id": "1374",
-        "nombre": "Perejil, fresco",
-        "tipo": [],
-        "grasaT": "1.3",
-        "proteinaT": "3"
-    }, {
         "id": "1376",
         "nombre": "Petit suisse, sabor natural, azucarado",
         "tipo": [],
@@ -5206,960 +4596,6 @@ export const Comida = [
         "grasaT": "3.4",
         "proteinaT": "4.7"
     }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1462",
-        "nombre": "Pasta alimenticia, rellena con carne, hervida",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "4.7"
-    }, {
-        "id": "1619",
-        "nombre": "Aceituna",
-        "tipo": [],
-        "grasaT": "12.5",
-        "proteinaT": "1.3"
-    }, {
-        "id": "1619",
-        "nombre": "Aceituna",
-        "tipo": [],
-        "grasaT": "12.5",
-        "proteinaT": "1.3"
-    }, {
-        "id": "1619",
-        "nombre": "Aceituna",
-        "tipo": [],
-        "grasaT": "12.5",
-        "proteinaT": "1.3"
-    }, {
         "id": "1619",
         "nombre": "Aceituna",
         "tipo": [],
@@ -6195,12 +4631,6 @@ export const Comida = [
         "tipo": [],
         "grasaT": "0.4",
         "proteinaT": "17.43"
-    }, {
-        "id": "1628",
-        "nombre": "Anchoas en aceite vegetal",
-        "tipo": [],
-        "grasaT": "9.71",
-        "proteinaT": "28.89"
     }, {
         "id": "1628",
         "nombre": "Anchoas en aceite vegetal",
@@ -6285,24 +4715,6 @@ export const Comida = [
         "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
         "grasaT": "2",
         "proteinaT": "18.3"
-    }, {
-        "id": "1643",
-        "nombre": "Boquer\u00f3n",
-        "tipo": [],
-        "grasaT": "6.3",
-        "proteinaT": "17.6"
-    }, {
-        "id": "1643",
-        "nombre": "Boquer\u00f3n",
-        "tipo": [],
-        "grasaT": "6.3",
-        "proteinaT": "17.6"
-    }, {
-        "id": "1643",
-        "nombre": "Boquer\u00f3n",
-        "tipo": [],
-        "grasaT": "6.3",
-        "proteinaT": "17.6"
     }, {
         "id": "1643",
         "nombre": "Boquer\u00f3n",
@@ -6417,12 +4829,6 @@ export const Comida = [
         "grasaT": "2.8",
         "proteinaT": "19"
     }, {
-        "id": "1664",
-        "nombre": "Congrio",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "2.8",
-        "proteinaT": "19"
-    }, {
         "id": "1666",
         "nombre": "Corazon de vaca",
         "tipo": [],
@@ -6519,12 +4925,6 @@ export const Comida = [
         "grasaT": "10.8",
         "proteinaT": "3.9"
     }, {
-        "id": "1681",
-        "nombre": "Helado de nata",
-        "tipo": [],
-        "grasaT": "10.8",
-        "proteinaT": "3.9"
-    }, {
         "id": "1683",
         "nombre": "Higado de pollo",
         "tipo": [],
@@ -6585,12 +4985,6 @@ export const Comida = [
         "grasaT": "0.8",
         "proteinaT": "24.3"
     }, {
-        "id": "1692",
-        "nombre": "Langostino ",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.8",
-        "proteinaT": "24.3"
-    }, {
         "id": "1694",
         "nombre": "Leche de vaca, entera",
         "tipo": [],
@@ -6602,12 +4996,6 @@ export const Comida = [
         "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
         "grasaT": "1.3",
         "proteinaT": "16.5"
-    }, {
-        "id": "1696",
-        "nombre": "Licores de frutas",
-        "tipo": [],
-        "grasaT": "0",
-        "proteinaT": "0.1"
     }, {
         "id": "1696",
         "nombre": "Licores de frutas",
@@ -6681,12 +5069,6 @@ export const Comida = [
         "grasaT": "75.6",
         "proteinaT": "1.3"
     }, {
-        "id": "1708",
-        "nombre": "Mayonesa con aceite de girasol",
-        "tipo": [],
-        "grasaT": "75.6",
-        "proteinaT": "1.3"
-    }, {
         "id": "1710",
         "nombre": "Mejillon",
         "tipo": [],
@@ -6728,18 +5110,6 @@ export const Comida = [
         "tipo": "Fruit and fruit products",
         "proteinaT": "0.8",
         "grasaT": []
-    }, {
-        "id": "1717",
-        "nombre": "Natillas sabor vainilla",
-        "tipo": [],
-        "grasaT": "2.9",
-        "proteinaT": "3.7"
-    }, {
-        "id": "1717",
-        "nombre": "Natillas sabor vainilla",
-        "tipo": [],
-        "grasaT": "2.9",
-        "proteinaT": "3.7"
     }, {
         "id": "1717",
         "nombre": "Natillas sabor vainilla",
@@ -6861,18 +5231,6 @@ export const Comida = [
         "grasaT": "1.4",
         "proteinaT": "17.9"
     }, {
-        "id": "1738",
-        "nombre": "Pulpo",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "1.4",
-        "proteinaT": "17.9"
-    }, {
-        "id": "1738",
-        "nombre": "Pulpo",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "1.4",
-        "proteinaT": "17.9"
-    }, {
         "id": "1741",
         "nombre": "Cremoso san millan ",
         "tipo": [],
@@ -6950,12 +5308,6 @@ export const Comida = [
         "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
         "grasaT": "7.5",
         "proteinaT": "18.1"
-    }, {
-        "id": "1754",
-        "nombre": "Seta",
-        "tipo": [],
-        "grasaT": "0.3",
-        "proteinaT": "1.8"
     }, {
         "id": "1754",
         "nombre": "Seta",
@@ -7088,27 +5440,6 @@ export const Comida = [
         "tipo": "Vegetables and vegetable products",
         "grasaT": "0.2",
         "proteinaT": "1.8"
-    }, {
-        "id": "1777",
-        "nombre": "Jam\u00f3n ib\u00e9rico de cebo",
-        "tipo": [],
-        "energiaT": "1261.2",
-        "grasaT": "19.2",
-        "proteinaT": "32.3"
-    }, {
-        "id": "1777",
-        "nombre": "Jam\u00f3n ib\u00e9rico de cebo",
-        "tipo": [],
-        "energiaT": "1261.2",
-        "grasaT": "19.2",
-        "proteinaT": "32.3"
-    }, {
-        "id": "1777",
-        "nombre": "Jam\u00f3n ib\u00e9rico de cebo",
-        "tipo": [],
-        "energiaT": "1261.2",
-        "grasaT": "19.2",
-        "proteinaT": "32.3"
     }, {
         "id": "1777",
         "nombre": "Jam\u00f3n ib\u00e9rico de cebo",
@@ -7333,12 +5664,6 @@ export const Comida = [
         "grasaT": "0.2",
         "proteinaT": "1.1"
     }, {
-        "id": "1816",
-        "nombre": "Endibia",
-        "tipo": [],
-        "grasaT": "0.2",
-        "proteinaT": "1.1"
-    }, {
         "id": "1818",
         "nombre": "Huevo de gallina, yema, cruda",
         "tipo": [],
@@ -7375,29 +5700,11 @@ export const Comida = [
         "grasaT": "2.82",
         "proteinaT": "8.29"
     }, {
-        "id": "1823",
-        "nombre": "Harina de ma\u00edz",
-        "tipo": "Grains and grain-based products",
-        "grasaT": "2.82",
-        "proteinaT": "8.29"
-    }, {
-        "id": "1823",
-        "nombre": "Harina de ma\u00edz",
-        "tipo": "Grains and grain-based products",
-        "grasaT": "2.82",
-        "proteinaT": "8.29"
-    }, {
         "id": "1826",
         "nombre": "Alcaparra",
         "tipo": [],
         "grasaT": "0.86",
         "proteinaT": "2.36"
-    }, {
-        "id": "1827",
-        "nombre": "Churro",
-        "tipo": "Grains and grain-based products",
-        "grasaT": "20",
-        "proteinaT": "4.6"
     }, {
         "id": "1827",
         "nombre": "Churro",
@@ -7459,24 +5766,6 @@ export const Comida = [
         "grasaT": "0.73",
         "proteinaT": "16.55"
     }, {
-        "id": "1837",
-        "nombre": "Ajo, en polvo",
-        "tipo": [],
-        "grasaT": "0.73",
-        "proteinaT": "16.55"
-    }, {
-        "id": "1839",
-        "nombre": "Sesamo molido",
-        "tipo": [],
-        "grasaT": "58",
-        "proteinaT": "18.2"
-    }, {
-        "id": "1839",
-        "nombre": "Sesamo molido",
-        "tipo": [],
-        "grasaT": "58",
-        "proteinaT": "18.2"
-    }, {
         "id": "1839",
         "nombre": "Sesamo molido",
         "tipo": [],
@@ -7530,12 +5819,6 @@ export const Comida = [
         "tipo": [],
         "grasaT": [],
         "proteinaT": []
-    }, {
-        "id": "1850",
-        "nombre": "Lasa\u00f1a",
-        "tipo": [],
-        "grasaT": "7.9",
-        "proteinaT": "6.3"
     }, {
         "id": "1850",
         "nombre": "Lasa\u00f1a",
@@ -7625,12 +5908,6 @@ export const Comida = [
         "grasaT": "0.08",
         "proteinaT": "0.25"
     }, {
-        "id": "1865",
-        "nombre": "Bebida energ\u00e9tica",
-        "tipo": "Water and water-based beverages",
-        "grasaT": "0.08",
-        "proteinaT": "0.25"
-    }, {
         "id": "1867",
         "nombre": "Albahaca",
         "tipo": "Vegetables and vegetable products",
@@ -7672,24 +5949,6 @@ export const Comida = [
         "tipo": "Alcoholic beverages",
         "proteinaT": "0.2",
         "grasaT": []
-    }, {
-        "id": "1873",
-        "nombre": "Sangria",
-        "tipo": "Alcoholic beverages",
-        "proteinaT": "0.2",
-        "grasaT": []
-    }, {
-        "id": "1873",
-        "nombre": "Sangria",
-        "tipo": "Alcoholic beverages",
-        "proteinaT": "0.2",
-        "grasaT": []
-    }, {
-        "id": "1876",
-        "nombre": "Cereales, en polvo, solubles (eko)",
-        "tipo": [],
-        "grasaT": "0.42",
-        "proteinaT": "5.7"
     }, {
         "id": "1876",
         "nombre": "Cereales, en polvo, solubles (eko)",
@@ -8260,12 +6519,6 @@ export const Comida = [
         "grasaT": "31.5",
         "proteinaT": "9.19"
     }, {
-        "id": "1971",
-        "nombre": "Chocolate con leche",
-        "tipo": "Sugar, confectionery and water-based sweet desserts",
-        "grasaT": "31.5",
-        "proteinaT": "9.19"
-    }, {
         "id": "1973",
         "nombre": "Queso manchego",
         "tipo": "Milk and dairy products",
@@ -8479,12 +6732,6 @@ export const Comida = [
         "tipo": [],
         "grasaT": "0.49",
         "proteinaT": "1.76"
-    }, {
-        "id": "2009",
-        "nombre": "Morcilla, frita",
-        "tipo": [],
-        "grasaT": "21.9",
-        "proteinaT": "12.58"
     }, {
         "id": "2009",
         "nombre": "Morcilla, frita",
@@ -8768,12 +7015,6 @@ export const Comida = [
         "grasaT": "3",
         "proteinaT": "10.9"
     }, {
-        "id": "2056",
-        "nombre": "Pan integral, sin sal",
-        "tipo": [],
-        "grasaT": "3",
-        "proteinaT": "10.9"
-    }, {
         "id": "2058",
         "nombre": "Bocadillo",
         "tipo": [],
@@ -8878,194 +7119,6 @@ export const Comida = [
         "nombre": "Salsa de s\u00e9samo",
         "tipo": []
     }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
-        "id": "2075",
-        "nombre": "Salsa de s\u00e9samo",
-        "tipo": []
-    }, {
         "id": "2123",
         "nombre": "Kebab",
         "tipo": [],
@@ -9093,13 +7146,6 @@ export const Comida = [
         "grasaT": "10.5",
         "proteinaT": "12.5",
         "energiaT": "606.1"
-    }, {
-        "id": "2127",
-        "nombre": "Huevo de gallina fresco",
-        "tipo": [],
-        "grasaT": "11.1",
-        "proteinaT": "12.5",
-        "energiaT": "623.2"
     }, {
         "id": "2127",
         "nombre": "Huevo de gallina fresco",
@@ -9156,132 +7202,6 @@ export const Comida = [
         "grasaT": "12",
         "proteinaT": "23",
         "energiaT": "835"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
-    }, {
-        "id": "2136",
-        "nombre": "Bacaladilla",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.7",
-        "proteinaT": "17.4",
-        "energiaT": "321.7"
     }, {
         "id": "2136",
         "nombre": "Bacaladilla",
@@ -9409,13 +7329,6 @@ export const Comida = [
         "proteinaT": "8.47",
         "energiaT": "1078.69"
     }, {
-        "id": "2171",
-        "nombre": "Pan rallado",
-        "tipo": "Grains and grain-based products",
-        "grasaT": "1.6",
-        "proteinaT": "8.47",
-        "energiaT": "1078.69"
-    }, {
         "id": "2173",
         "nombre": "Pan tostado integral",
         "tipo": [],
@@ -9450,13 +7363,6 @@ export const Comida = [
         "grasaT": "4.25",
         "proteinaT": "15.55",
         "energiaT": "790.84"
-    }, {
-        "id": "2178",
-        "nombre": "Semilla de lino",
-        "tipo": [],
-        "grasaT": "42.16",
-        "proteinaT": "18.29",
-        "energiaT": "2361.81"
     }, {
         "id": "2178",
         "nombre": "Semilla de lino",
@@ -9527,13 +7433,6 @@ export const Comida = [
         "grasaT": "13.2",
         "proteinaT": "4.6",
         "energiaT": "1581.5"
-    }, {
-        "id": "2189",
-        "nombre": "Frutos secos",
-        "tipo": [],
-        "grasaT": "51.45",
-        "proteinaT": "1.3",
-        "energiaT": "2356.7"
     }, {
         "id": "2189",
         "nombre": "Frutos secos",
@@ -9660,27 +7559,6 @@ export const Comida = [
         "proteinaT": "17.6",
         "energiaT": "2475.3",
         "grasaT": "49.2"
-    }, {
-        "id": "2208",
-        "nombre": "Soja, frita",
-        "tipo": [],
-        "grasaT": "4.8",
-        "proteinaT": "13.7",
-        "energiaT": "585.6"
-    }, {
-        "id": "2208",
-        "nombre": "Soja, frita",
-        "tipo": [],
-        "grasaT": "4.8",
-        "proteinaT": "13.7",
-        "energiaT": "585.6"
-    }, {
-        "id": "2208",
-        "nombre": "Soja, frita",
-        "tipo": [],
-        "grasaT": "4.8",
-        "proteinaT": "13.7",
-        "energiaT": "585.6"
     }, {
         "id": "2208",
         "nombre": "Soja, frita",
@@ -9987,13 +7865,6 @@ export const Comida = [
         "proteinaT": "10",
         "energiaT": "1003.5"
     }, {
-        "id": "2254",
-        "nombre": "Butifarra",
-        "tipo": [],
-        "grasaT": "20",
-        "proteinaT": "10",
-        "energiaT": "1003.5"
-    }, {
         "id": "2256",
         "nombre": "Cecina",
         "tipo": "Meat and meat products",
@@ -10147,13 +8018,6 @@ export const Comida = [
         "grasaT": "20.7",
         "proteinaT": "34",
         "energiaT": "1343.9"
-    }, {
-        "id": "2278",
-        "nombre": "Molleja de cordero",
-        "tipo": [],
-        "grasaT": "7.8",
-        "proteinaT": "15.3",
-        "energiaT": "548.7"
     }, {
         "id": "2278",
         "nombre": "Molleja de cordero",
@@ -10673,20 +8537,6 @@ export const Comida = [
         "proteinaT": "13.6",
         "energiaT": "249.7"
     }, {
-        "id": "2352",
-        "nombre": "Percebe",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.5",
-        "proteinaT": "13.6",
-        "energiaT": "249.7"
-    }, {
-        "id": "2354",
-        "nombre": "Pescado, gen\u00e9rico",
-        "tipo": [],
-        "grasaT": "1.6",
-        "proteinaT": "20.1",
-        "energiaT": "400.9"
-    }, {
         "id": "2354",
         "nombre": "Pescado, gen\u00e9rico",
         "tipo": [],
@@ -10700,13 +8550,6 @@ export const Comida = [
         "grasaT": "8.71",
         "proteinaT": "16.01",
         "energiaT": "616.2"
-    }, {
-        "id": "2357",
-        "nombre": "Pijota, cruda",
-        "tipo": [],
-        "grasaT": "1.8",
-        "proteinaT": "11.93",
-        "energiaT": "269.41"
     }, {
         "id": "2357",
         "nombre": "Pijota, cruda",
@@ -10768,13 +8611,6 @@ export const Comida = [
         "proteinaT": "0.9",
         "energiaT": "44.5"
     }, {
-        "id": "2366",
-        "nombre": "Apio, crudo",
-        "tipo": [],
-        "grasaT": "0.1",
-        "proteinaT": "0.9",
-        "energiaT": "44.5"
-    }, {
         "id": "2368",
         "nombre": "Arandano",
         "tipo": [],
@@ -10809,20 +8645,6 @@ export const Comida = [
         "grasaT": "0.8",
         "proteinaT": "3.1",
         "energiaT": "101"
-    }, {
-        "id": "2372",
-        "nombre": "Br\u00e9col, hervido",
-        "tipo": [],
-        "grasaT": "0.8",
-        "proteinaT": "3.1",
-        "energiaT": "101"
-    }, {
-        "id": "2374",
-        "nombre": "Pulpo, hervido",
-        "tipo": [],
-        "grasaT": "0.95",
-        "proteinaT": "13.39",
-        "energiaT": "287.09"
     }, {
         "id": "2374",
         "nombre": "Pulpo, hervido",
@@ -10928,20 +8750,6 @@ export const Comida = [
         "grasaT": "0.28",
         "proteinaT": "1.11",
         "energiaT": "80.06"
-    }, {
-        "id": "2390",
-        "nombre": "Escarola",
-        "tipo": [],
-        "grasaT": "0.2",
-        "proteinaT": "1.6",
-        "energiaT": "51.6"
-    }, {
-        "id": "2390",
-        "nombre": "Escarola",
-        "tipo": [],
-        "grasaT": "0.2",
-        "proteinaT": "1.6",
-        "energiaT": "51.6"
     }, {
         "id": "2390",
         "nombre": "Escarola",
@@ -11075,13 +8883,6 @@ export const Comida = [
         "grasaT": "0.2",
         "proteinaT": "0.88",
         "energiaT": "84.07"
-    }, {
-        "id": "2411",
-        "nombre": "Puerro, crudo y congelado",
-        "tipo": [],
-        "grasaT": "0.3",
-        "proteinaT": "1.6",
-        "energiaT": "101.2"
     }, {
         "id": "2411",
         "nombre": "Puerro, crudo y congelado",
@@ -11503,13 +9304,6 @@ export const Comida = [
         "proteinaT": "17.9",
         "energiaT": "379.9"
     }, {
-        "id": "2471",
-        "nombre": "Pulpo",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "1.4",
-        "proteinaT": "17.9",
-        "energiaT": "379.9"
-    }, {
         "id": "2473",
         "nombre": "Albahaca",
         "tipo": "Vegetables and vegetable products",
@@ -11762,13 +9556,6 @@ export const Comida = [
         "proteinaT": "28.77",
         "energiaT": "1622.39"
     }, {
-        "id": "2508",
-        "nombre": "Queso manchego",
-        "tipo": "Milk and dairy products",
-        "grasaT": "30.4",
-        "proteinaT": "28.77",
-        "energiaT": "1622.39"
-    }, {
         "id": "2510",
         "nombre": "Queso mozzarella",
         "tipo": [],
@@ -11853,20 +9640,6 @@ export const Comida = [
         "proteinaT": "3.6",
         "energiaT": "261.8"
     }, {
-        "id": "2521",
-        "nombre": "Yogur l\u00edquido, \"tipo actimel\"",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "3.6",
-        "energiaT": "261.8"
-    }, {
-        "id": "2521",
-        "nombre": "Yogur l\u00edquido, \"tipo actimel\"",
-        "tipo": [],
-        "grasaT": "3.4",
-        "proteinaT": "3.6",
-        "energiaT": "261.8"
-    }, {
         "id": "2524",
         "nombre": "Yogur, desnatado, con cereales, manzana y ciruela",
         "tipo": [],
@@ -11894,13 +9667,6 @@ export const Comida = [
         "grasaT": "0.2003",
         "proteinaT": "3.83",
         "energiaT": "295.221"
-    }, {
-        "id": "2528",
-        "nombre": "Yogur, desnatado, con melocot\u00f3n, frambuesa y fibra",
-        "tipo": [],
-        "grasaT": "0.1",
-        "proteinaT": "4.1",
-        "energiaT": "241.7"
     }, {
         "id": "2528",
         "nombre": "Yogur, desnatado, con melocot\u00f3n, frambuesa y fibra",
@@ -12161,13 +9927,6 @@ export const Comida = [
         "proteinaT": "12.59",
         "energiaT": "1388.42"
     }, {
-        "id": "2565",
-        "nombre": "Sopa de sobre maravilla",
-        "tipo": [],
-        "grasaT": "3.24",
-        "proteinaT": "12.59",
-        "energiaT": "1388.42"
-    }, {
         "id": "2567",
         "nombre": "Pasta de s\u00e9samo",
         "tipo": [],
@@ -12181,13 +9940,6 @@ export const Comida = [
         "grasaT": "2",
         "proteinaT": "24",
         "energiaT": "516"
-    }, {
-        "id": "2569",
-        "nombre": "San jacobo, congelado",
-        "tipo": [],
-        "grasaT": "13.34",
-        "proteinaT": "4.14",
-        "energiaT": "991.68"
     }, {
         "id": "2569",
         "nombre": "San jacobo, congelado",
@@ -12231,20 +9983,6 @@ export const Comida = [
         "proteinaT": "8.7",
         "energiaT": "265.5"
     }, {
-        "id": "2575",
-        "nombre": "Salsa de soja",
-        "tipo": "Seasoning, sauces and condiments",
-        "grasaT": "0.1",
-        "proteinaT": "8.7",
-        "energiaT": "265.5"
-    }, {
-        "id": "2577",
-        "nombre": "Salsa de queso",
-        "tipo": "Seasoning, sauces and condiments",
-        "grasaT": "6.1",
-        "proteinaT": "5.3",
-        "energiaT": "458.6"
-    }, {
         "id": "2577",
         "nombre": "Salsa de queso",
         "tipo": "Seasoning, sauces and condiments",
@@ -12265,13 +10003,6 @@ export const Comida = [
         "grasaT": "10.3",
         "proteinaT": "4.1",
         "energiaT": "634.4"
-    }, {
-        "id": "2581",
-        "nombre": "Salsa barbacoa",
-        "tipo": "Seasoning, sauces and condiments",
-        "grasaT": "1.8",
-        "proteinaT": "1.8",
-        "energiaT": "739.97"
     }, {
         "id": "2581",
         "nombre": "Salsa barbacoa",
@@ -12356,13 +10087,6 @@ export const Comida = [
         "grasaT": "1.3",
         "proteinaT": "3",
         "energiaT": "145"
-    }, {
-        "id": "2594",
-        "nombre": "Patatas, fritas, chips",
-        "tipo": [],
-        "grasaT": "34.9",
-        "proteinaT": "6.5",
-        "energiaT": "2243.3"
     }, {
         "id": "2594",
         "nombre": "Patatas, fritas, chips",
@@ -12665,13 +10389,6 @@ export const Comida = [
         "proteinaT": "19",
         "energiaT": "356.3"
     }, {
-        "id": "2637",
-        "nombre": "Vieira",
-        "tipo": "Fish, seafood, amphibians, reptiles and invertebrates",
-        "grasaT": "0.9",
-        "proteinaT": "19",
-        "energiaT": "356.3"
-    }, {
         "id": "2639",
         "nombre": "Zamburi\u00f1as",
         "tipo": [],
@@ -12713,13 +10430,6 @@ export const Comida = [
         "grasaT": "2.82",
         "proteinaT": "8.29",
         "energiaT": "1372.37"
-    }, {
-        "id": "2645",
-        "nombre": "Caramelo",
-        "tipo": "Sugar, confectionery and water-based sweet desserts",
-        "proteinaT": "0.4",
-        "energiaT": "1621.8",
-        "grasaT": []
     }, {
         "id": "2645",
         "nombre": "Caramelo",
@@ -12964,27 +10674,6 @@ export const Comida = [
         "proteinaT": "15.22",
         "energiaT": "1017.24"
     }, {
-        "id": "2680",
-        "nombre": "Carne picada",
-        "tipo": [],
-        "grasaT": "20.5",
-        "proteinaT": "15.22",
-        "energiaT": "1017.24"
-    }, {
-        "id": "2680",
-        "nombre": "Carne picada",
-        "tipo": [],
-        "grasaT": "20.5",
-        "proteinaT": "15.22",
-        "energiaT": "1017.24"
-    }, {
-        "id": "2680",
-        "nombre": "Carne picada",
-        "tipo": [],
-        "grasaT": "20.5",
-        "proteinaT": "15.22",
-        "energiaT": "1017.24"
-    }, {
         "id": "2684",
         "nombre": "Bizcocho de vainilla",
         "tipo": [],
@@ -13111,69 +10800,6 @@ export const Comida = [
         "proteinaT": "21.9",
         "energiaT": "686.8"
     }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
-        "id": "2701",
-        "nombre": "Carne de cerdo de capa blanca, cabezada, parte magra, cruda",
-        "tipo": [],
-        "grasaT": "8.5",
-        "proteinaT": "21.9",
-        "energiaT": "686.8"
-    }, {
         "id": "2711",
         "nombre": "Cabrito lechal, costillar, asado",
         "tipo": [],
@@ -13187,8 +10813,7 @@ export const Comida = [
         "grasaT": "16.49",
         "proteinaT": "21.63",
         "energiaT": "977.84"
-    }, 
-    {
+    }, {
         "id": "2713",
         "nombre": "Cordero ligero, costillar, asado",
         "tipo": [],

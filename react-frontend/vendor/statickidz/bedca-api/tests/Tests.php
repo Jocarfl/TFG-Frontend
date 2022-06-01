@@ -13,19 +13,10 @@ $comida = new stdClass();
 
 
 
-$h = var_dump($client->getFood(2461));
+$jsonData = json_encode($client->getFood(683));
+$a = json_decode($jsonData, true);
+$myJSON = json_encode($a);
 
-
-
-$fp = fopen('results4.json', 'w');
-fwrite($fp, serialize($client->getFood(2713)));
+$fp = fopen('results1.json', 'w');
+fwrite($fp, $myJSON);
 fclose($fp);
-
-
-echo"<pre>";
-//echo $client->getFoodGroups();
-//var_dump($client->getFoodGroups());
-//var_dump($client->getFood(2461)); 
-//var_dump($client->getFoodsInGroup(3));
-//json_encode($client->getFood(2461));
-echo "</pre>";  ?>

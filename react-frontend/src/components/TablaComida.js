@@ -20,7 +20,7 @@ export default function TabaComida({data}) {
         <Table responsive="sm">
         <thead>
           <tr>
-            <th>Nombre</th>
+            <th>PORCIÓN 100G</th>
             <th>Energía(KJ)</th>
             <th>Grasa(G)</th>
             <th>Proteína(G)</th>

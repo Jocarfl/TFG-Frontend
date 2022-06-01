@@ -52,7 +52,13 @@ array_push( $data, $comida );
 
 
 $myJSON = json_encode($data);
+$de = json_decode($myJSON);
+
+$uniq = array_values( array_unique( $de, SORT_REGULAR ) );
+
+
+$res = json_encode($uniq);
 
 $fp = fopen('ComidaBD.json', 'w');
-fwrite($fp, $myJSON);
+fwrite($fp, $res);
 fclose($fp);
