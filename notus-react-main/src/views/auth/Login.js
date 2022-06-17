@@ -1,7 +1,63 @@
-import React from "react";
+import React, {Component} from "react";
 import { Link } from "react-router-dom";
+import AuthService from "services/auth.service";
 
-export default function Login() {
+export default class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.handleLogin = this.handleLogin.bind(this);
+    this.onChangeUsername = this.onChangeUsername.bind(this);
+    this.onChangePassword = this.onChangePassword.bind(this);
+    this.state = {
+      username: "",
+      password: "",
+      loading: false,
+      message: ""
+    };
+  }
+  onChangeUsername(e) {
+    this.setState({
+      username: e.target.value
+    });
+  }
+  onChangePassword(e) {
+    this.setState({
+      password: e.target.value
+    });
+  }
+  handleLogin(e) {
+    e.preventDefault();
+    this.setState({
+      message: "",
+      loading: true
+    });
+    this.form.validateAll();
+    if (this.checkBtn.context._errors.length === 0) {
+      AuthService.login(this.state.username, this.state.password).then(
+        () => {
+          this.props.history.push("/profile");
+          window.location.reload();
+        },
+        error => {
+          const resMessage =
+            (error.response &&
+              error.response.data &&
+              error.response.data.message) ||
+            error.message ||
+            error.toString();
+          this.setState({
+            loading: false,
+            message: resMessage
+          });
+        }
+      );
+    } else {
+      this.setState({
+        loading: false
+      });
+    }
+  }
+render(){
   return (
     <>
       <div className="container mx-auto px-4 h-full">
@@ -11,7 +67,8 @@ export default function Login() {
               <div className="rounded-t mb-0 px-6 py-6">
               </div>
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-                <form>
+                <form
+                 onSubmit={this.handleLogin}>
                   <div className="relative w-full mb-3">
                     <label
                       className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
@@ -21,6 +78,9 @@ export default function Login() {
                     </label>
                     <input
                       type="email"
+                      name="username"
+                      value={this.state.username}
+                      onChange={this.onChangeUsername}
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Email"
                     />
@@ -35,6 +95,9 @@ export default function Login() {
                     </label>
                     <input
                       type="password"
+                      name="password"
+                      value={this.state.password}
+                      onChange={this.onChangePassword}
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Password"
                     />
@@ -53,14 +116,16 @@ export default function Login() {
                   </div>
 
                   <div className="text-center mt-6">
-                  <Link to="/admin/dashboard" className="text-blueGray-200">
                     <button
                       className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                       type="button"
-                    >
+                      disabled={this.state.loading}>
+
+                      {this.state.loading && (
+                        <span className=""></span>
+                      )}
                       Sign In
                     </button>
-                    </Link>
                     
                   </div>
                 </form>
@@ -78,4 +143,5 @@ export default function Login() {
       </div>
     </>
   );
+  }
 }
