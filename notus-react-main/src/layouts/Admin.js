@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+import EventBus from "common/EventBus";
 import UserService from "services/user.service";
+import AuthService from "services/auth.service";
 
 // components
 
@@ -14,8 +16,44 @@ import FooterAdmin from "components/Footers/FooterAdmin.js";
 import Dashboard from "views/admin/Dashboard.js";
 import Settings from "views/admin/Settings.js";
 import Nutricion from "views/admin/Nutricion";
+import PrivateRoute from "context/privateRoute";
 
-export default function Admin() {
+export default class Admin extends Component {
+  
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      content: ""
+    };
+  }
+
+  componentDidMount() {
+    UserService.getUserBoard().then(
+      response => {
+        this.setState({
+          content: response.data
+        });
+      },
+      error => {
+        this.setState({
+          content:
+            (error.response &&
+              error.response.data &&
+              error.response.data.message) ||
+            error.message ||
+            error.toString()
+        });
+
+
+
+        if (error.response && error.response.status === 401) {
+          EventBus.dispatch("logout");
+        }
+      }
+    );
+  }
+  render(){
   return (
     <>
       <Sidebar />
@@ -25,9 +63,9 @@ export default function Admin() {
         <HeaderStats />
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
           <Switch>
-            <Route path="/admin/dashboard" exact component={Dashboard} />
-            <Route path="/admin/settings" exact component={Settings} />
-            <Route path="/admin/nutricion" exact component={Nutricion} />
+            <PrivateRoute path="/admin/dashboard" isAuthenticated={AuthService.isAuthenticated()} exact component={Dashboard} />
+            <PrivateRoute path="/admin/settings" isAuthenticated={AuthService.isAuthenticated()} exact component={Settings} />
+            <PrivateRoute path="/admin/nutricion" isAuthenticated={AuthService.isAuthenticated()} exact component={Nutricion} />
             <Redirect from="/admin" to="/admin/dashboard" />
           </Switch>
           <FooterAdmin />
@@ -35,4 +73,5 @@ export default function Admin() {
       </div>
     </>
   );
+  }
 }

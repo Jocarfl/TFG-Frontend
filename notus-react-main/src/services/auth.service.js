@@ -24,6 +24,11 @@ const register = (username, email, password) => {
   const logout = () => {
     localStorage.removeItem("user");
   };
+
+  const isAuthenticated = () => {
+    if (getCurrentUser() != null) return true;
+    return false;
+  };
   
   const getCurrentUser = () => {
     return JSON.parse(localStorage.getItem("user"));
@@ -34,5 +39,6 @@ const register = (username, email, password) => {
     login,
     logout,
     getCurrentUser,
+    isAuthenticated,
   };
   export default AuthService;
