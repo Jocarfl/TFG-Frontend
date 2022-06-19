@@ -1,8 +1,28 @@
-import React from "react";
+import React,{Component} from "react";
+import AuthService from "services/auth.service";
 
 // components
 
-export default function CardInfoPerfil() {
+export default class  CardInfoPerfil extends Component {
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          redirect: null,
+          userReady: false,
+          currentUser: { username: "" }
+        };
+      }
+    
+      componentDidMount() {
+        const currentUser = AuthService.getCurrentUser();
+    
+        if (!currentUser) this.setState({ redirect: "/auth" });
+        this.setState({ currentUser: currentUser, userReady: true })
+      }
+
+    render(){
+        const { currentUser } = this.state;
     return (
         <>
          < div className = "relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16" > <div className="px-6">
@@ -37,7 +57,7 @@ export default function CardInfoPerfil() {
             <div className="text-center mt-5">
                 <h3
                     className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                    Josep Carreres
+                    {currentUser.first_name+" "+currentUser.second_name}
                 </h3>
                 <div className="relative pt-1">
                 <div className="flex items-center">
@@ -66,4 +86,5 @@ export default function CardInfoPerfil() {
     </div>
 </>
     );
+    }
 }

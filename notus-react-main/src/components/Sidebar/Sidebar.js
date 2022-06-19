@@ -19,6 +19,8 @@ export default function Sidebar() {
       currentUser: undefined,
     });}
 
+  const currentUser = AuthService.getCurrentUser();
+
   return (
     <>
       <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
@@ -36,7 +38,7 @@ export default function Sidebar() {
             className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
             to="/"
           >
-            Josep Carreres
+            {currentUser.first_name+" "+currentUser.second_name}
           </Link>
           {/* User */}
           <ul className="md:hidden items-center flex flex-wrap list-none">
@@ -118,7 +120,7 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Nutricion
+                  Nutrición
                 </Link>
               </li>
 
@@ -151,8 +153,8 @@ export default function Sidebar() {
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
                 <a href="/auth/login" className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block" onClick={logOut}>
-                <i className="fas fa-fingerprint text-blueGray-400 mr-2 text-sm"></i>{" "}
-                  LogOut
+                <i className="fas fa-door-closed text-blueGray-400 mr-2 text-sm"></i>{" "}
+                  Cerrar Sesión
                 </a>
                 
               </li>

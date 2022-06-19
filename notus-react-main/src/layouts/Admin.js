@@ -45,8 +45,6 @@ export default class Admin extends Component {
             error.toString()
         });
 
-
-
         if (error.response && error.response.status === 401) {
           EventBus.dispatch("logout");
         }
