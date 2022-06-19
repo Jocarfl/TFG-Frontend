@@ -15,9 +15,9 @@ export default function Auth() {
   return (
     <>
       <main>
-        <section className="">
+        <section class ="relative w-full h-full py-40 min-h-screen">
           <div
-            className=""
+            class ="absolute top-0 w-full h-full bg-lightBlue-100 bg-no-repeat bg-full"
           ></div>
           <Switch>
             <Route path="/auth/login" exact component={Login} />

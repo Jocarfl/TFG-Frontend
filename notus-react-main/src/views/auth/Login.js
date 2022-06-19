@@ -8,9 +8,9 @@ import AuthService from "services/auth.service";
 const required = value => {
   if (!value) {
     return (
-      <div className="" role="alert">
-        This field is required!
-      </div>
+      <p class="text-red-500 text-xs italic" role="alert">
+        *Este campo es obligatorio
+      </p>
     );
   }
 };
@@ -81,42 +81,47 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="">
-        <div className="">
 
-          <Form
+      <div class ="container mx-auto px-9 h-full ">
+      <div class="flex content-center items-center justify-center h-full">
+        <div class="w-full lg:w-4/12 px-4">
+          <div class ="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
+            <div class ="flex-auto px-4 lg:px-10 py-10 pt-0">
+          <Form        
             onSubmit={this.handleLogin}
             ref={c => {
               this.form = c;
             }}
           >
-            <div className="">
-              <label htmlFor="username">Username</label>
+            <div class="mb-4 pt-6">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Usuario</label>
               <Input
                 type="text"
-                className=""
+                class="shadow appearance-none border rounded w-full py-2 px-3 textblueGray-900 leading-tight focus:outline-none focus:shadow-outline"
                 name="username"
+                placeholder="Usuario"
                 value={this.state.username}
                 onChange={this.onChangeUsername}
                 validations={[required]}
               />
             </div>
 
-            <div className="">
-              <label htmlFor="password">Password</label>
+            <div class="mb-6 ">
+              <label class="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">Contraseña</label>
               <Input
                 type="password"
-                className=""
+                class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                 name="password"
+                placeholder="Contraseña"
                 value={this.state.password}
                 onChange={this.onChangePassword}
                 validations={[required]}
               />
             </div>
 
-            <div className="">
+            <div class="flex items-center justify-between">
               <button
-                className=""
+                class="bg-lightBlue-600 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                 disabled={this.state.loading}
               >
                 {this.state.loading && (
@@ -127,8 +132,8 @@ export default class Login extends Component {
             </div>
 
             {this.state.message && (
-              <div className="">
-                <div className="" role="alert">
+              <div >
+                <div class="text-red-500 text-xs italic" role="alert">
                   {this.state.message}
                 </div>
               </div>
@@ -141,6 +146,9 @@ export default class Login extends Component {
             />
           </Form>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
     );
   }
