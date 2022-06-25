@@ -26,7 +26,8 @@ const FoodItem = ({ myfood, deleteFood }) => {
       setPopoverShow(false);
     };
   return (
-    <li>
+    books.map((book)=>(
+      <li>
         <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 uppercase last:mr-0 mr-1">            
               <button type="button"
               onMouseEnter={openTooltip}
@@ -34,16 +35,20 @@ const FoodItem = ({ myfood, deleteFood }) => {
               ref={btnRef}
               className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 uppercase last:mr-0 mr-1"
                         >
-                          {books[0].nombre}
+                          {book.nombre}
                         </button>
                 <button
                   className='btn btn-sm btn-danger pl-2 mr-4'
-                  onClick={()=>deleteFood(books[0].id)}              
+                  onClick={()=>deleteFood(book.id)}              
                 >
                   <i className='far fa-trash-alt'></i>
                 </button>
               </span>
       </li>
+
+
+    ))
+    
   )
 }
 

@@ -69,10 +69,10 @@ export default function CardSettings({ todos,handleChangeProps, delHandler}) {
             <div>
               <ul>{
           
-          books.map((book) => (
-            <FoodItem books = {book} deleteBook={deleteBook}
+       
+            <FoodItem books = {books} deleteBook={deleteBook}
             />
-          ))}
+          }
           </ul>
 </div>
           
