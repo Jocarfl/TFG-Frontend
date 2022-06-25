@@ -2,7 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import {Comida} from "BaseDatosComida/ComidaBD";
 import CardTablaNutricion from "components/Cards/CardTablaNutricion";
-
+import CardComidaDelDia from "components/Cards/CardComidaDelDia";
+import CardMisComidas from "components/Cards/CardMisComidas";
 
 export default function Tables() {
 
@@ -14,13 +15,27 @@ export default function Tables() {
   
   return (
     <>
-      <div className="flex flex-wrap mt-4">
-        <div className="w-full mb-12 px-4">
-        <input
-                className="search"
-                placeholder="Search..."
-                onChange={(e) => setQuery(e.target.value.toLocaleLowerCase())}/> {<CardTablaNutricion data={Search(Comida)}/>}
+    <div>
+      <div className="flex flex-wrap ">
+        
+        <div className="w-full lg:w-4/12 px-4">
+        <CardMisComidas></CardMisComidas>
         </div>
+        <div className="w-full lg:w-8/12 px-4">
+        <div class="relative flex w-full flex-wrap items-stretch mb-4">
+        <input
+            type="text"
+            placeholder="Regular Input"
+            class="px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"/>
+        <span
+            class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
+            <i class="fas fa-search"></i>
+        </span>
+    </div>
+        <CardTablaNutricion data={Comida}></CardTablaNutricion>
+                
+        </div>
+      </div>
       </div>
     </>
   );

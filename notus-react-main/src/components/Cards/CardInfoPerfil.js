@@ -57,7 +57,7 @@ export default class  CardInfoPerfil extends Component {
             <div className="text-center mt-5">
                 <h3
                     className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                    {currentUser.first_name+" "+currentUser.second_name}
+                    
                 </h3>
                 <div className="relative pt-1">
                 <div className="flex items-center">

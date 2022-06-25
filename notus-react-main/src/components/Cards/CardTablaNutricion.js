@@ -3,13 +3,15 @@ import React, { useState, useMemo } from 'react';
 import PropTypes from "prop-types";
 import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
-let PageSize = 10;
+let PageSize = 6;
 
 
 
 export default function CardTable({ color,data }) {
+  
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [food, setFood] = useState();
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;
@@ -118,7 +120,9 @@ export default function CardTable({ color,data }) {
                 {item.proteinaT} G
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-right">
-                  <TableDropdown />
+
+                  <TableDropdown setFood={item}/>
+
                 </td>
               </tr>
               ))}
