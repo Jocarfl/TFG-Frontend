@@ -1,4 +1,5 @@
 import React ,{ useEffect, useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import { createPopper } from "@popperjs/core";
 
 const getDatafromLS=()=>{
@@ -16,7 +17,7 @@ const NotificationDropdown = ({setFood}) => {
   const [books, setbooks]=useState(getDatafromLS());
   const [nombre, setNombre]=useState(setFood.nombre);
   const [author, setAuthor]=useState('');
-  const [id, setID]=useState(setFood.id);
+  const [id, setID]=useState(uuidv4());
 
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -27,20 +28,13 @@ const NotificationDropdown = ({setFood}) => {
     e.preventDefault();
     // creating an object
     let book={
+      
       nombre,
       author,
       id
     }
     setbooks([...books,book]);
-    setAuthor('');
-    setID('');
-  }
-
-  const deleteBook=(id)=>{
-    const filteredBooks=books.filter((element,index)=>{
-      return element.id !== id
-    })
-    setbooks(filteredBooks);
+    window.location.reload();
   }
 
     // saving data to local storage

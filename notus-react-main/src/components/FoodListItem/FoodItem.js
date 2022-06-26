@@ -12,7 +12,7 @@ const getDatafromLS=()=>{
 }
 
 const FoodItem = ({ myfood, deleteFood }) => {
-  const [books, setbooks]=useState(getDatafromLS());
+    const [books, setbooks]=useState(getDatafromLS());
     const [popoverShow, setPopoverShow] = React.useState(false);
     const btnRef = React.createRef();
     const popoverRef = React.createRef();
@@ -27,12 +27,9 @@ const FoodItem = ({ myfood, deleteFood }) => {
     };
   return (
     books.map((book)=>(
-      <li>
-        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 uppercase last:mr-0 mr-1">            
+      <li key={book.id}>
+        <div className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 uppercase last:mr-0 mr-1">            
               <button type="button"
-              onMouseEnter={openTooltip}
-              onMouseLeave={closeTooltip}
-              ref={btnRef}
               className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 uppercase last:mr-0 mr-1"
                         >
                           {book.nombre}
@@ -43,7 +40,7 @@ const FoodItem = ({ myfood, deleteFood }) => {
                 >
                   <i className='far fa-trash-alt'></i>
                 </button>
-              </span>
+              </div>
       </li>
 
 

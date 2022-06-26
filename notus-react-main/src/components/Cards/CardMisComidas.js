@@ -11,13 +11,15 @@ const getDatafromLS=()=>{
   }
 }
 
-export default function CardSettings({ todos,handleChangeProps, delHandler}) {
+export default function CardSettings() {
   const [books, setbooks]=useState(getDatafromLS());
 
   // input field states
   const [title, setTitle]=useState('');
   const [author, setAuthor]=useState('');
   const [isbn, setIsbn]=useState('');
+  const [id, setId]=useState('');
+  const [nombre, setNombre]=useState('');
 
   // form submit event
   const handleAddBookSubmit=(e)=>{
@@ -26,11 +28,13 @@ export default function CardSettings({ todos,handleChangeProps, delHandler}) {
     let book={
       title,
       author,
-      isbn
+      isbn,
+      id,
+      nombre
     }
     setbooks([...books,book]);
-    setTitle('');
-    setAuthor('');
+    setNombre('');
+    setId('');
     setIsbn('');
   }
 
@@ -39,7 +43,12 @@ export default function CardSettings({ todos,handleChangeProps, delHandler}) {
     const filteredBooks=books.filter((element,index)=>{
       return element.id !== id
     })
+    console.log("Funciono?")
     setbooks(filteredBooks);
+  }
+  const deleteAll =() =>{
+    setbooks([])
+    window.location.reload();
   }
 
   // saving data to local storage
@@ -54,10 +63,11 @@ export default function CardSettings({ todos,handleChangeProps, delHandler}) {
           <div className="text-center flex justify-between">
             <h6 className="text-blueGray-700 text-xl font-bold">Mis comidas </h6>
             <button
-              className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+              className="bg-red-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
               type="button"
+              onClick={()=>deleteAll()}
             >
-              Guardar
+              Eliminar
             </button>
           </div>
         </div>
@@ -67,12 +77,9 @@ export default function CardSettings({ todos,handleChangeProps, delHandler}) {
               Desayuno
             </h6>
             <div>
-              <ul>{
-          
-       
-            <FoodItem books = {books} deleteBook={deleteBook}
-            />
-          }
+
+              <ul>{<FoodItem books = {books} deleteBook={() =>deleteBook}/>}
+
           </ul>
 </div>
           

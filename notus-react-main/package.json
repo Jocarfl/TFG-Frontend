@@ -21,7 +21,8 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
     "react-validation": "^3.0.7",
-    "tailwindcss": "2.0.4"
+    "tailwindcss": "2.0.4",
+    "uuidv4": "^6.2.13"
   },
   "scripts": {
     "start": "react-scripts start",
