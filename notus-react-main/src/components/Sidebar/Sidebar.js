@@ -88,6 +88,7 @@ export default function Sidebar() {
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
                   to="/admin/dashboard"
+                  
                 >
                   <i
                     className={
@@ -96,6 +97,7 @@ export default function Sidebar() {
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
+                    
                   ></i>{" "}
                   Home
                 </Link>
@@ -110,6 +112,7 @@ export default function Sidebar() {
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
                   to="/admin/nutricion"
+                  
                 >
                   <i
                     className={
@@ -117,7 +120,9 @@ export default function Sidebar() {
                       (window.location.href.indexOf("/admin/nutricion") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
+                        
                     }
+                    
                   ></i>{" "}
                   Nutrición
                 </Link>

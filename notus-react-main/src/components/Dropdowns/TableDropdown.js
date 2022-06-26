@@ -2,8 +2,8 @@ import React ,{ useEffect, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import { createPopper } from "@popperjs/core";
 
-const getDatafromLS=()=>{
-  const data = localStorage.getItem('books');
+const getDatafromDesayuno=()=>{
+  const data = localStorage.getItem('desayuno');
   if(data){
     return JSON.parse(data);
   }
@@ -12,35 +12,102 @@ const getDatafromLS=()=>{
   }
 }
 
+const getDatafromAlmuerzo=()=>{
+  const data = localStorage.getItem('almuerzo');
+  if(data){
+    return JSON.parse(data);
+  }
+  else{
+    return []
+  }
+}
+const getDatafromComida=()=>{
+  const data = localStorage.getItem('comida');
+  if(data){
+    return JSON.parse(data);
+  }
+  else{
+    return []
+  }
+}
+const getDatafromMerienda=()=>{
+  const data = localStorage.getItem('merienda');
+  if(data){
+    return JSON.parse(data);
+  }
+  else{
+    return []
+  }
+}
+const getDatafromCena=()=>{
+  const data = localStorage.getItem('cena');
+  if(data){
+    return JSON.parse(data);
+  }
+  else{
+    return []
+  }
+}
 const NotificationDropdown = ({setFood}) => {
 
-  const [books, setbooks]=useState(getDatafromLS());
-  const [nombre, setNombre]=useState(setFood.nombre);
-  const [author, setAuthor]=useState('');
-  const [id, setID]=useState(uuidv4());
+  const [desayuno, setDesayuno]=useState(getDatafromDesayuno());
+  const [almuerzo, setAlmuerzo]=useState(getDatafromAlmuerzo());
+  const [comida, setComida]=useState(getDatafromComida());
+  const [merienda, setMerienda]=useState(getDatafromMerienda());
+  const [cena, setCena]=useState(getDatafromCena());
 
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
   const popoverDropdownRef = React.createRef();
 
-  const handleAddBookSubmit=(e)=>{
+  const addDesayuno = (e)=>{
     e.preventDefault();
-    // creating an object
-    let book={
-      
-      nombre,
-      author,
-      id
-    }
-    setbooks([...books,book]);
+    setDesayuno([...desayuno,setFood]);
     window.location.reload();
   }
 
+  const addAlmuerzo = (e)=>{
+    e.preventDefault();
+    setAlmuerzo([...almuerzo,setFood]);
+    window.location.reload();
+  }
+  const addComida = (e)=>{
+    e.preventDefault();
+    setComida([...comida,setFood]);
+    window.location.reload();
+  }
+  const addMerienda = (e)=>{
+    e.preventDefault();
+    setMerienda([...merienda,setFood]);
+    window.location.reload();
+  }
+  const addCena = (e)=>{
+    e.preventDefault();
+    setCena([...cena,setFood]);
+    window.location.reload();
+  }
+
+     useEffect(()=>{
+      localStorage.setItem('desayuno',JSON.stringify(desayuno));
+    },[desayuno])
+     // saving data to local storage
+     useEffect(()=>{
+      localStorage.setItem('almuerzo',JSON.stringify(almuerzo));
+    },[almuerzo])
+     // saving data to local storage
+     useEffect(()=>{
+      localStorage.setItem('comida',JSON.stringify(comida));
+    },[comida])
+     // saving data to local storage
+     useEffect(()=>{
+      localStorage.setItem('merienda',JSON.stringify(merienda));
+    },[merienda])
     // saving data to local storage
     useEffect(()=>{
-      localStorage.setItem('books',JSON.stringify(books));
-    },[books])
+      localStorage.setItem('cena',JSON.stringify(cena));
+    },[cena])
+
 
 
   const openDropdownPopover = () => {
@@ -53,6 +120,7 @@ const NotificationDropdown = ({setFood}) => {
     setDropdownPopoverShow(false);
   };
   return (
+    
     <>
       <a
         className="text-blueGray-500 py-1 px-3"
@@ -80,7 +148,7 @@ const NotificationDropdown = ({setFood}) => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700 hover:shadow-lg"
           }
-          onClick={handleAddBookSubmit}
+          onClick={addDesayuno}
         >
           Desayuno
         </a>
@@ -89,7 +157,7 @@ const NotificationDropdown = ({setFood}) => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700 hover:shadow-lg"
           }
-          onClick={(e) => e.preventDefault()}
+          onClick={addAlmuerzo}
         >
           Almuerzo
         </a>
@@ -98,7 +166,7 @@ const NotificationDropdown = ({setFood}) => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700 hover:shadow-lg"
           }
-          onClick={(e) => e.preventDefault()}
+          onClick={addComida}
         >
           Comida
         </a>
@@ -107,7 +175,7 @@ const NotificationDropdown = ({setFood}) => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700 hover:shadow-lg"
           }
-          onClick={(e) => e.preventDefault()}
+          onClick={addMerienda}
         >
           Merienda
         </a>
@@ -116,7 +184,7 @@ const NotificationDropdown = ({setFood}) => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700 hover:shadow-lg"
           }
-          onClick={(e) => e.preventDefault()}
+          onClick={addCena}
         >
           Cena
         </a>

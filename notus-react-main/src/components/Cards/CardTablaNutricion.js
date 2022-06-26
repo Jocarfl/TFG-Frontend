@@ -11,7 +11,6 @@ export default function CardTable({ color,data }) {
   
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [food, setFood] = useState();
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;
@@ -74,6 +73,16 @@ export default function CardTable({ color,data }) {
                       : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
                   }
                 >
+                  Calorias(Kcal)
+                </th>
+                <th
+                  className={
+                    "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+                    (color === "light"
+                      ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                      : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
+                  }
+                >
                   Grasa(G)
                 </th>
                 <th
@@ -111,13 +120,16 @@ export default function CardTable({ color,data }) {
                   </span>
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                {item.energiaT} KJ
+                {Math.trunc(item.energiaT)}
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                   {item.grasaT} G
+                {Math.trunc(item.energiaT*0.238846)}
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                {item.proteinaT} G
+                   {item.grasaT}
+                </td>
+                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
+                {item.proteinaT}
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-right">
 
