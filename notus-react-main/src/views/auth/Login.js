@@ -61,7 +61,7 @@ export default class Login extends Component {
             window.location.reload();
           }
           if(user.roles.includes("ROLE_MODERATOR")){
-            this.props.history.push("/mod");
+            this.props.history.push("/moderator");
             window.location.reload();
           }
           

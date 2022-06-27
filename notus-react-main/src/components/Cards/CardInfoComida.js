@@ -50,6 +50,10 @@ const getDatafromCena = () => {
 
 const CardInfoComida = () => {
 
+  const [ideal,setIdeal]= useState({
+    min : 2000,
+    max : 2500
+  });
   const [desayuno, setDesayuno] = useState(getDatafromDesayuno());
   const [almuerzo, setAlmuerzo] = useState(getDatafromAlmuerzo());
   const [comida, setComida] = useState(getDatafromComida());
@@ -88,28 +92,55 @@ const CardInfoComida = () => {
       KcaloriaT += Math.abs(comida.energiaT);
     });
 
-    return KcaloriaT;
+    return Math.trunc(KcaloriaT*0.238846);
 }
-    
 
+const getColorSegunKcalIdeal = () => {
+
+  const kcal = getTodasCalorias();
+
+  if(kcal<ideal.min){
+
+    return "#FFC300"
+  }
+
+  if(kcal>ideal.min && kcal<ideal.max){
+
+    return "#DAF7A6"
+  }
+
+  if(kcal>ideal.max){
+
+    return "#FF5733"
+  }
+
+}
     return (
         <>
          < div className = "relative flex flex-col min-w-0 break-words bg-white w-full mb-4 shadow-xl rounded-lg " >
              <div className="px-6">
 
-            <div className="text-center justify-center mb-12 mt-5">
-              Kcal Ideal : 2000-2500
+            <div className="text-center justify-center mb-6 mt-5 ">
+            <h6 className="text-blueGray-700 text-xl font-bold">TUS CALORIAS IDEALES:
+                </h6>
             </div>
-            <div className="text-center mt-5 mb-2">
+            <div className="text-center justify-center mb-12">
+            <h6 className="text-blueGray-700 text-xl font-bold">{ideal.min + " - " + ideal.max + " KCAL"}
+                </h6>
+            </div>
+            <div className="text-center mt-5 mb-2 pb-2">
                       <ProgressBar
                 completed={getTodasCalorias()}
-                bgColor="#1eea0a"
+                bgColor={getColorSegunKcalIdeal()}
                 height=""
                 width=""
+                borderRadius="10%"
                 labelAlignment="center"
+                padding="px"
+                margin="10px"
                 labelColor="#000000"
                 labelSize="15px"
-                maxCompleted={2250}
+                maxCompleted={ideal.min}
                 customLabel={getTodasCalorias()+" kcal"}/>
 
             </div>

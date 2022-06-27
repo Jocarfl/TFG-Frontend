@@ -83,23 +83,23 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/dashboard") !== -1
+                    (window.location.href.indexOf("/moderator/pacientes") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin/dashboard"
+                  to="/moderator/pacientes"
                   
                 >
                   <i
                     className={
                       "fas fa-tv mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/dashboard") !== -1
+                      (window.location.href.indexOf("/moderator/pacientes") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
                     
                   ></i>{" "}
-                  Home
+                  Pacientes
                 </Link>
               </li>
 
@@ -107,24 +107,24 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/nutricion") !== -1
+                    (window.location.href.indexOf("/moderator/registro-peso") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin/nutricion"
+                  to="/moderator/registro-peso"
                   
                 >
                   <i
                     className={
                       "fas fa-table mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/nutricion") !== -1
+                      (window.location.href.indexOf("/moderator/registro-peso") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                         
                     }
                     
                   ></i>{" "}
-                  Nutrición
+                  Registro Peso 
                 </Link>
               </li>
 
@@ -132,34 +132,46 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/maps") !== -1
+                    (window.location.href.indexOf("/moderator/registro-comida") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin/dashboard"
+                  to="/moderator/registro-comida"
+                  
                 >
                   <i
                     className={
-                      "fas fa-heart mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/maps") !== -1
+                      "fas fa-table mr-2 text-sm " +
+                      (window.location.href.indexOf("/moderator/registro-comida") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
+                        
                     }
+                    
                   ></i>{" "}
-                  Recomendaciones Médico
+                  Registro Comidas
                 </Link>
               </li>
 
               <li className="items-center">
                 <Link
-                  className="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
-                  
-                  onClick={()=> window.open("http://vihrtualapp.gti-ia.upv.es", "_blank")}
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/moderator/recomendaciones") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/moderator/recomendaciones"
                 >
                   <i
-                    className= "fas fa-heart mr-2 text-sm text-blueGray-300"   
+                    className={
+                      "fas fa-heart mr-2 text-sm " +
+                      (window.location.href.indexOf("/moderator/recomendaciones") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
                   ></i>{" "}
-                  VihrtualApp
+                  Recomendaciones Paciente
                 </Link>
               </li>
             </ul>
