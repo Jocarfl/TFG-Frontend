@@ -1,78 +1,40 @@
-import React, { Component } from "react";
-import { Switch, Route, Redirect, useLocation } from "react-router-dom";
-import EventBus from "common/EventBus";
-import UserService from "services/user.service";
+import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import PrivateRoute from "context/privateRoute";
 import AuthService from "services/auth.service";
-
+import AdminSidebar from "components/Sidebar/AdminSidebar.js"
 // components
 
-import AdminNavbar from "components/Navbars/AdminNavbar.js";
-import Sidebar from "components/Sidebar/Sidebar.js";
-import HeaderStats from "components/Headers/HeaderStats.js";
-import HeaderNutricion from "components/Headers/HeaderNutricion.js";
-import FooterAdmin from "components/Footers/FooterAdmin.js";
+
+
+import Navbar from "components/Navbars/AuthNavbar.js";
+import FooterSmall from "components/Footers/FooterSmall.js";
 
 // views
 
-import Dashboard from "views/admin/Dashboard.js";
-import Settings from "views/admin/Settings.js";
-import Nutricion from "views/admin/Nutricion";
-import PrivateRoute from "context/privateRoute";
+import RegistrarUsuario from "views/admin/RegistrarUsuario.js";
+import Register from "views/auth/Register.js";
 
-
-export default class Admin extends Component {
-  
-  constructor(props) {
-    super(props);
-    
-
-    this.state = {
-      dashboard_page:false,
-      nutricion_page:false,
-    };
-  }
-
-  componentDidMount() {
-    
-
-    if(window.location.pathname.toString() == "/admin/dashboard"){
-      this.setState({
-        dashboard_page :true,
-        nutricion_page:false,
-      })
-    }
-    if(window.location.pathname.toString() == "/admin/nutricion"){
-      this.setState({
-        dashboard_page :false,
-        nutricion_page:true,
-      })
-    }
-    
-  }
-    
-  render(){
-    const { dashboard_page, nutricion_page } = this.state;
-
+export default function Admin() {
   return (
     <>
-      <Sidebar />
-      <div className="relative md:ml-64 bg-blueGray-100">
+      
+      <AdminSidebar/>
+        <div className="relative md:ml-64 flex content-center items-center justify-center h-full  ">
         
-        <AdminNavbar />
-        {/* Header */}
-        <HeaderStats />
-  
-        <div className="px-4 md:px-10 mx-auto w-full -m-24">
+          <div
+            class ="h-full "
+          >
           <Switch>
-            <PrivateRoute path="/admin/dashboard" isAuthenticated={AuthService.isAuthenticated()} exact component={Dashboard} />
-            <PrivateRoute path="/admin/settings" isAuthenticated={AuthService.isAuthenticated()} exact component={Settings} />
-            <PrivateRoute path="/admin/nutricion" isAuthenticated={AuthService.isAuthenticated()} exact component={Nutricion} />
-            <Redirect from="/admin" to="/admin/dashboard" />
+            <PrivateRoute path="/admin/registrar-usuario" isAuthenticated={AuthService.isAuthenticated()} exact component={RegistrarUsuario} />
+            <Redirect from="/admin" to="/admin/registrar-usuario" />
           </Switch>
-          <FooterAdmin />
+          
+          </div>
+          
         </div>
-      </div>
+        <FooterSmall absolute />
+        
     </>
   );
-  }
 }

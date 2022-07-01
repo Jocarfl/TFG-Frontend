@@ -18,9 +18,7 @@ export default function Tables() {
   return (
     <>
     <div>
-      <div className="flex flex-wrap ">
-        
-        
+      <div className="flex flex-wrap ">      
         <div className="w-full lg:w-4/12 px-4">
         <CardMisComidas></CardMisComidas>
         </div>

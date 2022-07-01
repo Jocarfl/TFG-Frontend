@@ -15,8 +15,6 @@ import FooterAdmin from "components/Footers/FooterAdmin.js";
 // views
 
 import Pacientes from "views/moderator/Pacientes.js";
-import Settings from "views/admin/Settings.js";
-import Nutricion from "views/admin/Nutricion";
 import PrivateRoute from "context/privateRoute";
 
 

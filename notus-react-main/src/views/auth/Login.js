@@ -57,11 +57,15 @@ export default class Login extends Component {
         () => {
           const user = AuthService.getCurrentUser();
           if(user.roles.includes("ROLE_USER")){
-            this.props.history.push("/admin");
+            this.props.history.push("/user");
             window.location.reload();
           }
           if(user.roles.includes("ROLE_MODERATOR")){
             this.props.history.push("/moderator");
+            window.location.reload();
+          }
+          if(user.roles.includes("ROLE_ADMIN")){
+            this.props.history.push("/admin");
             window.location.reload();
           }
           
