@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
+import { isValid } from "better-dni";
 
 import Select from 'react-select';
 
@@ -9,8 +10,8 @@ import DatePicker from "react-datepicker";
 import { getMonth, getYear } from 'date-fns';
 import range from "lodash/range";
 import "react-datepicker/dist/react-datepicker.css";
-
 import AuthService from "services/auth.service";
+import {isEmail} from "validator"
 
 const required = value => {
   if (!value) {
@@ -22,9 +23,49 @@ const required = value => {
   }
 };
 
-const techCompanies = [
+const email = value => {
+  if (!isEmail(value)) {
+    return (
+      <div class="text-red-500 text-xs italic" role="alert">
+        *Email invalido.
+      </div>
+    );
+  }
+};
+
+const dni = value => {
+  if (!isValid(value)) {
+    return (
+      <div class="text-red-500 text-xs italic" role="alert">
+        *DNI invalido.
+      </div>
+    );
+  }
+};
+
+const vusername = value => {
+  if (value.length < 3 || value.length > 20) {
+    return (
+      <div class="text-red-500 text-xs italic" role="alert">
+        * El usuario debe contener entre 3 y 20 caracteres.
+      </div>
+    );
+  }
+};
+
+const vpassword = value => {
+  if (value.length < 6 || value.length > 40) {
+    return (
+      <div class="text-red-500 text-xs italic" role="alert">
+        * The password must be between 6 and 40 characters.
+      </div>
+    );
+  }
+};
+
+const options = [
   { label: "Paciente", value: "user" },
-  { label: "Médico", value: "mod" },
+  { label: "Médico", value: "moderator" },
   { label: "Admin", value: "admin" }
 ];
 
@@ -48,10 +89,14 @@ export default class Login extends Component {
   
   constructor(props) {
     super(props);
-    this.handleLogin = this.handleLogin.bind(this);
+    this.handleRegister = this.handleRegister.bind(this);
     this.onChangeUsername = this.onChangeUsername.bind(this);
     this.onChangePassword = this.onChangePassword.bind(this);
-
+    this.onChangeEmail = this.onChangeEmail.bind(this);
+    this.onChangeFirstName = this.onChangeFirstName.bind(this);
+    this.onChangeSecondName = this.onChangeSecondName.bind(this);
+    this.onChangeDNI = this.onChangeDNI.bind(this);
+    
     this.state = {
       startDate : new Date(),
       username: "",
@@ -61,8 +106,8 @@ export default class Login extends Component {
       second_name:"",
       dni:"",
       rol:"",
-      date:"",
-      loading: false,
+      born_date: new Date(),
+      successful: false,
       message: ""
     };
   }
@@ -103,35 +148,47 @@ export default class Login extends Component {
     });
   }
 
-  onChangeRol(e) {
-    this.setState({
-      rol: e.target.value
-    });
+  onChangeRol = (e) => {
+    this.setState(this.state.rol = e);
+    console.log(e.value);
+  };
+
+  onChangeDate = (e) => {
+    this.setState(this.state.born_date = e);
+  };
+
+  borrarForm(){
+
+    window.location.reload();
   }
 
-  handleLogin(e) {
+  handleRegister(e) {
     e.preventDefault();
 
     this.setState({
       message: "",
-      loading: true
+      successful: false
     });
 
     this.form.validateAll();
-
     if (this.checkBtn.context._errors.length === 0) {
-      AuthService.login(this.state.username, this.state.password).then(
-        () => {
-          const user = AuthService.getCurrentUser();
-          if(user.roles.includes("ROLE_USER")){
-            this.props.history.push("/user");
-            window.location.reload();
-          }
-          if(user.roles.includes("ROLE_MODERATOR")){
-            this.props.history.push("/moderator");
-            window.location.reload();
-          }
-          
+      const roles = [this.state.rol.value] ;
+      const born_date = this.state.born_date.toLocaleDateString(); 
+      AuthService.register(
+        this.state.username,
+        this.state.email,
+        this.state.password,
+        this.state.first_name,
+        this.state.second_name,
+        this.state.dni,
+        born_date,
+        roles,
+      ).then(
+        response => {
+          this.setState({
+            message: response.data.message,
+            successful: true
+          });
         },
         error => {
           const resMessage =
@@ -142,19 +199,16 @@ export default class Login extends Component {
             error.toString();
 
           this.setState({
-            loading: false,
+            successful: false,
             message: resMessage
           });
         }
       );
-    } else {
-      this.setState({
-        loading: false
-      });
     }
   }
 
   render() {
+    
     return (
 
       <div class ="relative flex flex-col min-w-0 break-words w-full mb-4 shadow-lg rounded-lg bg-blueGray-100 border-0">
@@ -164,6 +218,7 @@ export default class Login extends Component {
             <button
               className="bg-red-500 text-white active:bg-red-100 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
               type="button"
+              onClick={() => this.borrarForm()}
             >
               Borrar
             </button>
@@ -172,7 +227,7 @@ export default class Login extends Component {
         <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
           
           <Form        
-            onSubmit={this.handleLogin}
+            onSubmit={this.handleRegister}
             ref={c => {
               this.form = c;
             }}
@@ -191,22 +246,22 @@ export default class Login extends Component {
                 placeholder="Usuario"
                 value={this.state.username}
                 onChange={this.onChangeUsername}
-                validations={[required]}
+                validations={[required,vusername]}
               />
             </div>
             </div>
 
             <div class="w-full lg:w-6/12 px-4">
               <div class ="relative w-full mb-3">
-              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="password">Email</label>
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="password">Contraseña</label>
               <Input
                 type="password"
                 class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                 name="password"
                 placeholder="Contraseña"
-                value={this.state.email}
-                onChange={this.onChangeEmail}
-                validations={[required]}
+                value={this.state.password}
+                onChange={this.onChangePassword}
+                validations={[required,vpassword]}
               />
             </div>
             </div>
@@ -231,6 +286,23 @@ export default class Login extends Component {
                 </div>
               </div>
 
+            <div class="w-full lg:w-6/12 px-4">
+              <div class ="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="password">Email</label>
+              <Input
+                type="text"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                name="password"
+                placeholder="Contraseña"
+                value={this.state.email}
+                onChange={this.onChangeEmail}
+                validations={[required,email]}
+              />
+            </div>
+            </div>
+
+           
+
               <div className="w-full lg:w-6/12 px-4">
                 <div className="relative w-full mb-3">
                   <label
@@ -243,10 +315,9 @@ export default class Login extends Component {
                 type="text"
                 class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                 name="password"
-                placeholder="Contraseña"
+                placeholder="Apellido"
                 value={this.state.second_name}
                 onChange={this.onChangeSecondName}
-                validations={[required]}
               />
                 </div>
               </div>
@@ -256,17 +327,29 @@ export default class Login extends Component {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    DNI
+                    DNI/NIF
                   </label>
                   <Input
-                type="password"
+                type="text"
                 class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                name="password"
-                placeholder="Contraseña"
+                name="dni"
+                placeholder="DNI"
                 value={this.state.dni}
                 onChange={this.onChangeDNI}
-                validations={[required]}
+                validations={[required,dni]}
               />
+                </div>
+              </div>
+
+              <div className="w-full lg:w-6/12 px-4">
+                <div className="relative w-full mb-3">
+                  <label
+                    className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    htmlFor="grid-password"
+                  >
+                    ROL
+                  </label>
+                  <Select options={ options } value={this.state.rol} onChange={this.onChangeRol} />
                 </div>
               </div>
 
@@ -318,41 +401,29 @@ export default class Login extends Component {
 
         </div>
       )}
-      selected={this.state.startDate}
-      onChange={(date) => this.setState({ startDate: date})}
+      selected={this.state.born_date}
+      onChange={this.onChangeDate}
     />
                 </div>
               </div>
 
-              <div className="w-full lg:w-6/12 px-4">
-                <div className="relative w-full mb-3">
-                  <label
-                    className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                    htmlFor="grid-password"
-                  >
-                    ROL
-                  </label>
-                  <Select options={ techCompanies } value={this.state.rol} />
-                </div>
-              </div>
-
-              
-
             <div class="flex justify-center mt-4 pl-4">
               <button
-                class="bg-emerald-500 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                disabled={this.state.loading}
-              >
-                {this.state.loading && (
-                  <span className=""></span>
-                )}
+                class="bg-emerald-500 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
                 <span>Registrar</span>
               </button>
             </div>
 
             {this.state.message && (
               <div >
-                <div class="text-red-500 text-xs italic" role="alert">
+                <div
+                  className={
+                    this.state.successful
+                      ? "text-emerald-500 text-xs italic"
+                      : "text-red-500 text-xs italic"
+                  }
+                  role="alert"
+                >
                   {this.state.message}
                 </div>
               </div>

@@ -1,10 +1,15 @@
 import api from "../api";
 
-const register = (username, email, password) => {
-    return api.post("/api/auth/signup" ,{
+const register = (username, email, password, first_name ,second_name, dni, born_date, roles) => {
+    return api.post("/api/auth/signup",{
       username,
       email,
       password,
+      first_name,
+      second_name, 
+      dni,
+      born_date, 
+      roles,
     });
   };
 
