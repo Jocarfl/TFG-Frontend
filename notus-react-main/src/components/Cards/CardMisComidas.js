@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import FoodItem from "components/FoodListItem/FoodItem";
+import FoodService from "services/food.service";
+import AuthService from "services/auth.service";
 
 const getDatafromDesayuno = () => {
     const data = localStorage.getItem('desayuno');
@@ -83,6 +85,13 @@ export default function CardSettings() {
     useEffect(()=>{
       localStorage.setItem('cena',JSON.stringify(cena));
     },[cena])
+
+    const handleInsertDiaryFood = (e) => {
+        e.preventDefault();
+
+        FoodService.insertarComidaDiariaPorId(AuthService.getCurrentUser().id,);
+        
+      }
 
     return (
         <> < div className = "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0" > <div className="rounded-t bg-white mb-0 px-6 py-6">

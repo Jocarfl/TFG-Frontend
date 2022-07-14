@@ -158,7 +158,6 @@ export default class Login extends Component {
   };
 
   borrarForm(){
-
     window.location.reload();
   }
 
