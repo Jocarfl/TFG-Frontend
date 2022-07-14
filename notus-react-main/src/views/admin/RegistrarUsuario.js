@@ -150,7 +150,6 @@ export default class Login extends Component {
 
   onChangeRol = (e) => {
     this.setState(this.state.rol = e);
-    console.log(e.value);
   };
 
   onChangeDate = (e) => {
