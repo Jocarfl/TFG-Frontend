@@ -5,6 +5,7 @@ import TableDropdown from "components/Dropdowns/TableDropdown";
 import AddMiComidaDropdown from "components/Dropdowns/AddMiComidaDropdown";
 import DataTable from "react-data-table-component"
 import ModalComida from "components/Modals/ModalGramosComida";
+import ModalControlComida from "components/Modals/ModalControlComida/ModalControlComida";
 import { Comida } from 'BaseDatosComida/ComidaBD';
 
 
@@ -42,7 +43,7 @@ const columns = [
 	    sortable: true,
   	},
     {
-      cell: row => <TableDropdown setFood={row}/>,
+      cell: row => <ModalControlComida setFood={row}/>,
       allowOverflow: true,
       button: true,
       width: '56px',
