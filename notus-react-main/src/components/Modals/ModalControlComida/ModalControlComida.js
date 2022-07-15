@@ -53,16 +53,6 @@ const getDatafromCena=()=>{
   }
 }
 
-const getComidaDelDiaTotal=()=>{
-  const data = localStorage.getItem('miComida');
-  if(data){
-    return JSON.parse(data);
-  }
-  else{
-    return []
-  }
-}
-
 export default function ModalControlComida ({setFood}) {
 
   const [desayuno, setDesayuno]=useState(getDatafromDesayuno());
@@ -90,7 +80,7 @@ export default function ModalControlComida ({setFood}) {
     setFood.proteinaT = cantidad/100*setFood.proteinaT;
     setFood.caloriasT = cantidad/100*setFood.caloriasT;
     setFood.grasaT = cantidad/100*setFood.grasaT;
-    
+
 
     if(comidaDelDia.value == "desayuno"){
       setDesayuno([...desayuno,setFood]);
@@ -114,7 +104,6 @@ export default function ModalControlComida ({setFood}) {
     }
 
   }
-
 
      useEffect(()=>{
       localStorage.setItem('desayuno',JSON.stringify(desayuno));

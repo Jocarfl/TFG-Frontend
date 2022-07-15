@@ -15,7 +15,7 @@ import FooterAdmin from "components/Footers/FooterAdmin.js";
 // views
 
 import Dashboard from "views/user/Dashboard.js";
-import Settings from "views/user/Settings.js";
+import Recomendaciones from "views/user/Recomendaciones";
 import Nutricion from "views/user/Nutricion";
 import PrivateRoute from "context/privateRoute";
 
@@ -65,7 +65,7 @@ export default class User extends Component {
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
           <Switch>
             <PrivateRoute path="/user/dashboard" isAuthenticated={AuthService.isAuthenticated()} exact component={Dashboard} />
-            <PrivateRoute path="/user/settings" isAuthenticated={AuthService.isAuthenticated()} exact component={Settings} />
+            <PrivateRoute path="/user/recomendaciones" isAuthenticated={AuthService.isAuthenticated()} exact component={Recomendaciones} />
             <PrivateRoute path="/user/nutricion" isAuthenticated={AuthService.isAuthenticated()} exact component={Nutricion} />
             <Redirect from="/user" to="/user/dashboard" />
           </Switch>

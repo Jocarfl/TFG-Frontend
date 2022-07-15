@@ -20,7 +20,7 @@ export default class HeaderStats extends Component {
     
     <>
       <div className="relative bg-lightBlue-600 md:pt-32 pb-32 pt-12">
-        {window.location.href.indexOf("/user/dashboard") !== -1 &&
+        {window.location.href.indexOf("/user/dashboard")  !== -1 &&
         <div className="px-4 md:px-10 mx-auto w-full">
           <div>
             {/* Card stats */}
@@ -59,11 +59,11 @@ export default class HeaderStats extends Component {
         {window.location.href.indexOf("/user/nutricion") !== -1 &&
         <div className="px-4 md:px-10 mx-auto w-full">
           <div className="flex flex-wrap justify-center">
-          <div className="w-full lg:w-4/12 xl:w-6/12 px-4">
-<CardInfoComida/>
-</div>
-</div>
-</div>}
+              <div className="w-full lg:w-4/12 xl:w-6/12 px-4">
+                  <CardInfoComida/>
+              </div>
+          </div>
+        </div>}
         
       </div>
     </>
