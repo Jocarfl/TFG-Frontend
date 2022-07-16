@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
 import AdminService from "services/admin.service";
-
+import ModalVincularPaciente from "components/Modals/ModalVincularPaciente/ModalVincularPaciente"
 
 
 const columns = [
@@ -36,6 +36,12 @@ const columns = [
     name: 'ID',
     selector : row => row._id,
     sortable: true,
+  },
+  {
+    cell: row => <ModalVincularPaciente setMod={row} />,
+    allowOverflow: true,
+    button: true,
+    width: '56px',
   },
 ];
 
