@@ -1,7 +1,13 @@
 import api from "../api";
 
-const getTodosLosMedicos = () => {
+  const getTodosLosMedicos = () => {
     return api.get("/api/admin/getAllModerators").then((response) => {
+        return response.data;
+      });
+  };
+
+  const getPacientesVinculadosAlModerador = (id_mod) => {
+    return api.get("/api/admin/getPacientesVinculadosAlModerador",{params :{_id: id_mod}}).then((response) => {
         return response.data;
       });
   };
@@ -13,6 +19,7 @@ const getTodosLosMedicos = () => {
   const AdminService = {
     getTodosLosMedicos,
     vincularUsuarioConMod,
+    getPacientesVinculadosAlModerador,
   };
 
   export default AdminService;

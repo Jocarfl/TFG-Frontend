@@ -99,6 +99,7 @@ export default function Tables() {
   const [filterText, setFilterText] = React.useState('');
 	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
   const [listaMedicos,setListaMedicos] = useState([]);
+  const [listaPacientesMod,setListaPacientesMod] = useState([]);
  
 
   useEffect(()=>{AdminService.getTodosLosMedicos().then(data => {
@@ -109,7 +110,18 @@ export default function Tables() {
 		item => item.username && item.username.toLowerCase().includes(filterText.toLowerCase()),
 	);
 
-  const ExpandedComponent = ({ data }) => <pre>{JSON.stringify(data, null, 2)}</pre>;
+  const ExpandedComponent = ({ data }) => (
+    useEffect(()=>{AdminService.getPacientesVinculadosAlModerador(data._id).then(data => {
+      setListaPacientesMod(data)
+  }).catch(err => console.log(err));},[]),
+
+
+  listaPacientesMod.map((item =>
+    <p>{item.username}</p>
+    ))
+
+  
+  );
 
 	const subHeaderComponentMemo = React.useMemo(() => {
 		const handleClear = () => {
@@ -140,6 +152,7 @@ export default function Tables() {
             expandableRows
             expandableRowsComponent={ExpandedComponent}
             customStyles={customStyles}
+            expandableCloseAllOnExpand
 			subHeaderComponent={subHeaderComponentMemo}
 			persistTableHead
 		/>         
