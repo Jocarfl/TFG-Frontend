@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
 import AdminService from "services/admin.service";
+import AuthService from "services/auth.service";
+import Lista from "components/Cards/CardTablaListaPacientes"
 import ModalVincularPaciente from "components/Modals/ModalVincularPaciente/ModalVincularPaciente"
 
 
@@ -36,12 +38,6 @@ const columns = [
     name: 'ID',
     selector : row => row._id,
     sortable: true,
-  },
-  {
-    cell: row => <ModalVincularPaciente setMod={row} />,
-    allowOverflow: true,
-    button: true,
-    width: '56px',
   },
 ];
 
@@ -88,8 +84,6 @@ const FilterComponent = ({ filterText, onFilter}) => (
                 <i class="fas fa-search"></i>
             </span>
           </div>
-
-        
   </>
 
   );
@@ -102,25 +96,17 @@ export default function Tables() {
   const [listaPacientesMod,setListaPacientesMod] = useState([]);
  
 
-  useEffect(()=>{AdminService.getTodosLosMedicos().then(data => {
-    setListaMedicos(data);
+  useEffect(()=>{AdminService.getPacientesVinculadosAlModerador(AuthService.getCurrentUser().id).then(data => {
+    setListaPacientesMod(data)
 }).catch(err => console.log(err));},[])
 
-	const filteredItems =  listaMedicos.filter(
+	const filteredItems =  listaPacientesMod.filter(
 		item => item.username && item.username.toLowerCase().includes(filterText.toLowerCase()),
 	);
 
   const ExpandedComponent = ({ data }) => (
-    useEffect(()=>{AdminService.getPacientesVinculadosAlModerador(data._id).then(data => {
-      setListaPacientesMod(data)
-  }).catch(err => console.log(err));},[]),
-
-
-  listaPacientesMod.map((item =>
-    <p>{item.username}</p>
-    ))
-
   
+    <p></p>
   );
 
 	const subHeaderComponentMemo = React.useMemo(() => {
@@ -143,18 +129,22 @@ export default function Tables() {
             
           
         <DataTable
-              title="Lista de Médicos"
-              columns={columns}
-              data={filteredItems}
-              pagination
-              paginationResetDefaultPage={resetPaginationToggle} // optionally, a hook to reset pagination to page 1
-              subHeader
-              expandableRows
-              expandableRowsComponent={ExpandedComponent}
-              customStyles={customStyles}
-              expandableCloseAllOnExpand
-              subHeaderComponent={subHeaderComponentMemo}
-              persistTableHead
+            title="Lista Pacientes"
+            columns={columns}
+            data={filteredItems}
+            pagination
+            paginationResetDefaultPage={resetPaginationToggle} // optionally, a hook to reset pagination to page 1
+            subHeader
+            responsive
+            expandableRows
+            expandOnRowClicked
+            highlightOnHover
+            pointerOnHover
+            expandableRowsComponent={ExpandedComponent}
+            customStyles={customStyles}
+            expandableCloseAllOnExpand
+            subHeaderComponent={subHeaderComponentMemo}
+            persistTableHead
 		/>         
           
           </div>

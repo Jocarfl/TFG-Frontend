@@ -1,10 +1,10 @@
 import Pagination from 'components/Pagination/Pagination';
 import React, { useState, useMemo } from 'react';
-import CardTablaListaPacientes from "components/Cards/CardTablaListaPacientes"
+import CardTablaListaPacientesRegistroComida from "components/Cards/CardTablaListaPacientesRegistroComida"
 
 
 
-export default function Pacientes() {
+export default function HistorialComida() {
   
 
   return (
@@ -12,7 +12,7 @@ export default function Pacientes() {
       <div>
         <div className="flex flex-wrap mt-6 ">      
           <div >
-            <CardTablaListaPacientes></CardTablaListaPacientes>
+            <CardTablaListaPacientesRegistroComida></CardTablaListaPacientesRegistroComida>
           </div>
         </div>
         </div>

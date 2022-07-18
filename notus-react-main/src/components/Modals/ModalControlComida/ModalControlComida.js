@@ -78,9 +78,9 @@ export default function ModalControlComida ({setFood}) {
 
     setFood.energiaT = cantidad/100*setFood.energiaT;
     setFood.proteinaT = cantidad/100*setFood.proteinaT;
-    setFood.caloriasT = cantidad/100*setFood.caloriasT;
+    setFood.caloriasT = setFood.energiaT*0.238846;
     setFood.grasaT = cantidad/100*setFood.grasaT;
-
+    setFood.cantidad = cantidad;
 
     if(comidaDelDia.value == "desayuno"){
       setDesayuno([...desayuno,setFood]);

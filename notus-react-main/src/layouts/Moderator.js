@@ -15,6 +15,7 @@ import FooterAdmin from "components/Footers/FooterAdmin.js";
 // views
 
 import Pacientes from "views/moderator/Pacientes.js";
+import HistorialComida from "views/moderator/HistorialComida";
 import PrivateRoute from "context/privateRoute";
 
 
@@ -24,11 +25,14 @@ export default function Moderator() {
   return (
     <>
       <Sidebar />
-      <div className="relative md:ml-64 bg-blueGray-100">
+      <div className="relative md:ml-64 flex content-center items-center justify-center h-full">
 
-        <div className="h-full ">
+      <div
+            class ="px-4 md:px-10 mx-auto w-full"
+          >
           <Switch>
             <PrivateRoute path="/moderator/pacientes" isAuthenticated={AuthService.isAuthenticated()} exact component={Pacientes} />
+            <PrivateRoute path="/moderator/historial-comida" isAuthenticated={AuthService.isAuthenticated()} exact component={HistorialComida} />
 
             <Redirect from="/moderator" to="/moderator/pacientes" />
           </Switch>

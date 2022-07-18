@@ -52,6 +52,9 @@ export default function CardSettings() {
     const [merienda, setMerienda] = useState(getDatafromMerienda());
     const [cena, setCena] = useState(getDatafromCena());
 
+    const [message, setMessage] = useState('');
+    const [successful, setSuccessful] = useState(false);
+
     // delete book from LS
     const deleteBook = (id) => {
 
@@ -89,7 +92,25 @@ export default function CardSettings() {
     const handleInsertDiaryFood = (e) => {
         e.preventDefault();
 
-        FoodService.insertarComidaDiariaPorId(AuthService.getCurrentUser().id,);
+        let comidas = {
+            desayuno : desayuno,
+            almuerzo : almuerzo,
+            comida : comida,
+            merienda : merienda,
+            cena : cena
+        }
+
+        console.log(comidas);
+        FoodService.insertarComidaDiariaPorId(AuthService.getCurrentUser().id,comidas).then(
+            response => {
+              setMessage(response.data);
+              setSuccessful(true);
+            },
+            error => {
+              setMessage(error.response.data);
+              setSuccessful(false);
+            }
+          )
         
       }
 
@@ -112,13 +133,11 @@ export default function CardSettings() {
                     Desayuno
                 </h6>
                 <div>
-
                     {
                         desayuno.map(
                             (comida) => (<FoodItem comida={comida} deleteBook={() => deleteBook}/>)
                         )
                     }
-
                 </div>
 
                 <hr className="mt-6 border-b-1 border-blueGray-300"/>
@@ -165,9 +184,24 @@ export default function CardSettings() {
 
                 <div class="mt-6 flex items-center justify-between">
                     <button
+                    onClick={handleInsertDiaryFood}
                         class="bg-lightBlue-600 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
                         <span>Enviar</span>
                     </button>
+                    {message && (
+              <div >
+                <div
+                  className={
+                    successful
+                      ? "text-emerald-500 text-xs italic"
+                      : "text-red-500 text-xs italic"
+                  }
+                  role="alert"
+                >
+                  {message}
+                </div>
+              </div>
+            )} 
                 </div>
             </form>
         </div>

@@ -1,10 +1,7 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import {Comida} from "BaseDatosComida/ComidaBD";
 import CardTablaNutricion from "components/Cards/CardTablaNutricionNEW";
-import CardComidaDelDia from "components/Cards/CardComidaDelDia";
 import CardMisComidas from "components/Cards/CardMisComidas";
-import ModalComida from "components/Modals/ModalGramosComida";
 
 export default function Tables() {
 
