@@ -3,10 +3,6 @@ import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
 import AdminService from "services/admin.service";
 import AuthService from "services/auth.service";
-import Lista from "components/Cards/CardTablaListaPacientes"
-import ModalVincularPaciente from "components/Modals/ModalVincularPaciente/ModalVincularPaciente"
-
-
 const columns = [
   {
     name: 'Nombre de Usuario',

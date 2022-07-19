@@ -1,7 +1,7 @@
 import React, {useRef,useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css"
-import "./ModalControlComida.css"
+import "./css/Modal.css"
 import Select from 'react-select';
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";

@@ -1,12 +1,7 @@
-import Pagination from '../Pagination/Pagination';
 import React, { useState, useMemo } from 'react';
-import PropTypes from "prop-types";
-import TableDropdown from "components/Dropdowns/TableDropdown";
-import AddMiComidaDropdown from "components/Dropdowns/AddMiComidaDropdown";
 import DataTable from "react-data-table-component"
-import ModalComida from "components/Modals/ModalGramosComida";
-import ModalControlComida from "components/Modals/ModalControlComida/ModalControlComida";
-import { Comida } from 'BaseDatosComida/ComidaBD';
+import ModalControlComida from "components/Modals/ModalControlComida";
+
 
 
 

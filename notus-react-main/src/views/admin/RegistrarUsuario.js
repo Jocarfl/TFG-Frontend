@@ -359,8 +359,8 @@ export default class Login extends Component {
                     FECHA NACIMIENTO
                   </label>
                   <DatePicker
-      dateFormat="yyyy-MM-dd"
-      renderCustomHeader={({
+        dateFormat="yyyy-MM-dd"
+        renderCustomHeader={({
         date,
         changeYear,
         changeMonth,

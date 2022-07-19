@@ -1,7 +1,7 @@
 import React, {useRef,useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css"
-import "./ModalVincularPaciente.css"
+import "./css/Modal.css"
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import AdminService from "services/admin.service";

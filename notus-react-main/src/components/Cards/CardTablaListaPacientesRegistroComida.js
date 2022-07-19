@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
 import AdminService from "services/admin.service";
 import AuthService from "services/auth.service";
-import Lista from "components/Cards/CardTablaListaPacientes"
-import ModalVincularPaciente from "components/Modals/ModalVincularPaciente/ModalVincularPaciente"
+import ModalRegistrosComida from "components/Modals/ModalRegistrosComida"
 
 
 const columns = [
+
+  
   {
     name: 'Nombre de Usuario',
       selector : row => row.username,
@@ -38,6 +39,12 @@ const columns = [
     name: 'ID',
     selector : row => row._id,
     sortable: true,
+  },
+  {
+    cell: row => <ModalRegistrosComida setMod={row} />,
+    allowOverflow: true,
+    button: true,
+    width: '56px',
   },
 ];
 
@@ -136,8 +143,6 @@ export default function Tables() {
             paginationResetDefaultPage={resetPaginationToggle} // optionally, a hook to reset pagination to page 1
             subHeader
             responsive
-            expandableRows
-            expandOnRowClicked
             highlightOnHover
             pointerOnHover
             expandableRowsComponent={ExpandedComponent}

@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
 import AdminService from "services/admin.service";
-import ModalVincularPaciente from "components/Modals/ModalVincularPaciente/ModalVincularPaciente"
+import ModalVincularPaciente from "components/Modals/ModalVincularPaciente"
 
 
 const columns = [
