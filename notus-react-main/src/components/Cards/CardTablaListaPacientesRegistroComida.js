@@ -83,7 +83,7 @@ const FilterComponent = ({ filterText, onFilter}) => (
           id="search"
           type="text"
           onChange={onFilter}
-          placeholder="Buscar médico"
+          placeholder="Buscar paciente"
           value={filterText}
           class="px-3 py-3 placeholder-blueGray-400 text-blueGray-600 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"/>   		
             <span

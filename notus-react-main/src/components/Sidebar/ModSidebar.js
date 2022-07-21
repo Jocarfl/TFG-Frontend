@@ -108,56 +108,6 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/moderator/registro-peso") !== -1
-                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                      : "text-blueGray-700 hover:text-blueGray-500")
-                  }
-                  to="/moderator/registro-peso"
-                  
-                >
-                  <i
-                    className={
-                      "fas fa-table mr-2 text-sm " +
-                      (window.location.href.indexOf("/moderator/registro-peso") !== -1
-                        ? "opacity-75"
-                        : "text-blueGray-300")
-                        
-                    }
-                    
-                  ></i>{" "}
-                  Registro Peso 
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/moderator/historial-comida") !== -1
-                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                      : "text-blueGray-700 hover:text-blueGray-500")
-                  }
-                  to="/moderator/historial-comida"
-                  
-                >
-                  <i
-                    className={
-                      "fas fa-table mr-2 text-sm " +
-                      (window.location.href.indexOf("/moderator/historial-comida") !== -1
-                        ? "opacity-75"
-                        : "text-blueGray-300")
-                        
-                    }
-                    
-                  ></i>{" "}
-                  Registro Comidas
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/moderator/recomendaciones") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")

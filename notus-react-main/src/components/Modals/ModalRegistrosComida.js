@@ -100,7 +100,7 @@ return (
     <Popup
     trigger={<button className="button">
                 <span className="text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg">
-                    <i className="fas fa-file"></i>
+                    <i className="fas fa-utensils"></i>
                 </span>
             </button>}
             
@@ -128,7 +128,7 @@ return (
         </div>
 
         <div className="flex flex-wrap mt-6">
-        <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >Desayuno</label>
+        <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >DESAYUNO</label>
           <DataTable
           dense
           data={desayuno}
@@ -137,7 +137,7 @@ return (
             persistTableHead
           />
          
-        <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >Almuerzo</label>
+        <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >ALMUERZO</label>
           <DataTable
               dense
               data={almuerzo}
@@ -146,7 +146,7 @@ return (
                 persistTableHead/> 
 
 
-        <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >Comida</label>
+        <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >COMIDA</label>
           <DataTable
               dense
               data={comida}
@@ -154,7 +154,7 @@ return (
                 customStyles={customStyles}
                 persistTableHead
               />
-          <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >Merienda</label>
+          <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >MERIENDA</label>
           <DataTable
             dense
             data={merienda}
@@ -162,7 +162,7 @@ return (
               customStyles={customStyles}
               persistTableHead
             />
-            <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >Cena</label>
+            <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >CENA</label>
     <DataTable
     dense
     data={cena}

@@ -2,27 +2,20 @@ import React, {useRef,useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css"
 import "./css/Modal.css"
+import ModService from "services/mod.service";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
-import AdminService from "services/admin.service";
 
 
 export default function ModalControlComida ({setMod}) {
 
-  const [dni, setDNI] = useState('');
-  const [message, setMessage] = useState('');
-  const [successful, setSuccessful] = useState(false);
+    const [_weight, setWeight] = useState('');
+    const [message, setMessage] = useState('');
+    const [successful, setSuccessful] = useState(false);
 
-  const onChangeDNI = (e)=>{
-    e.preventDefault();
-    setDNI(e.target.value);
-  }
 
   const onSubmit = (e) => {
-    e.preventDefault();
-    AdminService.vincularUsuarioConMod(
-      dni,
-      setMod._id).then(
+    ModService.insertarPesoPacienteEnHistorial(setMod._id,_weight).then(
         response => {
           setMessage(response.data.message);
           setSuccessful(true);
@@ -39,10 +32,18 @@ export default function ModalControlComida ({setMod}) {
           setSuccessful(false);
         }
       );
+        
+
+  }
+
+  const onChangeWeight = (e)=>{
+    e.preventDefault();
+    setWeight(e.target.value);
   }
 
 
   const form = useRef(null);
+
 
 
 return (
@@ -61,25 +62,26 @@ return (
           &times;
         </button>
         <div className="header">
-          <h6 className="text-blueGray-700 text-xl font-bold">Vincular Paciente a {setMod.username}</h6>
+          <h6 className="text-blueGray-700 text-xl font-bold">{"Insertar peso de "+setMod.username}</h6>
         </div>
         <div className="content">
         <Form
         ref={form}
         onSubmit={onSubmit}>
-        <div class="mb-12 m-2 pt-6">
+        <div class="mb-6 pt-6">
           
-          <label class="block text-gray-700 text-xl font-bold mb-2 mr-4" >DNI Paciente</label>
+          <label class="block text-gray-700 text-xl font-bold mb-2 mr-4" >Peso (kg)</label>
           <Input
-              type="text"
-              name="dni"
+              type="number"
+              name="cantidad"
               min="0"
               required
-              onChange={onChangeDNI}
-              placeholder="DNI"
+              onChange={onChangeWeight}
+              placeholder="Cantidad en kilo gramos"
               class="shadow appearance-none  rounded w-full py-2 px-6 textblueGray-900 focus:outline-none focus:shadow-outline"/> 
 
-                     {message && (
+
+                  {message && (
               <div >
                 <div
                   className={
@@ -92,9 +94,8 @@ return (
                   {message}
                 </div>
               </div>
-            )}  
+            )}     
         </div>
-       
 
 
         <div class="flex justify-center mt-4 pl-4">             

@@ -3,37 +3,72 @@ import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
 import AdminService from "services/admin.service";
 import AuthService from "services/auth.service";
+import ModalRegistrosComida from "components/Modals/ModalRegistrosComida"
+import ModalRegistroPesos from "components/Modals/ModalRegistroPesos"
+import ModalInsertarPeso from "components/Modals/ModalInsertarPeso"
+import ModalInfoPaciente from "components/Modals/ModalInfoPaciente";
+import Popup from 'reactjs-popup';
+
+
+
 const columns = [
   {
-    name: 'Nombre de Usuario',
+    name: 'Usuario',
       selector : row => row.username,
       sortable: true,
-      grow: 1,
       style: {
             color: '#202124',
             fontSize: '14px',
             fontWeight: 500,
           },
+          width: '200px',
   },
   {
     name: 'Nombre',
     selector : row => row.first_name,
     sortable: true,
+    width: '200px',
   },
   {
     name: 'Apellido',
     selector : row => row.second_name,
     sortable: true,
+    width: '200px',
   },
   {
     name: 'Email',
     selector : row => row.email,
     sortable: true,
+    width: '200px',
   },
   {
-    name: 'ID',
-    selector : row => row._id,
+    name: 'DNI',
+    selector : row => row.dni,
     sortable: true,
+    width: '200px',
+  },
+  {
+    name : 'Registro Comida',
+    cell: row => <ModalRegistrosComida setMod={row} />,
+    allowOverflow: true,
+    button: true,
+    width: '160px',
+    grow : -1,
+  },
+  {
+    name : 'Registro Peso',
+    cell: row => <ModalRegistroPesos setMod={row} />,
+    allowOverflow: true,
+    button: true,
+    width: '160px',
+    grow : -1,
+  },
+  {
+    name : 'Insertar Peso',
+    cell: row => <ModalInsertarPeso setMod={row} />,
+    allowOverflow: true,
+    button: true,
+    width: '160px',
   },
 ];
 
@@ -72,7 +107,7 @@ const FilterComponent = ({ filterText, onFilter}) => (
           id="search"
           type="text"
           onChange={onFilter}
-          placeholder="Buscar médico"
+          placeholder="Buscar paciente"
           value={filterText}
           class="px-3 py-3 placeholder-blueGray-400 text-blueGray-600 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"/>   		
             <span
@@ -88,8 +123,8 @@ export default function Tables() {
 
   const [filterText, setFilterText] = React.useState('');
 	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
-  const [listaMedicos,setListaMedicos] = useState([]);
   const [listaPacientesMod,setListaPacientesMod] = useState([]);
+  const [open, setOpen] = useState(false);
  
 
   useEffect(()=>{AdminService.getPacientesVinculadosAlModerador(AuthService.getCurrentUser().id).then(data => {
@@ -100,10 +135,11 @@ export default function Tables() {
 		item => item.username && item.username.toLowerCase().includes(filterText.toLowerCase()),
 	);
 
-  const ExpandedComponent = ({ data }) => (
-  
-    <p></p>
-  );
+  const handleRowClicked = row => {
+    setOpen(true);
+    <ModalInfoPaciente setOpen={setOpen} open={open}/>
+  };
+
 
 	const subHeaderComponentMemo = React.useMemo(() => {
 		const handleClear = () => {
@@ -125,6 +161,7 @@ export default function Tables() {
             
           
         <DataTable
+        
 			title="Lista Pacientes"
 			columns={columns}
 			data={filteredItems}
@@ -132,10 +169,10 @@ export default function Tables() {
 			paginationResetDefaultPage={resetPaginationToggle} // optionally, a hook to reset pagination to page 1
 			subHeader
       responsive
-            expandableRows
-            expandableRowsComponent={ExpandedComponent}
-            customStyles={customStyles}
-            expandableCloseAllOnExpand
+      highlightOnHover
+      pointerOnHover
+      onRowClicked={handleRowClicked}
+      customStyles={customStyles}
 			subHeaderComponent={subHeaderComponentMemo}
 			persistTableHead
 		/>         

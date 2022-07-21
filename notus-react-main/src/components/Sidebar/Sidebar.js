@@ -117,7 +117,7 @@ export default function Sidebar() {
                 >
                   <i
                     className={
-                      "fas fa-table mr-2 text-sm " +
+                      "fas fa-carrot mr-2 text-sm " +
                       (window.location.href.indexOf("/user/nutricion") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
@@ -140,7 +140,7 @@ export default function Sidebar() {
                 >
                   <i
                     className={
-                      "fas fa-heart mr-2 text-sm " +
+                      "fas fa-book-medical mr-2 text-sm " +
                       (window.location.href.indexOf("/user/recomendaciones") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
