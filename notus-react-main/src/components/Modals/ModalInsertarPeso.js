@@ -7,7 +7,7 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 
 
-export default function ModalControlComida ({setMod}) {
+export default function ModalInsertarPeso ({setMod}) {
 
     const [_weight, setWeight] = useState('');
     const [message, setMessage] = useState('');

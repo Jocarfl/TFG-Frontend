@@ -61,7 +61,7 @@ const customStyles = {
   };
 
 
-export default function ModalControlComida ({setMod}) {
+export default function ModalRegistroComida ({setMod}) {
 
   const [dni, setDNI] = useState('');
   const [message, setMessage] = useState('');

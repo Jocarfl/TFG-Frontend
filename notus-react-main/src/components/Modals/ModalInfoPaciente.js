@@ -4,19 +4,20 @@ import "reactjs-popup/dist/index.css"
 import "./css/Modal.css"
 
 
-export default class ModalInfoPaciente extends React.Component {
-  render() {
+export default function ModalInfoPaciente ({setOpen,open,datos}) {
+
     return(
-      <Popup open={this.props.open} modal>
+      <Popup open={open} modal
+      onClose={() =>setOpen(false)}>
         {() => ( 
           <>
-          <label>Hola</label>
-            <button onClick={() => this.props.setOpen(false)}>
+          <label>{}</label>
+            <button onClick={() => setOpen(false)}>
               close
             </button>
           </>
         )}
       </Popup>
     )
-  }
+  
 }

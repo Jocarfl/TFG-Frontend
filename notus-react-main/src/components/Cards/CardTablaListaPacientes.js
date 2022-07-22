@@ -125,6 +125,7 @@ export default function Tables() {
 	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
   const [listaPacientesMod,setListaPacientesMod] = useState([]);
   const [open, setOpen] = useState(false);
+  const [datos, setDatos] = useState({});
  
 
   useEffect(()=>{AdminService.getPacientesVinculadosAlModerador(AuthService.getCurrentUser().id).then(data => {
@@ -137,7 +138,7 @@ export default function Tables() {
 
   const handleRowClicked = row => {
     setOpen(true);
-    <ModalInfoPaciente setOpen={setOpen} open={open}/>
+    setDatos(row); 
   };
 
 
@@ -157,6 +158,7 @@ export default function Tables() {
   return (
     <>
     <div>
+    <ModalInfoPaciente setOpen={setOpen} open={open} datos={datos}/>
       <div className="flex flex-wrap mt-8 ">
             
           

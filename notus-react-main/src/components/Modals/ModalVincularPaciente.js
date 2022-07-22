@@ -7,7 +7,7 @@ import Input from "react-validation/build/input";
 import AdminService from "services/admin.service";
 
 
-export default function ModalControlComida ({setMod}) {
+export default function ModalVincularPaciente ({setMod}) {
 
   const [dni, setDNI] = useState('');
   const [message, setMessage] = useState('');

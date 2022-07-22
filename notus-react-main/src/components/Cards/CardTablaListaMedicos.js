@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
 import AdminService from "services/admin.service";
 import ModalVincularPaciente from "components/Modals/ModalVincularPaciente"
-
+import ModalListaPacientesVinculados from "components/Modals/ModalListaPacientesVinculados";
 
 const columns = [
   {
@@ -100,6 +100,8 @@ export default function Tables() {
 	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
   const [listaMedicos,setListaMedicos] = useState([]);
   const [listaPacientesMod,setListaPacientesMod] = useState([]);
+  const [open, setOpen] = useState(false);
+  const [datos, setDatos] = useState({});
  
 
   useEffect(()=>{AdminService.getTodosLosMedicos().then(data => {
@@ -123,6 +125,17 @@ export default function Tables() {
   
   );
 
+  const HandleRowClicked = row => {
+   AdminService.getPacientesVinculadosAlModerador(row._id).then(data => {
+      setListaPacientesMod(data)
+  }).catch(err => console.log(err));
+    setOpen(true);
+    setDatos(row); 
+
+
+
+  };
+
 	const subHeaderComponentMemo = React.useMemo(() => {
 		const handleClear = () => {
 			if (filterText) {
@@ -141,7 +154,7 @@ export default function Tables() {
     <div>
       <div className="flex flex-wrap mt-8 ">
             
-          
+      <ModalListaPacientesVinculados setOpen={setOpen} open={open} datos={datos} listaPacientes = {listaPacientesMod}/>
         <DataTable
               title="Lista de Médicos"
               columns={columns}
@@ -149,8 +162,10 @@ export default function Tables() {
               pagination
               paginationResetDefaultPage={resetPaginationToggle} // optionally, a hook to reset pagination to page 1
               subHeader
-              expandableRows
-              expandableRowsComponent={ExpandedComponent}
+              responsive
+              highlightOnHover
+              pointerOnHover
+              onRowClicked={HandleRowClicked}
               customStyles={customStyles}
               expandableCloseAllOnExpand
               subHeaderComponent={subHeaderComponentMemo}

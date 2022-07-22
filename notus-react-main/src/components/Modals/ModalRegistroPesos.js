@@ -49,7 +49,7 @@ const columns = [
       },
     };
 
-export default function ModalControlComida ({setMod}) {
+export default function ModalRegistroPesos ({setMod}) {
 
     
     const [registro, setRegistro] = useState([]);
