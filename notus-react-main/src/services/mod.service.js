@@ -19,10 +19,17 @@ import api from "../api";
       });
   };
 
+  const insertarRecomendacionPaciente = (id,_title,_description) => {
+    return api.post("/api/mod/insertarRecomendacionPaciente",{_id: id, title: _title, description: _description}).then((response) => {
+        return response.data;
+      });
+  };
+
   const ModService = {
     getRegistroComidaDePacientePorFecha,
     getHistorialPesoPaciente,
     insertarPesoPacienteEnHistorial,
+    insertarRecomendacionPaciente,
   };
 
   export default ModService;

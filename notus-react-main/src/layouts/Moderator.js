@@ -15,8 +15,8 @@ import FooterAdmin from "components/Footers/FooterAdmin.js";
 // views
 
 import Pacientes from "views/moderator/Pacientes.js";
-import HistorialComida from "views/moderator/HistorialComida";
 import PrivateRoute from "context/privateRoute";
+import RecomendacionesPaciente from "views/moderator/RecomendacionesPaciente";
 
 
 export default function Moderator() {
@@ -32,7 +32,7 @@ export default function Moderator() {
           >
           <Switch>
             <PrivateRoute path="/moderator/pacientes" isAuthenticated={AuthService.isAuthenticated()} exact component={Pacientes} />
-            <PrivateRoute path="/moderator/historial-comida" isAuthenticated={AuthService.isAuthenticated()} exact component={HistorialComida} />
+            <PrivateRoute path="/moderator/recomendaciones" isAuthenticated={AuthService.isAuthenticated()} exact component={RecomendacionesPaciente} />
 
             <Redirect from="/moderator" to="/moderator/pacientes" />
           </Switch>

@@ -99,6 +99,8 @@ return (
             dense
             data={registro}
 			subHeader
+      fixedHeader
+  fixedHeaderScrollHeight="300px"
             responsive
             customStyles={customStyles}
             expandableCloseAllOnExpand

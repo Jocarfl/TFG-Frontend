@@ -4,7 +4,7 @@ import CardTablaListaPacientesRegistroComida from "components/Cards/CardTablaLis
 
 
 
-export default function HistorialComida() {
+export default function RecomendacionesPaciente() {
   
 
   return (
@@ -12,7 +12,7 @@ export default function HistorialComida() {
       <div>
         <div className="flex flex-wrap mt-6 ">      
           <div >
-            <CardTablaListaPacientesRegistroComida></CardTablaListaPacientesRegistroComida>
+            
           </div>
         </div>
         </div>

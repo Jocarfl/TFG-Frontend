@@ -33,8 +33,8 @@ const columns = [
     sortable: true,
   },
   {
-    name: 'ID',
-    selector : row => row._id,
+    name: 'DNI',
+    selector : row => row.dni,
     sortable: true,
   },
   {

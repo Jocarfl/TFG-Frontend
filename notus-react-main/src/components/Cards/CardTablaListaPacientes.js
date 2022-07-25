@@ -7,6 +7,9 @@ import ModalRegistrosComida from "components/Modals/ModalRegistrosComida"
 import ModalRegistroPesos from "components/Modals/ModalRegistroPesos"
 import ModalInsertarPeso from "components/Modals/ModalInsertarPeso"
 import ModalInfoPaciente from "components/Modals/ModalInfoPaciente";
+import ModalInsertarRecomendacion from "components/Modals/ModalInsertarRecomendacion";
+
+
 import Popup from 'reactjs-popup';
 
 
@@ -21,31 +24,31 @@ const columns = [
             fontSize: '14px',
             fontWeight: 500,
           },
-          width: '200px',
+          width: '160px',
   },
   {
     name: 'Nombre',
     selector : row => row.first_name,
     sortable: true,
-    width: '200px',
+    width: '160px',
   },
   {
     name: 'Apellido',
     selector : row => row.second_name,
     sortable: true,
-    width: '200px',
+    width: '160px',
   },
   {
     name: 'Email',
     selector : row => row.email,
     sortable: true,
-    width: '200px',
+    width: '190px',
   },
   {
     name: 'DNI',
     selector : row => row.dni,
     sortable: true,
-    width: '200px',
+    width: '160px',
   },
   {
     name : 'Registro Comida',
@@ -53,7 +56,7 @@ const columns = [
     allowOverflow: true,
     button: true,
     width: '160px',
-    grow : -1,
+ 
   },
   {
     name : 'Registro Peso',
@@ -61,11 +64,18 @@ const columns = [
     allowOverflow: true,
     button: true,
     width: '160px',
-    grow : -1,
+
   },
   {
     name : 'Insertar Peso',
     cell: row => <ModalInsertarPeso setMod={row} />,
+    allowOverflow: true,
+    button: true,
+    width: '160px',
+  },
+  {
+    name : 'Insertar Recomendación',
+    cell: row => <ModalInsertarRecomendacion setMod={row} />,
     allowOverflow: true,
     button: true,
     width: '160px',

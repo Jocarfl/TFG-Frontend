@@ -62,7 +62,7 @@ export default function ModalListaPacientesVinculados ({setOpen,open,datos,lista
           &times;
         </button>
         <div className="header">
-          <h6 className="text-blueGray-700 text-xl font-bold">Pacientes vinculados a {datos.username}</h6>
+          <h6 className="text-blueGray-700 text-xl font-bold">Pacientes vinculados a {datos.first_name}</h6>
         </div>
         <div className="content">
         <div className="container px-4 mx-auto">
