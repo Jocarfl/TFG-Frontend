@@ -1,11 +1,63 @@
 import React, {useRef,useEffect, useState } from "react";
 import Popup from "reactjs-popup";
+import DataTable from "react-data-table-component"
+import ModService from "services/mod.service";
 import "reactjs-popup/dist/index.css"
 import "./css/Modal.css"
 
 
+const columns = [
+  {
+    name: 'Título',
+      selector : row => row.title,
+      sortable: true,
+  },
+  {
+    name: 'Descripción',
+    selector : row => row.description,
+    sortable: true,
+
+  },
+  {
+    name: 'Completado',
+    selector : row => {if(row.completed==true){return <i className="fas fa-check"></i>}else{return <i className="fas fa-ban"></i>}},
+    sortable: true,
+
+  },
+];
+
+const customStyles = {
+  headRow: {
+    style: {
+      border: 'none',
+    },
+    },
+    headCells: {
+      style: {
+        color: '#202124',
+        fontSize: '14px',
+      },
+    },
+    rows: {
+      highlightOnHoverStyle: {
+        backgroundColor: 'rgb(230, 244, 244)',
+        borderBottomColor: '#FFFFFF',
+        borderRadius: '25px',
+        outline: '1px solid #FFFFFF',
+      },
+    },
+    pagination: {
+      style: {
+        border: 'none',
+      },
+    },
+  };
+
+
 export default function ModalInfoPaciente ({setOpen,open,datos}) {
 
+  const [recomendaciones, setRecomendaciones] = useState([]);
+  const [state, setState] = useState(false);
   const [edad, setEdad] = useState("");
 
     function getAge(){
@@ -16,7 +68,10 @@ export default function ModalInfoPaciente ({setOpen,open,datos}) {
       return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));}
 
   useEffect(()=>{ if (open){ setEdad(getAge());} },[open])
-
+    
+  useEffect(()=>{ModService.getRecomendacionesPaciente(datos._id).then(data => {
+    setRecomendaciones(data);
+}).catch(err => console.log(err));},[open])
   
     return(
       <Popup open={open} modal
@@ -46,18 +101,39 @@ export default function ModalInfoPaciente ({setOpen,open,datos}) {
   </div>
   <div className="flex flex-wrap">  
     <div className="w-full px-4 flex-1">
-      <span className="text-sm block my-4 p-3 text-blueGray-600 rounded border border-solid border-blueGray-200 font-bold">GÉNERO</span>
+      <span className="text-sm block my-4 p-3 text-blueGray-600 rounded border border-solid border-blueGray-200 font-bold">GÉNERO: {datos.gender}</span>
     </div>
     <div className="w-full px-4 flex-1">
-      <span className="text-sm block my-4 p-3 text-blueGray-600 rounded border border-solid border-blueGray-200 font-bold">PESO: {datos.weight} </span>
+      <span className="text-sm block my-4 p-3 text-blueGray-600 rounded border border-solid border-blueGray-200 font-bold">PESO: {datos.weight} kg </span>
     </div>
     <div className="w-full px-4 flex-1">
-      <span className="text-sm block my-4 p-3 text-blueGray-600 rounded border border-solid border-blueGray-200 font-bold">ALTURA: {datos.height}</span>
+      <span className="text-sm block my-4 p-3 text-blueGray-600 rounded border border-solid border-blueGray-200 font-bold">ALTURA: {datos.height} cm</span>
     </div>
   </div>
 </div>
 
 <hr className="my-4 md:min-w-full" />
+
+<div className="container px-4 mb-4 mx-auto">
+        <div className="flex flex-wrap">
+        <div className="w-full px-4 flex-1">
+        <DataTable
+        title="Recomendaciones"
+			      columns={columns}
+            data={recomendaciones}
+			      subHeader
+            fixedHeader
+            fixedHeaderScrollHeight="300px"
+            responsive
+            customStyles={customStyles}
+            expandableCloseAllOnExpand
+			      persistTableHead
+		/> 
+        </div>
+              
+            
+            </div>
+        </div>
 
        
 

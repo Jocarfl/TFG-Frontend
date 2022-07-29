@@ -25,11 +25,19 @@ import api from "../api";
       });
   };
 
+  const getRecomendacionesPaciente = (id) => {
+    
+    return api.get("/api/mod/getRecomendacionesDelPaciente",{params :{_id: id}}).then((response) => {
+        return response.data;
+      });
+  };
+
   const ModService = {
     getRegistroComidaDePacientePorFecha,
     getHistorialPesoPaciente,
     insertarPesoPacienteEnHistorial,
     insertarRecomendacionPaciente,
+    getRecomendacionesPaciente,
   };
 
   export default ModService;

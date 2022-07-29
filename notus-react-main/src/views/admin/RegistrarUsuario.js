@@ -371,7 +371,7 @@ export default class Login extends Component {
                   >
                     GÉNERO
                   </label>
-                  <Select options={ optionsGenero } defaultValue={{label: "Femenino", value: "femenino"}} value={this.state.gender} onChange={value =>this.onChangeGenero(value)}  /> 
+                  <Select options={ optionsGenero } defaultValue={{ label: "Femenino", value: "femenino" }} value={this.state.gender} onChange={value =>this.onChangeGenero(value)}  /> 
                 </div>
               </div>
 
