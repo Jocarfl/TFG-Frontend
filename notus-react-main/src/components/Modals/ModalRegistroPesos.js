@@ -95,16 +95,16 @@ return (
         <div className="flex flex-wrap">
         <div className="w-full px-4 flex-1">
         <DataTable
-			columns={columns}
+			      columns={columns}
             dense
             data={registro}
-			subHeader
-      fixedHeader
-  fixedHeaderScrollHeight="300px"
+			      subHeader
+            fixedHeader
+            fixedHeaderScrollHeight="300px"
             responsive
             customStyles={customStyles}
             expandableCloseAllOnExpand
-			persistTableHead
+			      persistTableHead
 		/> 
         </div>
               

@@ -1,6 +1,6 @@
 import api from "../api";
 
-const register = (username, email, password, first_name ,second_name, dni, born_date, roles) => {
+const register = (username, email, password, first_name ,second_name, dni, born_date, roles, gender,height) => {
     return api.post("/api/auth/signup",{
       username,
       email,
@@ -10,6 +10,8 @@ const register = (username, email, password, first_name ,second_name, dni, born_
       dni,
       born_date, 
       roles,
+      gender,
+      height,
     });
   };
 

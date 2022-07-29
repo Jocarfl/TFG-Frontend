@@ -69,6 +69,12 @@ const options = [
   { label: "Admin", value: "admin" }
 ];
 
+const optionsGenero = [
+  { label: "Masculino", value: "masculino" },
+  { label: "Femenino", value: "femenino" },
+  { label: "Otro", value: "otro" }
+];
+
   const years = range(1990, getYear(new Date()) + 1, 1);
   const months = [
     "January",
@@ -96,6 +102,8 @@ export default class Login extends Component {
     this.onChangeFirstName = this.onChangeFirstName.bind(this);
     this.onChangeSecondName = this.onChangeSecondName.bind(this);
     this.onChangeDNI = this.onChangeDNI.bind(this);
+    this.onChangeAltura = this.onChangeAltura.bind(this);
+    this.onChangeGenero = this.onChangeGenero.bind(this);
     
     this.state = {
       startDate : new Date(),
@@ -105,7 +113,9 @@ export default class Login extends Component {
       first_name:"",
       second_name:"",
       dni:"",
+      height: 0,
       rol:"",
+      gender: "",
       born_date: new Date(),
       successful: false,
       message: ""
@@ -129,6 +139,14 @@ export default class Login extends Component {
       email: e.target.value
     });
   }
+  
+ 
+
+  onChangeAltura(e) {
+    this.setState({
+      height: e.target.value
+    });
+  }
 
   onChangeFirstName(e) {
     this.setState({
@@ -146,6 +164,10 @@ export default class Login extends Component {
     this.setState({
       dni: e.target.value
     });
+  }
+
+  onChangeGenero(e) {
+    this.setState(this.state.gender = e);
   }
 
   onChangeRol = (e) => {
@@ -171,6 +193,7 @@ export default class Login extends Component {
     this.form.validateAll();
     if (this.checkBtn.context._errors.length === 0) {
       const roles = [this.state.rol.value] ;
+      const gender = this.state.gender.value;
       const born_date = this.state.born_date.toLocaleDateString(); 
       AuthService.register(
         this.state.username,
@@ -181,6 +204,8 @@ export default class Login extends Component {
         this.state.dni,
         born_date,
         roles,
+        gender,
+        this.state.height,
       ).then(
         response => {
           this.setState({
@@ -191,7 +216,7 @@ export default class Login extends Component {
         error => {
           const resMessage =
             (error.response &&
-              error.response.data &&
+              error.response &&
               error.response.data.message) ||
             error.message ||
             error.toString();
@@ -334,6 +359,40 @@ export default class Login extends Component {
                 value={this.state.dni}
                 onChange={this.onChangeDNI}
                 validations={[required,dni]}
+              />
+                </div>
+              </div>
+
+              <div className="w-full lg:w-6/12 px-4">
+                <div className="relative w-full mb-3">
+                  <label
+                    className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    htmlFor="grid-password"
+                  >
+                    GÉNERO
+                  </label>
+                  <Select options={ optionsGenero } defaultValue={{label: "Femenino", value: "femenino"}} value={this.state.gender} onChange={value =>this.onChangeGenero(value)}  /> 
+                </div>
+              </div>
+
+              <div className="w-full lg:w-6/12 px-4">
+                <div className="relative w-full mb-3">
+                  <label
+                    className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    htmlFor="grid-password"
+                  >
+                    Altura
+                  </label>
+                  <Input
+                type="number"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                name="altura"
+                min="0"
+                step="0.01"
+                placeholder="cm"
+                value={this.state.height}
+                onChange={this.onChangeAltura}
+                validations={[required]}
               />
                 </div>
               </div>

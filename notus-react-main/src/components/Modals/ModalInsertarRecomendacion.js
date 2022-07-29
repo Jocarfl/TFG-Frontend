@@ -24,7 +24,6 @@ export default function ModalInsertarRecomendacion ({setMod}) {
         response => {
           setMessage(response.message);
           setSuccessful(true);
-          console.log(response.message);
         },
         error => {
           const resMessage =
