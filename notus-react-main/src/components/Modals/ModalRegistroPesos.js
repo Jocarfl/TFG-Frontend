@@ -7,11 +7,15 @@ import DataTable from "react-data-table-component"
 import Input from "react-validation/build/input";
 import Form from "react-validation/build/form";
 
+function getDate(date){
+  const sDate = new Date(date);
+  return sDate.getDate() + "/" + sDate.getMonth() +"/" + sDate.getFullYear();
+}
 
 const columns = [
     {
       name: 'Fecha',
-        selector : row => row.date,
+        selector : row => getDate(row.date),
         sortable: true,
     },
     {

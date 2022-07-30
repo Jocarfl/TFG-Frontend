@@ -128,8 +128,10 @@ return (
         </div>
 
         <div className="flex flex-wrap mt-6">
+        
+ 
         <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >DESAYUNO</label>
-          <DataTable
+          <DataTable 
           dense
           data={desayuno}
             columns={columns}
@@ -139,6 +141,7 @@ return (
          
         <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >ALMUERZO</label>
           <DataTable
+        
               dense
               data={almuerzo}
               columns={columns}
@@ -148,6 +151,7 @@ return (
 
         <label class="block text-gray-700 text-m font-bold mb-2 mr-4" >COMIDA</label>
           <DataTable
+     
               dense
               data={comida}
               columns={columns}

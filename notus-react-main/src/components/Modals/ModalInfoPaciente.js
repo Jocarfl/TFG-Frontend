@@ -125,6 +125,7 @@ export default function ModalInfoPaciente ({setOpen,open,datos}) {
             fixedHeader
             fixedHeaderScrollHeight="300px"
             responsive
+            splited
             customStyles={customStyles}
             expandableCloseAllOnExpand
 			      persistTableHead
