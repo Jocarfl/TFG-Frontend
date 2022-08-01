@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import { useLocation } from 'react-router-dom';
-
+import { ResponsiveFontSize } from 'react-responsive-font-size'
 // components
 
 import CardRetosDiarios from "components/Cards/CardRetosDiarios";
@@ -15,6 +15,13 @@ export default class HeaderStats extends Component {
   }
   
   render(){   
+
+    const styleObj = {
+      fontSize: 14,
+      color: "#4a54f1",
+      textAlign: "center",
+      paddingTop: "100px",
+  }
 
   return (
     
@@ -68,9 +75,15 @@ export default class HeaderStats extends Component {
         {window.location.href.indexOf("/user/recomendaciones") !== -1 &&
         <div className="px-4 md:px-10 mx-auto w-full">
           <div className="flex flex-wrap justify-center">
-              <div className="w-full lg:w-4/12 xl:w-6/12 px-4">
-                  RECOMENDACIONES
-              </div>
+
+            
+              
+          <div style={{ height: "100px" }}>
+      <ResponsiveFontSize className="text-blueGray-700 font-bold" ratio={0.4} optionsObject={{ setFontSize: true, globalVariableName: '--my-variable', lockFontSize: false }}>
+        RECOMENDACIONES <i className="fas fa-book-medical"></i>
+      </ResponsiveFontSize>
+    </div>
+              
           </div>
         </div>}
         

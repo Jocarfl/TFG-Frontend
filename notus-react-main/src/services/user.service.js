@@ -1,23 +1,22 @@
-import axios from "axios";
 import authHeader from "./auth-header";
 import api from "../api";
 
-const getPublicContent = () => {
-  return api.get("/api/test/all");
+
+const getRecomendacionesPaciente = (id) => {   
+  return api.get("/api/user/getRecomendacionesDelPaciente",{params :{_id: id}}).then((response) => {
+      return response.data;
+    });
 };
-const getUserBoard = () => {
-  return api.get("/api/test/user", { headers: authHeader() });
-};
-const getModeratorBoard = () => {
-  return api.get("/api/test/mod", { headers: authHeader() });
-};
-const getAdminBoard = () => {
-  return api.get("/api/test/admin", { headers: authHeader() });
-};
+
+
+const marcarRecomendacionComoCompletada = (id,itemID) => {   
+  return api.post("/api/user/marcarRecomendacionComoCompletada",{_id: id, idRec: itemID}).then((response) => {
+      return response.data;
+    });
+};;
+
 const UserService = {
-  getPublicContent,
-  getUserBoard,
-  getModeratorBoard,
-  getAdminBoard,
+  getRecomendacionesPaciente,
+  marcarRecomendacionComoCompletada
 };
 export default UserService;
