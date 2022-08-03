@@ -2,8 +2,14 @@ import React, {useEffect, useState} from "react";
 import CardRecomendacionesPaciente from "components/Cards/CardRecomendacionesPaciente"
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
-// components
+import {motion}  from 'framer-motion/dist/framer-motion'
+import { ResponsiveFontSize } from 'react-responsive-font-size'
 
+const transition = {
+  type: "spring",
+  damping: 5,
+  stiffness: 5
+};
 
 export default function Recomendaciones() {
 
@@ -17,16 +23,23 @@ export default function Recomendaciones() {
 
   useEffect(()=>{UserService.getRecomendacionesPaciente(id).then(data => {
     setRecomendaciones(data);
-}).catch(err => console.log(err));},[])
+}).catch(err => console.log(err));},[recomendaciones])
+
+
 
 
   return (
     <>
 
-    <div className="w-full px-12" >
 
-      {recomendaciones.reverse().map((item)=>(
-        
+    <div className="w-full px-12" >
+    <ul>
+      {recomendaciones.map((item)=>(
+        <motion.li
+        key={item._id}
+        layout
+        transition={transition}
+        >
         <CardRecomendacionesPaciente
         statDate={getDate(item.date)}
         statTitle={item.title}
@@ -34,10 +47,9 @@ export default function Recomendaciones() {
         statCompleted = {item.completed}
         statId = {item._id}
         /> 
-
+      </motion.li>
       ))}
-
-    
+</ul>
 
     
 

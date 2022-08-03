@@ -60,7 +60,7 @@ export default function ModalRegistroPesos ({setMod}) {
     const [state, setState] = useState(false);
 
   useEffect(()=>{ModService.getHistorialPesoPaciente(setMod._id).then(data => {
-    setRegistro(data);
+    setRegistro(data.reverse());
 }).catch(err => console.log(err));},[state])
 
 

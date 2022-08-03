@@ -1,34 +1,55 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
+import UserService from "services/user.service";
+import AuthService from "services/auth.service";
 import Chart from "chart.js";
 
+
 export default function CardGraficaPeso() {
-  React.useEffect(() => {
+
+  const userID = AuthService.getCurrentUser().id;
+  const [pesos, setPesos] = useState([]);
+  const [date,setDate] = useState([]);
+
+  function getOnlyWeight(item) {
+    return item.weight;
+  }
+
+  function getOnlyDate(item) {
+    const newDate = new Date(item.date);
+    return newDate.getDate()+"/"+newDate.getMonth()+"/"+newDate.getFullYear();
+  }
+
+  useEffect(()=>{UserService.getUltimosPesosUsuario(userID).then(data => {
+    setPesos(data);
+}).catch(err => console.log(err));},[]);
+
+
+  useEffect(() => {
     var config = {
       type: "line",
       data: {
-        labels: [
-          "Enero",
-          "Febrero",
-          "Marzo",
-          "Abril",
-          "Mayo",
-          "Junio",
-          "Julio",
-        ],
+        labels: pesos.map(getOnlyDate),
         datasets: [
           {
-            label: "Peso ideal (kg)",
-            backgroundColor: "#4c51bf",
-            borderColor: "#4c51bf",
+            label: "Peso ideal máx (kg)",
+            backgroundColor: "rgba(0,0,0,0.2)",
+            borderColor: "#239B56",
             data: [80, 80, 80, 80, 80, 80, 80],
-            fill: false,
+            fill: 1,
           },
           {
-            label: "Peso actual (kg)",
+            label: "Peso ideal mín (kg)",
+            backgroundColor: "rgba(0,0,0,0.2)",
+            borderColor: "#239B56",
+            data: [85, 85, 85, 85, 85, 85, 82],
+            fill: 1,
+          },
+          {
+            label: "Peso (kg)",
             fill: false,
             backgroundColor: "#fff",
             borderColor: "#fff",
-            data: [78, 75, 76, 79, 83, 80, 81],
+            data: pesos.map(getOnlyWeight),
           },
         ],
       },
@@ -105,7 +126,7 @@ export default function CardGraficaPeso() {
     };
     var ctx = document.getElementById("line-chart").getContext("2d");
     window.myLine = new Chart(ctx, config);
-  }, []);
+  },[pesos]);
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-blueGray-700">

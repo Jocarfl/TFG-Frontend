@@ -13,10 +13,24 @@ const marcarRecomendacionComoCompletada = (id,itemID) => {
   return api.post("/api/user/marcarRecomendacionComoCompletada",{_id: id, idRec: itemID}).then((response) => {
       return response.data;
     });
-};;
+};
+
+const getInfoGamificacionPorId = (userID) => {   
+  return api.get("/api/user/getInfoGamificacionPorId",{params :{_id: userID}}).then((response) => {
+      return response.data;
+    });
+};
+
+const getUltimosPesosUsuario = (userID) => {   
+  return api.get("/api/user/getUltimosPesosUsuario",{params :{_id: userID}}).then((response) => {
+      return response.data;
+    });
+};
 
 const UserService = {
   getRecomendacionesPaciente,
-  marcarRecomendacionComoCompletada
+  marcarRecomendacionComoCompletada,
+  getInfoGamificacionPorId,
+  getUltimosPesosUsuario
 };
 export default UserService;

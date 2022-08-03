@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import PropTypes from "prop-types";
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
@@ -11,17 +11,19 @@ export default function CardStats({
   statId,
 }){
 
-const [completado, setCompletado] = useState([]);
+
+const [completado, setCompletado] = useState();
+
+useEffect(()=>{setCompletado(statCompleted);},)
+
+
 
 function setCompleted (itemID) {
   const id = AuthService.getCurrentUser().id;
 
   UserService.marcarRecomendacionComoCompletada(id,itemID);
-
-  console.log("why")
+  setCompletado(statCompleted);
 }
-
-
 
 
   return (
@@ -47,7 +49,7 @@ function setCompleted (itemID) {
                 }
               >
                 <button type="submit" onClick={() => setCompleted(statId)}>
-                <div  className={"text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 " + (statCompleted !== true ? "bg-emerald-200 " : "bg-emerald-500 ") + " uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg"} >      
+                <div  className={"text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 " + (completado !== true ? "bg-emerald-200 " : "bg-emerald-500 ") + " uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg"} >      
                 <i className="fas fa-check"></i>
                 </div>
                 </button>

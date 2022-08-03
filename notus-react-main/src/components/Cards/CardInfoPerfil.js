@@ -1,28 +1,21 @@
-import React,{Component} from "react";
+import React,{useEffect,useState} from "react";
 import AuthService from "services/auth.service";
+import UserService from "services/user.service";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 // components
 
-export default class  CardInfoPerfil extends Component {
-    constructor(props) {
-        super(props);
+export default function  CardInfoPerfil () {
     
-        this.state = {
-          redirect: null,
-          userReady: false,
-          currentUser: { username: "" }
-        };
-      }
-    
-      componentDidMount() {
-        const currentUser = AuthService.getCurrentUser();
-    
-        if (!currentUser) this.setState({ redirect: "/auth" });
-        this.setState({ currentUser: currentUser, userReady: true })
-      }
+    const [info, setInfo] = useState(false);
+    const [badgeLength, setBadgeLength] = useState(0);
+    const userID = AuthService.getCurrentUser().id;
 
-    render(){
-        const { currentUser } = this.state;
+    useEffect(()=>{UserService.getInfoGamificacionPorId(userID).then(data => {
+        setInfo(data);
+        setBadgeLength(data.badges.length);
+    }).catch(err => console.log(err));},)
+
     return (
         <>
          < div className = "relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16" > <div className="px-6">
@@ -40,41 +33,49 @@ export default class  CardInfoPerfil extends Component {
                         <div className="mr-4 p-3 text-center">
                             <span
                                 className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                                22
+                                {info.level}
                             </span>
-                            <span className="text-sm text-blueGray-400">Logros</span>
+                            <span className="text-xl text-blueGray-400">Nivel</span>
                         </div>
                         <div className="mr-4 p-3 text-center">
                             <span
                                 className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                                2
+                                {badgeLength}
                             </span>
-                            <span className="text-sm text-blueGray-400">Insignias</span>
+                            <span className="text-xl text-blueGray-400">Insignias</span>
+                        </div>
+                        <div className="mr-4 p-3 text-center">
+                            <span
+                                className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
+                                0
+                            </span>
+                            <span className="text-xl text-blueGray-400">Top 1</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="text-center mt-5">
+            <div className="text-center mt-1">
                 <h3
                     className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
                     
                 </h3>
                 <div className="relative pt-1">
-                <div className="flex items-center">
-                    <span className="mr-2">60%</span>
-                    <div className="relative w-full">
-                      <div className="overflow-hidden h-2 text-xs flex rounded bg-lightBlue-200">
-                        <div
-                          style={{ width: "60%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-lightBlue-500"
-                        ></div>
-                      </div>
-                    </div>
+                <div className="text-center mt-1 mb-2 pb-2">
+                    <ProgressBar
+                completed = {info.score}
+                bgColor="#FFC300"
+                labelColor="#000000"
+                height="35px"
+                labelAlignment="center"
+                customLabel={Math.round(info.score)+" / "+ Math.round(info.limit_score)}
+                maxCompleted={info.limit_score}/>
+
+
                   </div>
                 </div>
                 <div
                     className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-                    240 puntos semanales
+                    {info.weekly_score + " puntos semanales"}
                 </div>
                 <div className="mb-12 text-blueGray-600 mt-10">
                     <i className="fas fa-trophy mr-2 text-xl text-blueGray-400"></i>
@@ -86,5 +87,5 @@ export default class  CardInfoPerfil extends Component {
     </div>
 </>
     );
-    }
+    
 }
