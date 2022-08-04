@@ -1,13 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
 import PropTypes from "prop-types";
+import UserService from "services/user.service";
+import AuthService from "services/auth.service";
 
 export default function CardStats({
   statSubtitle,
   statTitle,
   statDescripiron,
-  statIconName,
   statIconColor,
 }) {
+
+  const [completado, setCompletado] = useState(false);
+  const [disabled, setDisabled] = useState(false);
+  const id = AuthService.getCurrentUser().id;
+  const _elemento = "retos";
+  function marcarRetoCompletado() {
+    setCompletado(true);
+    setDisabled(true);
+    UserService.sumarPuntuacionAUsuarioPorElemento(id,_elemento);
+  }
+
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
@@ -24,13 +36,14 @@ export default function CardStats({
             <div className="relative w-auto pl-4 flex-initial">
               <div
                 className={
-                  "text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full " +
-                  statIconColor
+                  "text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full "
                 }
               >
              
-                <button className=" background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                  <i className={statIconName}></i>
+             <button disabled={disabled} type="submit" onClick={() => marcarRetoCompletado()} >
+                <div  className={"text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 " + (completado !== true ? "bg-emerald-200 " : "bg-emerald-500 ") + " uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg"} >      
+                <i className="fas fa-check"></i>
+                </div>
                 </button>
               </div>
             </div>

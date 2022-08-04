@@ -56,11 +56,6 @@ export default function CardGraficaPeso() {
       options: {
         maintainAspectRatio: false,
         responsive: true,
-        title: {
-          display: false,
-          text: "Sales Charts",
-          fontColor: "white",
-        },
         legend: {
           labels: {
             fontColor: "white",

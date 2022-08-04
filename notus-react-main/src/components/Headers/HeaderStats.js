@@ -1,20 +1,24 @@
-import React,{Component} from "react";
+import React,{Component,useEffect,useState} from "react";
 import { useLocation } from 'react-router-dom';
 import { ResponsiveFontSize } from 'react-responsive-font-size'
+import UserService from "services/user.service";
+import AuthService from "services/auth.service";
 // components
 
 import CardRetosDiarios from "components/Cards/CardRetosDiarios";
 import CardInfoComida from "components/Cards/CardInfoComida";
 
-export default class HeaderStats extends Component {
+export default function HeaderStats() {
   
+  
+    const [retos, setRetos] = useState([]);
+    const userID = AuthService.getCurrentUser().id;
 
-  constructor(props) {
-    super(props);
-    
-  }
-  
-  render(){   
+
+   useEffect(()=>{ UserService.getRetosDiariosSegunNivel(userID).then(data => {
+      setRetos(data);
+      console.log(data);
+  }).catch(err => console.log(err))},[]);
 
     const styleObj = {
       fontSize: 14,
@@ -32,33 +36,21 @@ export default class HeaderStats extends Component {
           <div>
             {/* Card stats */}
             <div className="flex flex-wrap justify-center">
-              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <CardRetosDiarios
-                  statSubtitle="Reto 1"
-                  statTitle="Título reto"
-                  statDescripiron="Descripción reto"
-                  statIconName="fa fa-check"
-                  statIconColor="bg-emerald-500"
-                />
-              </div>
-              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <CardRetosDiarios
-                  statSubtitle="Reto 2"
-                  statTitle="Título reto"
-                  statDescripiron="Descripción reto"
-                  statIconName="fa fa-check"
-                  statIconColor="bg-emerald-500"
-                />
-              </div>
-              <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <CardRetosDiarios
-                  statSubtitle="Reto 3"
-                  statTitle="Título reto"
-                  statDescripiron="Descripción reto"
-                  statIconName="fa fa-check"
-                  statIconColor="bg-emerald-500"
-                />
-              </div>
+              
+            {
+              
+                retos.map((item)=>(
+                  
+                  <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
+                  <CardRetosDiarios
+                  statSubtitle={"Reto Nivel: "+item.level}
+                  statTitle={item.title}
+                  statDescripiron={item.description}
+                /></div>
+
+                ))
+            }
+              
             </div>
           </div>
         </div>}
@@ -91,4 +83,4 @@ export default class HeaderStats extends Component {
     </>
   );
   }
-}
+

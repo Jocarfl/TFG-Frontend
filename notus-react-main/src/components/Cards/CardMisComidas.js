@@ -45,6 +45,7 @@ const getDatafromCena = () => {
     }
 }
 
+
 export default function CardSettings() {
     const [desayuno, setDesayuno] = useState(getDatafromDesayuno());
     const [almuerzo, setAlmuerzo] = useState(getDatafromAlmuerzo());
@@ -52,8 +53,30 @@ export default function CardSettings() {
     const [merienda, setMerienda] = useState(getDatafromMerienda());
     const [cena, setCena] = useState(getDatafromCena());
 
+    const [submited,setSubmited]= useState(false);
+    const [disabled,setDisabled]= useState(false);
+
     const [message, setMessage] = useState('');
     const [successful, setSuccessful] = useState(false);
+
+
+    function hasOneDayPassed(){
+        var date = new Date().toLocaleDateString();
+        if( localStorage.yourapp_date == date ) 
+            return false;
+        localStorage.yourapp_date = date;
+        return true;
+      }
+      
+    function runOncePerDay(){
+    
+        if( !hasOneDayPassed()){ 
+            console.log("deshabilitado")
+        
+        }
+         
+      }
+
 
     // delete book from LS
     const deleteBook = (id) => {
@@ -183,7 +206,7 @@ export default function CardSettings() {
                 </div>
 
                 <div class="mt-6 flex items-center justify-between">
-                    <button
+                    <button disabled={disabled}
                     onClick={handleInsertDiaryFood}
                         class="bg-lightBlue-600 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
                         <span>Enviar</span>

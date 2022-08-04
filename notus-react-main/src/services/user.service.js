@@ -27,10 +27,24 @@ const getUltimosPesosUsuario = (userID) => {
     });
 };
 
+const getRetosDiariosSegunNivel = (userID) => {   
+  return api.get("/api/user/getRetosDiariosSegunNivel",{params :{_id: userID}}).then((response) => {
+      return response.data;
+    });
+};
+
+const sumarPuntuacionAUsuarioPorElemento = (id,_elemento) => {   
+  return api.post("/api/user/sumarPuntuacionAUsuarioPorElemento",{_id: id, elemento: _elemento}).then((response) => {
+      return response.data;
+    });
+};
+
 const UserService = {
   getRecomendacionesPaciente,
   marcarRecomendacionComoCompletada,
   getInfoGamificacionPorId,
-  getUltimosPesosUsuario
+  getUltimosPesosUsuario,
+  getRetosDiariosSegunNivel,
+  sumarPuntuacionAUsuarioPorElemento
 };
 export default UserService;

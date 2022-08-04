@@ -25,9 +25,6 @@ export default function Recomendaciones() {
     setRecomendaciones(data);
 }).catch(err => console.log(err));},[recomendaciones])
 
-
-
-
   return (
     <>
 
