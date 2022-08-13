@@ -78,18 +78,27 @@ export default function ModalRegistroComida ({setMod}) {
   const [cena, setCena] = useState([]);
 
   useEffect(()=>{ModService.getRegistroComidaDePacientePorFecha(setMod._id,startDate).then(data => {
+
+    if(data !=[]){
     setDesayuno(data.comidas.desayuno);
     setAlmuerzo(data.comidas.almuerzo);
     setComida(data.comidas.comida);
     setMerienda(data.comidas.merienda);
-    setCena(data.comidas.cena);  
+    setCena(data.comidas.cena);
+    }else{
+
+    setDesayuno([]);
+    setAlmuerzo([]);
+    setComida([]);
+    setMerienda([]);
+    setCena([]);
+
+    }
+     
+
 }).catch(err => console.log(err));},[startDate])
 
 
-  const onChangeData = (e)=>{
-    e.preventDefault();
-    setDNI(e.target.value);
-  }
 
 
 
