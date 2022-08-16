@@ -100,8 +100,6 @@ export default function ModalRegistroComida ({setMod}) {
 
 
 
-
-
   const form = useRef(null);
 
 

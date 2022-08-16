@@ -41,7 +41,7 @@ export default function CardGraficaPeso() {
             label: "Peso ideal mín (kg)",
             backgroundColor: "rgba(0,0,0,0.2)",
             borderColor: "#239B56",
-            data: [85, 85, 85, 85, 85, 85, 82],
+            data: [85, 85, 85, 85, 85, 85, 85],
             fill: 1,
           },
           {

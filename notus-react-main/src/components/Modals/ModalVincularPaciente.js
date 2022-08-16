@@ -4,7 +4,11 @@ import "reactjs-popup/dist/index.css"
 import "./css/Modal.css"
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
+import CheckButton from "react-validation/build/button";
 import AdminService from "services/admin.service";
+import { isValid } from "better-dni";
+
+
 
 
 export default function ModalVincularPaciente ({setMod}) {
@@ -12,14 +16,38 @@ export default function ModalVincularPaciente ({setMod}) {
   const [dni, setDNI] = useState('');
   const [message, setMessage] = useState('');
   const [successful, setSuccessful] = useState(false);
+  const form = useRef(null);
+  const checkBtn = useRef(null);
 
   const onChangeDNI = (e)=>{
     e.preventDefault();
     setDNI(e.target.value);
   }
 
+  const required = value => {
+    if (!value) {
+      return (
+        <p class="text-red-500 text-xs italic" role="alert">
+          *Este campo es obligatorio
+        </p>
+      );
+    }
+  };
+
+  const Verifydni = value => {
+    if (!isValid(value)) {
+      return (
+        <div class="text-red-500 text-xs italic" role="alert">
+          *DNI invalido.
+        </div>
+      );
+    }
+  };
+
   const onSubmit = (e) => {
     e.preventDefault();
+    form.current.validateAll();
+    if (checkBtn.current.context._errors.length === 0) {
     AdminService.vincularUsuarioConMod(
       dni,
       setMod._id).then(
@@ -35,14 +63,16 @@ export default function ModalVincularPaciente ({setMod}) {
             error.message ||
             error.toString();
 
+            setSuccessful(false);
           setMessage(resMessage);
-          setSuccessful(false);
+          
         }
       );
+    }
   }
 
 
-  const form = useRef(null);
+  
 
 
 return (
@@ -65,7 +95,9 @@ return (
         </div>
         <div className="content">
         <Form
-        ref={form}
+        ref={c => {
+          form.current = c;
+        }}
         onSubmit={onSubmit}>
         <div class="mb-12 m-2 pt-6">
           
@@ -74,8 +106,10 @@ return (
               type="text"
               name="dni"
               min="0"
-              required
+              value={dni}
               onChange={onChangeDNI}
+              required
+              validations={[Verifydni]}
               placeholder="DNI"
               class="shadow appearance-none  rounded w-full py-2 px-6 textblueGray-900 focus:outline-none focus:shadow-outline"/> 
 
@@ -94,8 +128,8 @@ return (
               </div>
             )}  
         </div>
-       
 
+      
 
         <div class="flex justify-center mt-4 pl-4">             
               <button
@@ -112,6 +146,13 @@ return (
                 class="bg-emerald-500 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
                 <span>Insertar</span>
               </button>
+
+              <CheckButton
+              style={{ display: "none" }}
+              ref={c => {
+                checkBtn.current = c;
+              }}
+            />
             </div>
         </Form>
         </div>
