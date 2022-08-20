@@ -2,6 +2,7 @@ import React,{useEffect,useState} from "react";
 import AuthService from "services/auth.service";
 import UserService from "services/user.service";
 import ProgressBar from "@ramonak/react-progress-bar";
+import ModalCambioDeAvatar from "components/Modals/ModalCambioDeAvatar";
 
 // components
 
@@ -9,7 +10,12 @@ export default function  CardInfoPerfil () {
     
     const [info, setInfo] = useState(false);
     const [badgeLength, setBadgeLength] = useState(0);
+    const [open, setOpen] = useState(false);
     const userID = AuthService.getCurrentUser().id;
+
+    const handleAvatarClicked= row => {
+        setOpen(true);
+      };
 
     useEffect(()=>{UserService.getInfoGamificacionPorId(userID).then(data => {
         setInfo(data);
@@ -18,14 +24,18 @@ export default function  CardInfoPerfil () {
 
     return (
         <>
+        <ModalCambioDeAvatar setOpen={setOpen} open={open}/>
          < div className = "relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16" > <div className="px-6">
             <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4 flex justify-center">
                     <div className="relative">
+                        <button
+                        onClick={() => handleAvatarClicked()}>
                         <img
-                            alt="..."
+                            alt="..."   
                             src={require("assets/img/team-1-800x800.jpg").default}
-                            className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"/>
+                            className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px cursor:pointer"/>
+                            </button>
                     </div>
                 </div>
                 <div className="w-full px-4 text-center mt-20">

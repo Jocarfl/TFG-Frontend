@@ -39,12 +39,28 @@ const sumarPuntuacionAUsuarioPorElemento = (id,_elemento) => {
     });
 };
 
+const getClasificacionPorPuntos = () => {   
+  return api.get("/api/user/getClasificacionPorPuntos").then((response) => {
+      return response.data;
+    });
+};
+
+const getActividadesRecientes = () => {   
+  return api.get("/api/user/getActividadesRecientes").then((response) => {
+      return response.data;
+    });
+};
+
+
+
 const UserService = {
   getRecomendacionesPaciente,
   marcarRecomendacionComoCompletada,
   getInfoGamificacionPorId,
   getUltimosPesosUsuario,
   getRetosDiariosSegunNivel,
-  sumarPuntuacionAUsuarioPorElemento
+  sumarPuntuacionAUsuarioPorElemento,
+  getClasificacionPorPuntos,
+  getActividadesRecientes
 };
 export default UserService;

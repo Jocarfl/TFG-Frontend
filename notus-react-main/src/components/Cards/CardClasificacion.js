@@ -1,8 +1,19 @@
-import React from "react";
+import React , {useState,useEffect} from "react";
+import UserService from "services/user.service";
 
 // components
 
 export default function CardSocialTraffic() {
+
+  const [clasificacion, setClasificación] = useState([]);
+
+
+  useEffect(()=>{
+   UserService.getClasificacionPorPuntos().then(data => {
+    setClasificación(data);
+}).catch(err => console.log(err));},[clasificacion])
+
+
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
@@ -32,51 +43,21 @@ export default function CardSocialTraffic() {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              {clasificacion.reverse().map((item)=> (
+                <tr key={item._id}>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-left">
-                  1
+                  {item.clasi}
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
                   Josep Carreres
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                 240
+                 {Math.round(item.weekly_score)}
                 </td>
               </tr>
-              <tr>
-                <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-left">
-                  2
-                </th>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                  Joan Ascó
-                </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                 220
-                </td>
-              </tr>
-              <tr>
-                <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-left">
-                  3
-                </th>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                  Raquel Estruch
-                </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                 200
-                </td>
-              </tr>
-              <tr>
-                <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-left">
-                  4
-                </th>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                  Patricia Garrido
-                </td>
-                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                 150
-                </td>
-              </tr>
-        
+
+              ))}
+         
             </tbody>
           </table>
         </div>

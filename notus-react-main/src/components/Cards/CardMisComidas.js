@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import FoodItem from "components/FoodListItem/FoodItem";
 import FoodService from "services/food.service";
+import UserService from "services/user.service";
 import AuthService from "services/auth.service";
 
 const getDatafromDesayuno = () => {
@@ -56,27 +57,10 @@ export default function CardSettings() {
     const [submited,setSubmited]= useState(false);
     const [disabled,setDisabled]= useState(false);
 
+    const id = AuthService.getCurrentUser().id;
+
     const [message, setMessage] = useState('');
     const [successful, setSuccessful] = useState(false);
-
-
-    function hasOneDayPassed(){
-        var date = new Date().toLocaleDateString();
-        if( localStorage.yourapp_date == date ) 
-            return false;
-        localStorage.yourapp_date = date;
-        return true;
-      }
-      
-    function runOncePerDay(){
-    
-        if( !hasOneDayPassed()){ 
-            console.log("deshabilitado")
-        
-        }
-         
-      }
-
 
     // delete book from LS
     const deleteBook = (id) => {
@@ -122,12 +106,11 @@ export default function CardSettings() {
             merienda : merienda,
             cena : cena
         }
-
-        console.log(comidas);
         FoodService.insertarComidaDiariaPorId(AuthService.getCurrentUser().id,comidas).then(
             response => {
               setMessage(response.data);
               setSuccessful(true);
+              UserService.sumarPuntuacionAUsuarioPorElemento(id,"nutricion");
             },
             error => {
               setMessage(error.response.data);
