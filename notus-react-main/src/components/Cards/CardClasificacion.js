@@ -43,13 +43,13 @@ export default function CardSocialTraffic() {
               </tr>
             </thead>
             <tbody>
-              {clasificacion.reverse().map((item)=> (
+              {clasificacion.map((item)=> (
                 <tr key={item._id}>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-left">
                   {item.clasi}
                 </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
-                  Josep Carreres
+                  {item.user}
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4">
                  {Math.round(item.weekly_score)}
