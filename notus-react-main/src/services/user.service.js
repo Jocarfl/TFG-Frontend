@@ -28,7 +28,7 @@ const getUltimosPesosUsuario = (userID) => {
 };
 
 const getRetosDiariosSegunNivel = (userID) => {   
-  return api.get("/api/user/getRetosDiariosSegunNivel",{params :{_id: userID}}).then((response) => {
+  return api.get("/api/user/getRetosDiariosDelUsuario",{params :{_id: userID}}).then((response) => {
       return response.data;
     });
 };
@@ -51,6 +51,13 @@ const getActividadesRecientes = () => {
     });
 };
 
+const marcarRetoComoCompletado = (id,itemID) => {   
+  return api.post("/api/user/marcarRetoComoCompletado",{_id: id, idReto: itemID}).then((response) => {
+      return response.data;
+    });
+};
+
+
 
 
 const UserService = {
@@ -61,6 +68,7 @@ const UserService = {
   getRetosDiariosSegunNivel,
   sumarPuntuacionAUsuarioPorElemento,
   getClasificacionPorPuntos,
-  getActividadesRecientes
+  getActividadesRecientes,
+  marcarRetoComoCompletado
 };
 export default UserService;

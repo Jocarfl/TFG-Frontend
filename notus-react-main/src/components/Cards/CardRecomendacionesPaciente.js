@@ -22,13 +22,14 @@ function setCompleted (itemID) {
   const id = AuthService.getCurrentUser().id;
 
   UserService.marcarRecomendacionComoCompletada(id,itemID);
+
+  
   if(completado!=true){
     UserService.sumarPuntuacionAUsuarioPorElemento(id,"recomendaciones");
   }
   
   setCompletado(statCompleted);
 }
-
 
   return (
     <>

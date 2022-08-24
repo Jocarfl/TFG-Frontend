@@ -17,8 +17,7 @@ export default function HeaderStats() {
 
    useEffect(()=>{ UserService.getRetosDiariosSegunNivel(userID).then(data => {
       setRetos(data);
-      console.log(data);
-  }).catch(err => console.log(err))},[]);
+  }).catch(err => console.log(err))},[retos]);
 
     const styleObj = {
       fontSize: 14,
@@ -46,6 +45,8 @@ export default function HeaderStats() {
                   statSubtitle={"Reto Nivel: "+item.level}
                   statTitle={item.title}
                   statDescripiron={item.description}
+                  statId = {item._id}
+                  statCompleted = {item.completed}
                 /></div>
 
                 ))

@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import PropTypes from "prop-types";
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
@@ -7,17 +7,26 @@ export default function CardStats({
   statSubtitle,
   statTitle,
   statDescripiron,
-  statIconColor,
+  statId,
+  statCompleted
 }) {
+  
+  const [completado, setCompletado] = useState();
 
-  const [completado, setCompletado] = useState(false);
-  const [disabled, setDisabled] = useState(false);
   const id = AuthService.getCurrentUser().id;
   const _elemento = "retos";
-  function marcarRetoCompletado() {
-    setCompletado(true);
-    setDisabled(true);
-    UserService.sumarPuntuacionAUsuarioPorElemento(id,_elemento);
+
+  useEffect(()=>{setCompletado(statCompleted);},)
+
+  function marcarRetoCompletado(itemID) {
+    console.log(itemID);
+    UserService.marcarRetoComoCompletado(id,itemID);
+    if(completado!=true){
+      UserService.sumarPuntuacionAUsuarioPorElemento(id,_elemento);
+    }
+
+    setCompletado(statCompleted);
+    
   }
 
   return (
@@ -40,7 +49,7 @@ export default function CardStats({
                 }
               >
              
-             <button disabled={disabled} type="submit" onClick={() => marcarRetoCompletado()} >
+             <button type="submit" onClick={() => marcarRetoCompletado(statId)} >
                 <div  className={"text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 " + (completado !== true ? "bg-emerald-200 " : "bg-emerald-500 ") + " uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg"} >      
                 <i className="fas fa-check"></i>
                 </div>
