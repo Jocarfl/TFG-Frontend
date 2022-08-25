@@ -7,6 +7,15 @@ import iconoTercero from'iconos/icono_tercero.png';
 
 // components
 
+const getAvatar=()=>{
+    const avatar = localStorage.getItem('avatar');
+    if(avatar){
+      return avatar;
+    }else{
+        return require("assets/img/default800x800.png").default;
+    }
+  }
+
 export default function  CardInfoPerfil () {
     
     const [info, setInfo] = useState(false);
@@ -14,9 +23,19 @@ export default function  CardInfoPerfil () {
     const [open, setOpen] = useState(false);
     const userID = AuthService.getCurrentUser().id;
 
+    const [imageSrc, setImageSrc] = useState(require("assets/img/default800x800.png").default);
+
     const handleAvatarClicked= row => {
         setOpen(true);
       };
+
+      const getData = (imageSrc) => {
+        setImageSrc(imageSrc);
+      };
+
+    useEffect(()=>{
+        setImageSrc(getAvatar())
+    },)
 
     useEffect(()=>{UserService.getInfoGamificacionPorId(userID).then(data => {
         setInfo(data);
@@ -25,7 +44,7 @@ export default function  CardInfoPerfil () {
 
     return (
         <>
-        <ModalCambioDeAvatar setOpen={setOpen} open={open}/>
+        <ModalCambioDeAvatar setOpen={setOpen} open={open} getData={getData}/>
          < div className = "relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16" > <div className="px-6">
             <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4 flex justify-center">
@@ -33,9 +52,10 @@ export default function  CardInfoPerfil () {
                         <button
                         onClick={() => handleAvatarClicked()}>
                         <img
-                            alt="..."   
-                            src={require("assets/img/team-1-800x800.jpg").default}
+                            alt="Hola"   
+                            src={imageSrc}
                             className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px cursor:pointer"/>
+                            
                             </button>
                     </div>
                 </div>
