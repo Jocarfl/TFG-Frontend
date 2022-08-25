@@ -3,8 +3,6 @@ import DataTable from "react-data-table-component"
 import ModalControlComida from "components/Modals/ModalControlComida";
 
 
-
-
 const columns = [
   	{
   		name: 'PORCIÓN(100G)',
@@ -74,7 +72,6 @@ const columns = [
 
   const FilterComponent = ({ filterText, onFilter}) => (
     	<>
-
 <div class="relative flex w-full flex-wrap items-stretch mb-4">
 <input
             id="search"

@@ -2,6 +2,8 @@ import React,{useState,useEffect} from "react";
 import PropTypes from "prop-types";
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function CardStats({
   statDate,
@@ -17,15 +19,17 @@ const [completado, setCompletado] = useState();
 useEffect(()=>{setCompletado(statCompleted);},)
 
 
-
 function setCompleted (itemID) {
   const id = AuthService.getCurrentUser().id;
-
-  UserService.marcarRecomendacionComoCompletada(id,itemID);
-
   
+  UserService.marcarRecomendacionComoCompletada(id,itemID);
   if(completado!=true){
     UserService.sumarPuntuacionAUsuarioPorElemento(id,"recomendaciones");
+    toast.success("Has ganado 10 puntos!",{
+      toastId: itemID,
+      icon: ({theme, type}) =>  <img src={require("iconos/puntuacion.png").default}/> 
+    });
+  
   }
   
   setCompletado(statCompleted);
@@ -33,6 +37,7 @@ function setCompleted (itemID) {
 
   return (
     <>
+    <ToastContainer limit={1} />
       <div className="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 mt-6 xl:mb-0 shadow-lg">
         <div className="flex-auto p-8">
           <div className="flex flex-wrap">

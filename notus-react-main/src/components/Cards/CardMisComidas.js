@@ -3,6 +3,8 @@ import FoodItem from "components/FoodListItem/FoodItem";
 import FoodService from "services/food.service";
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const getDatafromDesayuno = () => {
     const data = localStorage.getItem('desayuno');
@@ -96,6 +98,46 @@ export default function CardSettings() {
       localStorage.setItem('cena',JSON.stringify(cena));
     },[cena])
 
+    const generoUsuario = AuthService.getCurrentUser().gender;
+
+    
+    function ajustarKcalSegunGenero() {
+        if(generoUsuario=="masculino"){
+          
+          return {min: 2000,max:2500}
+        }
+    
+        if(generoUsuario=="femenino"){
+          
+          return {min: 1600,max:2000}
+        }
+      }
+
+    const [ideal,setIdeal]= useState(ajustarKcalSegunGenero());
+
+    const getTodasCalorias = () => { 
+        let KcaloriaT = 0; 
+        desayuno.forEach((comida)=>{
+          KcaloriaT += Math.abs(comida.energiaT);
+        });
+        almuerzo.forEach((comida)=>{
+          KcaloriaT += Math.abs(comida.energiaT);
+        });
+        comida.forEach((comida)=>{
+          KcaloriaT += Math.abs(comida.energiaT);
+        });
+        merienda.forEach((comida)=>{
+          KcaloriaT += Math.abs(comida.energiaT);
+        });
+        cena.forEach((comida)=>{
+          KcaloriaT += Math.abs(comida.energiaT);
+        });
+    
+        return Math.trunc(KcaloriaT*0.238846);
+    }
+
+    const kcalTotales = getTodasCalorias()
+
     const handleInsertDiaryFood = (e) => {
         e.preventDefault();
 
@@ -106,22 +148,36 @@ export default function CardSettings() {
             merienda : merienda,
             cena : cena
         }
+        if(window.confirm("Ya has registrado todas tus comidas? Solo se podrá registrar una vez por día.") == true){
         FoodService.insertarComidaDiariaPorId(AuthService.getCurrentUser().id,comidas).then(
             response => {
               setMessage(response.data);
               setSuccessful(true);
               UserService.sumarPuntuacionAUsuarioPorElemento(id,"nutricion");
+                
+              if(kcalTotales> ideal.min && kcalTotales<ideal.max){
+              toast.success("Has ganado 25 puntos!",{
+                icon: ({theme, type}) =>  <img src={require("iconos/puntuacion.png").default}/> 
+              });
+                }
+                if(kcalTotales< ideal.min || kcalTotales>ideal.max){
+                    toast.error("No has cumplido con tu rango ideal...",{
+                        icon: ({theme, type}) =>  <img src={require("iconos/triste.png").default}/> 
+                      });
+                }
             },
             error => {
               setMessage(error.response.data);
               setSuccessful(false);
             }
-          )
+          )}
         
       }
 
     return (
-        <> < div className = "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0" > <div className="rounded-t bg-white mb-0 px-6 py-6">
+        <>
+        <ToastContainer /> 
+        < div className = "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0" > <div className="rounded-t bg-white mb-0 px-6 py-6">
             <div className="text-center flex justify-between">
                 <h6 className="text-blueGray-700 text-xl font-bold">Mis comidas
                 </h6>
@@ -191,7 +247,7 @@ export default function CardSettings() {
                 <div class="mt-6 flex items-center justify-between">
                     <button disabled={disabled}
                     onClick={handleInsertDiaryFood}
-                        class="bg-lightBlue-600 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
+                        class="bg-emerald-500 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
                         <span>Enviar</span>
                     </button>
                     {message && (

@@ -5,6 +5,7 @@ import AuthService from "services/auth.service";
 import {motion}  from 'framer-motion/dist/framer-motion'
 import { ResponsiveFontSize } from 'react-responsive-font-size'
 
+
 const transition = {
   type: "spring",
   damping: 5,
@@ -18,7 +19,8 @@ export default function Recomendaciones() {
 
   function getDate(date){
     const sDate = new Date(date);
-    return sDate.getDate() + "/" + sDate.getMonth() +"/" + sDate.getFullYear();
+    const month = sDate.getMonth()+2;
+    return sDate.getDate() + "/" + month +"/" + sDate.getFullYear();
   }
 
   useEffect(()=>{UserService.getRecomendacionesPaciente(id).then(data => {
@@ -30,11 +32,11 @@ export default function Recomendaciones() {
     <div className="w-full px-12" >
     <ul>
       {recomendaciones.map((item)=>(
-        <motion.li
+        /*<motion.li
         key={item._id}
         layout
         transition={transition}
-        >
+        > Fallos en los toasts*/
         <CardRecomendacionesPaciente
         statDate={getDate(item.date)}
         statTitle={item.title}
@@ -42,7 +44,7 @@ export default function Recomendaciones() {
         statCompleted = {item.completed}
         statId = {item._id}
         /> 
-      </motion.li>
+      /*</motion.li>*/
       ))}
 </ul>
 

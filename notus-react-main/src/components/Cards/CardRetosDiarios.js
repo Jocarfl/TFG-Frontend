@@ -2,6 +2,9 @@ import React,{useState,useEffect} from "react";
 import PropTypes from "prop-types";
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function CardStats({
   statSubtitle,
@@ -10,6 +13,7 @@ export default function CardStats({
   statId,
   statCompleted
 }) {
+
   
   const [completado, setCompletado] = useState();
 
@@ -19,10 +23,13 @@ export default function CardStats({
   useEffect(()=>{setCompletado(statCompleted);},)
 
   function marcarRetoCompletado(itemID) {
-    console.log(itemID);
+    
     UserService.marcarRetoComoCompletado(id,itemID);
     if(completado!=true){
       UserService.sumarPuntuacionAUsuarioPorElemento(id,_elemento);
+      toast.success("Has ganado 5 puntos!",{
+        icon: ({theme, type}) =>  <img src={require("iconos/puntuacion.png").default}/> 
+      });
     }
 
     setCompletado(statCompleted);
@@ -31,6 +38,7 @@ export default function CardStats({
 
   return (
     <>
+    <ToastContainer />
       <div className="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
         <div className="flex-auto p-4">
           <div className="flex flex-wrap">

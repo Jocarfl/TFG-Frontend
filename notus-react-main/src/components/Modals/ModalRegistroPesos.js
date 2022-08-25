@@ -9,7 +9,8 @@ import Form from "react-validation/build/form";
 
 function getDate(date){
   const sDate = new Date(date);
-  return sDate.getDate() + "/" + sDate.getMonth() +"/" + sDate.getFullYear();
+  const month = sDate.getMonth()+2;
+  return sDate.getDate() + "/" + month +"/" + sDate.getFullYear();
 }
 
 const columns = [

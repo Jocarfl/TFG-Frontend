@@ -50,10 +50,22 @@ const getDatafromCena = () => {
 
 const CardInfoComida = () => {
 
-  const [ideal,setIdeal]= useState({
-    min : 2000,
-    max : 2500
-  });
+  const generoUsuario = AuthService.getCurrentUser().gender;
+
+  function ajustarKcalSegunGenero() {
+    if(generoUsuario=="masculino"){
+      
+      return {min: 2000,max:2500}
+    }
+
+    if(generoUsuario=="femenino"){
+      
+      return {min: 1600,max:2000}
+    }
+  }
+
+  const [ideal,setIdeal]= useState(ajustarKcalSegunGenero());
+
   const [desayuno, setDesayuno] = useState(getDatafromDesayuno());
   const [almuerzo, setAlmuerzo] = useState(getDatafromAlmuerzo());
   const [comida, setComida] = useState(getDatafromComida());
