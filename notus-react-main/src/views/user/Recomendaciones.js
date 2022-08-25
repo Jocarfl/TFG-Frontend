@@ -27,8 +27,6 @@ export default function Recomendaciones() {
 
   return (
     <>
-
-
     <div className="w-full px-12" >
     <ul>
       {recomendaciones.map((item)=>(

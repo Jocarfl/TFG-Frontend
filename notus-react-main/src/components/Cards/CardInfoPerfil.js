@@ -3,6 +3,7 @@ import AuthService from "services/auth.service";
 import UserService from "services/user.service";
 import ProgressBar from "@ramonak/react-progress-bar";
 import ModalCambioDeAvatar from "components/Modals/ModalCambioDeAvatar";
+import iconoTercero from'iconos/icono_tercero.png';
 
 // components
 
@@ -39,35 +40,13 @@ export default function  CardInfoPerfil () {
                     </div>
                 </div>
                 <div className="w-full px-4 text-center mt-20">
-                    <div className="flex justify-center py4 lg:pt-4 pt-8">
-                        <div className="mr-4 p-3 text-center">
-                            <span
-                                className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                                {info.level}
-                            </span>
-                            <span className="text-xl text-blueGray-400">Nivel</span>
-                        </div>
-                        <div className="mr-4 p-3 text-center">
-                            <span
-                                className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                                {badgeLength}
-                            </span>
-                            <span className="text-xl text-blueGray-400">Insignias</span>
-                        </div>
-                        <div className="mr-4 p-3 text-center">
-                            <span
-                                className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                                0
-                            </span>
-                            <span className="text-xl text-blueGray-400">Top 1</span>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
-            <div className="text-center mt-1">
+            <div className="text-center mt-6">
                 <h3
-                    className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                    
+                    className="text-xl font-semibold leading-normal mb-2 ml-3 text-blueGray-600 mb-2">
+                      {"NIVEL:     "+info.level}
                 </h3>
                 <div className="relative pt-1">
                 <div className="text-center mt-1 mb-2 pb-2">
@@ -87,10 +66,18 @@ export default function  CardInfoPerfil () {
                     className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                     {info.weekly_score + " puntos semanales"}
                 </div>
-                <div className="mb-12 text-blueGray-600 mt-10">
-                    <i className="fas fa-trophy mr-2 text-xl text-blueGray-400"></i>
-                    <i className="fas fa-star mr-2 text-xl text-blueGray-400"></i>
-                    <i className="fas fa-trophy-star mr-2 text-xl text-blueGray-400"></i>
+                <div className="mb-12 text-blueGray-600 mt-8">
+                <div className="flex justify-center py4 lg: pt-4">
+                        <div className="mr-4 p-3 text-center">
+                        <img  src={require("iconos/icono_primero.png").default} /> x0
+                        </div>
+                        <div className="mr-4 p-3 text-center">
+                        <img  src={require("iconos/icono_segundo.png").default} />x0
+                        </div>
+                        <div className="mr-4 p-3 text-center">
+                        <img  src={require("iconos/icono_tercero.png").default} />x0
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
