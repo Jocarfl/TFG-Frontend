@@ -8,6 +8,8 @@ export default function CardGraficaPeso() {
 
   const userID = AuthService.getCurrentUser().id;
   const [pesos, setPesos] = useState([]);
+  const [pesoIdealMax, setPesoIdealMax] = useState(0);
+  const [pesoIdealMin, setPesoIdealMin] = useState(0);
   const [date,setDate] = useState([]);
 
   function getOnlyWeight(item) {
@@ -20,10 +22,15 @@ export default function CardGraficaPeso() {
   }
 
   useEffect(()=>{UserService.getUltimosPesosUsuario(userID).then(data => {
-    setPesos(data);
+    setPesos(data.listaPesos);
 }).catch(err => console.log(err));},[]);
 
+useEffect(()=>{UserService.getUltimosPesosUsuario(userID).then(data => {
+  setPesoIdealMax(Math.round(data.rangoPesoIdeal.max));
+  setPesoIdealMin(Math.round(data.rangoPesoIdeal.min));
+}).catch(err => console.log(err));});
 
+console.log(pesoIdealMin)
   useEffect(() => {
     var config = {
       type: "line",
@@ -34,14 +41,14 @@ export default function CardGraficaPeso() {
             label: "Peso ideal máx (kg)",
             backgroundColor: "rgba(0,0,0,0.2)",
             borderColor: "#239B56",
-            data: [80, 80, 80, 80, 80, 80, 80],
+            data: [pesoIdealMax,pesoIdealMax,pesoIdealMax,pesoIdealMax,pesoIdealMax,pesoIdealMax,pesoIdealMax],
             fill: 1,
           },
           {
             label: "Peso ideal mín (kg)",
             backgroundColor: "rgba(0,0,0,0.2)",
             borderColor: "#239B56",
-            data: [85, 85, 85, 85, 85, 85, 85],
+            data: [pesoIdealMin,pesoIdealMin,pesoIdealMin,pesoIdealMin,pesoIdealMin,pesoIdealMin,pesoIdealMin],
             fill: 1,
           },
           {

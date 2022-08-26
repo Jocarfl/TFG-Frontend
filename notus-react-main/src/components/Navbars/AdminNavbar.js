@@ -7,12 +7,8 @@ export default function Navbar() {
 
   const [info, setInfo] = useState(false);
   const [badgeLength, setBadgeLength] = useState(0);
-  const userID = AuthService.getCurrentUser().id;
+  const user = AuthService.getCurrentUser();
 
-  useEffect(()=>{UserService.getInfoGamificacionPorId(userID).then(data => {
-      setInfo(data);
-      setBadgeLength(data.badges.length);
-  }).catch(err => console.log(err));},)
 
   return (
     <>
@@ -25,7 +21,7 @@ export default function Navbar() {
             href=""
             onClick={(e) => e.preventDefault()}
           >
-            Josep Carreres
+            {user.user_name}
           </a>
 
 
