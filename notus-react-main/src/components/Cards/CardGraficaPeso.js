@@ -30,7 +30,6 @@ useEffect(()=>{UserService.getUltimosPesosUsuario(userID).then(data => {
   setPesoIdealMin(Math.round(data.rangoPesoIdeal.min));
 }).catch(err => console.log(err));});
 
-console.log(pesoIdealMin)
   useEffect(() => {
     var config = {
       type: "line",

@@ -45,6 +45,12 @@ const getClasificacionPorPuntos = () => {
     });
 };
 
+const getAllFood = () => {   
+  return api.get("/api/user/getAllFood").then((response) => {
+      return response.data;
+    });
+};
+
 const getActividadesRecientes = () => {   
   return api.get("/api/user/getActividadesRecientes").then((response) => {
       return response.data;
@@ -69,6 +75,7 @@ const UserService = {
   sumarPuntuacionAUsuarioPorElemento,
   getClasificacionPorPuntos,
   getActividadesRecientes,
-  marcarRetoComoCompletado
+  marcarRetoComoCompletado,
+  getAllFood
 };
 export default UserService;

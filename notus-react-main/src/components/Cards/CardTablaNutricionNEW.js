@@ -1,5 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import DataTable from "react-data-table-component"
+import UserService from 'services/user.service';
 import ModalControlComida from "components/Modals/ModalControlComida";
 
 
@@ -92,12 +93,19 @@ const columns = [
     );
 
 
-export default function CardTable({ color,data }) {
-  
+export default function CardTable({ color, data }) {
 
-  const [filterText, setFilterText] = React.useState('');
-	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
-	const filteredItems = data.filter(
+	
+  
+    const [filterText, setFilterText] = useState('');
+	const [resetPaginationToggle, setResetPaginationToggle] = useState(false);
+	const [comidaBD, setComidaBD] = useState([]);
+
+	useEffect(()=>{UserService.getAllFood().then(data => {
+		setComidaBD(data)
+	}).catch(err => console.log(err));},[])
+
+	const filteredItems = comidaBD.filter(
 		item => item.nombre && item.nombre.toLowerCase().includes(filterText.toLowerCase()),
 	);
 

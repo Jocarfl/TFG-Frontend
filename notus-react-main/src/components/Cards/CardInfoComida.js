@@ -113,7 +113,7 @@ const getColorSegunKcalIdeal = () => {
 
   if(kcal<ideal.min){
 
-    return "#FFC300"
+    return "#FF5733"
   }
 
   if(kcal>ideal.min && kcal<ideal.max){

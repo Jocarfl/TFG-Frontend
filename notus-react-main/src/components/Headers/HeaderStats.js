@@ -72,7 +72,7 @@ export default function HeaderStats() {
             
               
           <div style={{ height: "100px" }}>
-      <ResponsiveFontSize className="text-blueGray-700 font-bold" ratio={0.4} optionsObject={{ setFontSize: true, globalVariableName: '--my-variable', lockFontSize: false }}>
+      <ResponsiveFontSize className="text-white font-bold" ratio={0.4} optionsObject={{ setFontSize: true, globalVariableName: '--my-variable', lockFontSize: false }}>
         RECOMENDACIONES <i className="fas fa-book-medical"></i>
       </ResponsiveFontSize>
     </div>

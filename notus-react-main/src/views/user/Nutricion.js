@@ -1,5 +1,5 @@
 import React from "react";
-import {Comida} from "BaseDatosComida/ComidaBD";
+
 import CardTablaNutricion from "components/Cards/CardTablaNutricionNEW";
 import CardMisComidas from "components/Cards/CardMisComidas";
 
@@ -13,7 +13,7 @@ export default function Tables() {
             <CardMisComidas></CardMisComidas>
           </div>
           <div className="w-full lg:w-8/12 px-4">
-            <CardTablaNutricion data={Comida}></CardTablaNutricion>           
+            <CardTablaNutricion ></CardTablaNutricion>           
           </div>
         </div>
         </div>

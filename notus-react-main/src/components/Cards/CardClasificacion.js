@@ -44,7 +44,7 @@ export default function CardSocialTraffic() {
             </thead>
             <tbody>
               {clasificacion.map((item)=> (
-                <tr key={item._id}>
+                <tr key={item.user}>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-left">
                   {item.clasi}
                 </th>
