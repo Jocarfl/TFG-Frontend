@@ -8,8 +8,8 @@ export default function CardGraficaPeso() {
 
   const userID = AuthService.getCurrentUser().id;
   const [pesos, setPesos] = useState([]);
-  const [pesoIdealMax, setPesoIdealMax] = useState(0);
-  const [pesoIdealMin, setPesoIdealMin] = useState(0);
+  const [pesoIdealMax, setPesoIdealMax] = useState(AuthService.getCurrentUser().ideal_weight.max);
+  const [pesoIdealMin, setPesoIdealMin] = useState(AuthService.getCurrentUser().ideal_weight.min);
   const [date,setDate] = useState([]);
 
   function getOnlyWeight(item) {
@@ -24,11 +24,6 @@ export default function CardGraficaPeso() {
   useEffect(()=>{UserService.getUltimosPesosUsuario(userID).then(data => {
     setPesos(data.listaPesos);
 }).catch(err => console.log(err));},[]);
-
-useEffect(()=>{UserService.getUltimosPesosUsuario(userID).then(data => {
-  setPesoIdealMax(Math.round(data.rangoPesoIdeal.max));
-  setPesoIdealMin(Math.round(data.rangoPesoIdeal.min));
-}).catch(err => console.log(err));});
 
   useEffect(() => {
     var config = {
