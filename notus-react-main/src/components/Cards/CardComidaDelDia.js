@@ -1,9 +1,8 @@
 import React from "react";
-import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
 // components
 
-export default function CardSocialTraffic({ color,data }) {
+export default function CardComidaDelDia({ color }) {
   return (
     <>
       <div
@@ -58,7 +57,7 @@ export default function CardSocialTraffic({ color,data }) {
                  KJ
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-right">
-                  <TableDropdown></TableDropdown>
+                  
                 </td>
               </tr>
 
@@ -89,7 +88,7 @@ export default function CardSocialTraffic({ color,data }) {
                  KJ
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-right">
-                  <TableDropdown></TableDropdown>
+                  
                 </td>
               </tr>
 
@@ -119,7 +118,7 @@ export default function CardSocialTraffic({ color,data }) {
                  KJ
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-right">
-                  <TableDropdown></TableDropdown>
+                  
                 </td>
               </tr>
 
@@ -149,7 +148,7 @@ export default function CardSocialTraffic({ color,data }) {
                  KJ
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-right">
-                  <TableDropdown></TableDropdown>
+                
                 </td>
               </tr>
 
@@ -181,7 +180,7 @@ export default function CardSocialTraffic({ color,data }) {
 </span>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-x whitespace-nowrap p-4 text-right">
-                  <TableDropdown></TableDropdown>
+                  
                 </td>
               </tr>
               

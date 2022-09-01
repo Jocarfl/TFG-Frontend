@@ -1,13 +1,11 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Redirect } from "react-router-dom";
 import PrivateRoute from "context/privateRoute";
 import AuthService from "services/auth.service";
 import AdminSidebar from "components/Sidebar/AdminSidebar.js"
 // components
 
 
-
-import Navbar from "components/Navbars/AuthNavbar.js";
 import FooterAdmin from "components/Footers/FooterAdmin.js";
 
 // views

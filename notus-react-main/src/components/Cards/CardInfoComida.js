@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import AuthService from "services/auth.service";
-import { createPopper } from "@popperjs/core"
 import ProgressBar from "@ramonak/react-progress-bar";
 
 
@@ -72,19 +71,6 @@ const CardInfoComida = () => {
   const [merienda, setMerienda] = useState(getDatafromMerienda());
   const [cena, setCena] = useState(getDatafromCena());
     
-  const [popoverShow, setPopoverShow] = React.useState(false);
-  const btnRef = React.createRef();
-  const popoverRef = React.createRef();
-
-  const openTooltip = () => {
-    createPopper(btnRef.current, popoverRef.current, {
-      placement: "top"
-    });
-    setPopoverShow(true);
-  };
-  const closeTooltip = () => {
-    setPopoverShow(false);
-  };
 
   const getTodasCalorias = () => { 
     let KcaloriaT = 0; 

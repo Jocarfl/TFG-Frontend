@@ -2,6 +2,9 @@ import React, {useEffect, useState} from "react";
 import CardRecomendacionesPaciente from "components/Cards/CardRecomendacionesPaciente"
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
+/*
+ANIMACIÓN CANCELADA POR LAS NOTIFICACIONES
+
 import {motion}  from 'framer-motion/dist/framer-motion'
 import { ResponsiveFontSize } from 'react-responsive-font-size'
 
@@ -11,6 +14,8 @@ const transition = {
   damping: 5,
   stiffness: 5
 };
+*/
+
 
 export default function Recomendaciones() {
 

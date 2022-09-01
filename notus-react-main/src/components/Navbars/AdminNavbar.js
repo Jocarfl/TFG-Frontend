@@ -1,12 +1,8 @@
-import React,{useEffect,useState} from "react";
+import React from "react";
 import AuthService from "services/auth.service";
-import UserService from "services/user.service";
-import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function Navbar() {
 
-  const [info, setInfo] = useState(false);
-  const [badgeLength, setBadgeLength] = useState(0);
   const user = AuthService.getCurrentUser();
 
 

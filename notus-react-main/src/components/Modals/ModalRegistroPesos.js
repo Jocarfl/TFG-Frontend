@@ -1,11 +1,9 @@
-import React, {useRef,useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css"
 import "./css/Modal.css"
 import ModService from "services/mod.service";
 import DataTable from "react-data-table-component"
-import Input from "react-validation/build/input";
-import Form from "react-validation/build/form";
 
 function getDate(date){
   const sDate = new Date(date);
@@ -72,9 +70,6 @@ export default function ModalRegistroPesos ({setMod}) {
     setState(true);
   }
 
-
-
-  const form = useRef(null);
 
 
 return (

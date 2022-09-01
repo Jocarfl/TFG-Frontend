@@ -1,5 +1,4 @@
-import React,{Component,useEffect,useState} from "react";
-import { useLocation } from 'react-router-dom';
+import React,{useEffect,useState} from "react";
 import { ResponsiveFontSize } from 'react-responsive-font-size'
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";

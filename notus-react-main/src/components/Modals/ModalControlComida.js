@@ -82,23 +82,23 @@ export default function ModalControlComida ({setFood}) {
     setFood.grasaT = cantidad/100*setFood.grasaT;
     setFood.cantidad = cantidad;
 
-    if(comidaDelDia.value == "desayuno"){
+    if(comidaDelDia.value === "desayuno"){
       setDesayuno([...desayuno,setFood]);
       window.location.reload();
     }
-    if(comidaDelDia.value == "almuerzo"){
+    if(comidaDelDia.value === "almuerzo"){
       setAlmuerzo([...almuerzo,setFood]);
       window.location.reload();
     }
-    if(comidaDelDia.value == "comida"){
+    if(comidaDelDia.value === "comida"){
       setComida([...comida,setFood]);
       window.location.reload();
     }
-    if(comidaDelDia.value == "merienda"){
+    if(comidaDelDia.value === "merienda"){
       setMerienda([...merienda,setFood]);
       window.location.reload();
     }
-    if(comidaDelDia.value == "cena"){
+    if(comidaDelDia.value === "cena"){
       setCena([...cena,setFood]);
       window.location.reload();
     }

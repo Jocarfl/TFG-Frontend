@@ -3,7 +3,6 @@ import AuthService from "services/auth.service";
 import UserService from "services/user.service";
 import ProgressBar from "@ramonak/react-progress-bar";
 import ModalCambioDeAvatar from "components/Modals/ModalCambioDeAvatar";
-import iconoTercero from'iconos/icono_tercero.png';
 
 // components
 

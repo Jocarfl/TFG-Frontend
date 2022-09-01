@@ -10,8 +10,6 @@ import ModalInfoPaciente from "components/Modals/ModalInfoPaciente";
 import ModalInsertarRecomendacion from "components/Modals/ModalInsertarRecomendacion";
 
 
-import Popup from 'reactjs-popup';
-
 
 
 const columns = [

@@ -1,4 +1,4 @@
-import React, {useRef,useEffect, useState } from "react";
+import React, {useRef, useState } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css"
 import "./css/Modal.css"
@@ -23,16 +23,6 @@ export default function ModalVincularPaciente ({setMod}) {
     e.preventDefault();
     setDNI(e.target.value);
   }
-
-  const required = value => {
-    if (!value) {
-      return (
-        <p class="text-red-500 text-xs italic" role="alert">
-          *Este campo es obligatorio
-        </p>
-      );
-    }
-  };
 
   const Verifydni = value => {
     if (!isValid(value)) {

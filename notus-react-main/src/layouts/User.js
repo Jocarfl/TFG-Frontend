@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Redirect, useLocation } from "react-router-dom";
-import EventBus from "common/EventBus";
-import UserService from "services/user.service";
+import { Switch, Redirect } from "react-router-dom";
 import AuthService from "services/auth.service";
 
 // components
@@ -9,7 +7,6 @@ import AuthService from "services/auth.service";
 import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import HeaderStats from "components/Headers/HeaderStats.js";
-import HeaderNutricion from "components/Headers/HeaderNutricion.js";
 import FooterAdmin from "components/Footers/FooterAdmin.js";
 
 // views
@@ -25,33 +22,13 @@ export default class User extends Component {
   constructor(props) {
     super(props);
     
-
-    this.state = {
-      dashboard_page:false,
-      nutricion_page:false,
-    };
   }
 
   componentDidMount() {
     
-
-    if(window.location.pathname.toString() == "/user/dashboard"){
-      this.setState({
-        dashboard_page :true,
-        nutricion_page:false,
-      })
-    }
-    if(window.location.pathname.toString() == "/user/nutricion"){
-      this.setState({
-        dashboard_page :false,
-        nutricion_page:true,
-      })
-    }
-    
   }
     
   render(){
-    const { dashboard_page, nutricion_page } = this.state;
 
   return (
     <>

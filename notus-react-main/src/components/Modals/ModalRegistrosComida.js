@@ -1,9 +1,7 @@
-import React, {useRef,useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css"
 import "./css/Modal.css"
-import Form from "react-validation/build/form";
-import Input from "react-validation/build/input";
 import ModService from "services/mod.service";
 import ReactDatePicker from "react-datepicker";
 import DataTable, { defaultThemes } from "react-data-table-component"
@@ -63,13 +61,7 @@ const customStyles = {
 
 export default function ModalRegistroComida ({setMod}) {
 
-  const [dni, setDNI] = useState('');
-  const [message, setMessage] = useState('');
-  const [successful, setSuccessful] = useState(false);
-
   const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
-
 
   const [desayuno, setDesayuno] = useState([]);
   const [almuerzo, setAlmuerzo] = useState([]);
@@ -79,7 +71,7 @@ export default function ModalRegistroComida ({setMod}) {
 
   useEffect(()=>{ModService.getRegistroComidaDePacientePorFecha(setMod._id,startDate).then(data => {
 
-    if(data !=[]){
+    if(data !==[]){
     setDesayuno(data.comidas.desayuno);
     setAlmuerzo(data.comidas.almuerzo);
     setComida(data.comidas.comida);
@@ -99,8 +91,6 @@ export default function ModalRegistroComida ({setMod}) {
 }).catch(err => console.log(err));},[startDate])
 
 
-
-  const form = useRef(null);
 
 
 return (

@@ -1,4 +1,4 @@
-import React, {useRef,useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 import DataTable from "react-data-table-component"
 import ModService from "services/mod.service";
@@ -20,7 +20,7 @@ const columns = [
   },
   {
     name: 'Completado',
-    selector : row => {if(row.completed==true){return <span className="text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg"><i className="fas fa-check"></i></span>}else{return <span className="text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 uppercase last:mr-0 mr-1 hover:bg-red-600 shadow-lg"><i className="fas fa-ban"></i></span>}},
+    selector : row => {if(row.completed===true){return <span className="text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg"><i className="fas fa-check"></i></span>}else{return <span className="text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 uppercase last:mr-0 mr-1 hover:bg-red-600 shadow-lg"><i className="fas fa-ban"></i></span>}},
     sortable: true,
 
   },
@@ -57,7 +57,6 @@ const customStyles = {
 export default function ModalInfoPaciente ({setOpen,open,datos}) {
 
   const [recomendaciones, setRecomendaciones] = useState([]);
-  const [state, setState] = useState(false);
   const [edad, setEdad] = useState("");
 
     function getAge(){

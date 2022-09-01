@@ -1,4 +1,4 @@
-import React, {useRef,useEffect, useState } from "react";
+import React, {useState } from "react";
 import Popup from "reactjs-popup";
 import Avatar from "react-avatar-edit";
 import "reactjs-popup/dist/index.css"

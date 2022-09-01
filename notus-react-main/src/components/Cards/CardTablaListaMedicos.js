@@ -112,19 +112,6 @@ export default function Tables() {
 		item => item.username && item.username.toLowerCase().includes(filterText.toLowerCase()),
 	);
 
-  const ExpandedComponent = ({ data }) => (
-    useEffect(()=>{AdminService.getPacientesVinculadosAlModerador(data._id).then(data => {
-      setListaPacientesMod(data)
-  }).catch(err => console.log(err));},[]),
-
-
-  listaPacientesMod.map((item =>
-    <p>{item.username}</p>
-    ))
-
-  
-  );
-
   const HandleRowClicked = row => {
    AdminService.getPacientesVinculadosAlModerador(row._id).then(data => {
       setListaPacientesMod(data)

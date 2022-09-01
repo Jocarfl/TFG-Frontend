@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import FoodItem from "components/FoodListItem/FoodItem";
-import FoodService from "services/food.service";
 import UserService from "services/user.service";
 import AuthService from "services/auth.service";
 import { ToastContainer, toast } from 'react-toastify';
@@ -56,7 +55,6 @@ export default function CardSettings() {
     const [merienda, setMerienda] = useState(getDatafromMerienda());
     const [cena, setCena] = useState(getDatafromCena());
 
-    const [submited,setSubmited]= useState(false);
     const [disabled,setDisabled]= useState(false);
 
     const id = AuthService.getCurrentUser().id;
@@ -149,7 +147,7 @@ export default function CardSettings() {
             cena : cena
         }
         if(window.confirm("Ya has registrado todas tus comidas? Solo se podrá registrar una vez por día.") == true){
-        FoodService.insertarComidaDiariaPorId(AuthService.getCurrentUser().id,comidas).then(
+        UserService.insertarComidaDiariaPorId(AuthService.getCurrentUser().id,comidas).then(
             response => {
               setMessage(response.data);
               setSuccessful(true);

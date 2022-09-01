@@ -10,7 +10,6 @@ export default function CardGraficaPeso() {
   const [pesos, setPesos] = useState([]);
   const [pesoIdealMax, setPesoIdealMax] = useState(AuthService.getCurrentUser().ideal_weight.max);
   const [pesoIdealMin, setPesoIdealMin] = useState(AuthService.getCurrentUser().ideal_weight.min);
-  const [date,setDate] = useState([]);
 
   function getOnlyWeight(item) {
     return item.weight;
