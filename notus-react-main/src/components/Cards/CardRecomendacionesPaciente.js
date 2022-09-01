@@ -5,7 +5,7 @@ import AuthService from "services/auth.service";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function CardStats({
+export default function CardRecomendacionesPaciente({
   statDate,
   statTitle,
   statDescripiron,
@@ -76,7 +76,7 @@ function setCompleted (itemID) {
 }
 
 
-CardStats.propTypes = {
+CardRecomendacionesPaciente.propTypes = {
   statDate: PropTypes.string,
   statTitle: PropTypes.string,
   statDescripiron: PropTypes.string,

@@ -3,7 +3,7 @@ import UserService from "services/user.service";
 
 // components
 
-export default function CardSocialTraffic() {
+export default function CardClasificacion() {
 
   const [clasificacion, setClasificación] = useState([]);
 

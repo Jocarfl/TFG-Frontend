@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-export default function CardStats({
+export default function CardRetosDiarios({
   statSubtitle,
   statTitle,
   statDescripiron,
@@ -75,7 +75,7 @@ export default function CardStats({
 }
 
 
-CardStats.propTypes = {
+CardRetosDiarios.propTypes = {
   statSubtitle: PropTypes.string,
   statTitle: PropTypes.string,
   statDescripiron: PropTypes.string,

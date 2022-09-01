@@ -93,7 +93,7 @@ const columns = [
     );
 
 
-export default function CardTable({ color, data }) {
+export default function CardTablaNutricionNEW({ color, data }) {
 
 	
   

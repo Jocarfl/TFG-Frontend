@@ -48,7 +48,7 @@ const getDatafromCena = () => {
 }
 
 
-export default function CardSettings() {
+export default function CardMisComidas() {
     const [desayuno, setDesayuno] = useState(getDatafromDesayuno());
     const [almuerzo, setAlmuerzo] = useState(getDatafromAlmuerzo());
     const [comida, setComida] = useState(getDatafromComida());

@@ -94,7 +94,7 @@ const FilterComponent = ({ filterText, onFilter}) => (
 
   );
 
-export default function Tables() {
+export default function CardTablaListaMedicos() {
 
   const [filterText, setFilterText] = React.useState('');
 	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);

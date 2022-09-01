@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AuthService from "services/auth.service";
 
-export default function Sidebar() {
+export default function ModSidebar() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
 
   const logOut = () => {
