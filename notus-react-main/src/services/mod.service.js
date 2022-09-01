@@ -33,12 +33,19 @@ import authHeader from "./auth-header";
       });
   };
 
+  const getPacientesVinculadosAlModerador = (id_mod) => {
+    return api.get("/api/mod/getPacientesVinculadosAlModerador",{params :{_id: id_mod}, headers: authHeader()}).then((response) => {
+        return response.data;
+      });
+  };
+
   const ModService = {
     getRegistroComidaDePacientePorFecha,
     getHistorialPesoPaciente,
     insertarPesoPacienteEnHistorial,
     insertarRecomendacionPaciente,
     getRecomendacionesPaciente,
+    getPacientesVinculadosAlModerador
   };
 
   export default ModService;

@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component"
-import AdminService from "services/admin.service";
+import ModService from "services/mod.service";
 import AuthService from "services/auth.service";
 import ModalRegistrosComida from "components/Modals/ModalRegistrosComida"
 import ModalRegistroPesos from "components/Modals/ModalRegistroPesos"
@@ -136,7 +136,7 @@ export default function CardTablaListaPacientes() {
   const [datos, setDatos] = useState({});
  
 
-  useEffect(()=>{AdminService.getPacientesVinculadosAlModerador(AuthService.getCurrentUser().id).then(data => {
+  useEffect(()=>{ModService.getPacientesVinculadosAlModerador(AuthService.getCurrentUser().id).then(data => {
     setListaPacientesMod(data)
 }).catch(err => console.log(err));},[])
 
