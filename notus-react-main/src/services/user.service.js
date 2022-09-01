@@ -3,7 +3,7 @@ import api from "../api";
 
 
 const getRecomendacionesPaciente = (id) => {   
-  return api.get("/api/user/getRecomendacionesDelPaciente",{params :{_id: id}},{ headers: authHeader() }).then((response) => {
+  return api.get("/api/user/getRecomendacionesDelPaciente",{params :{_id: id},headers: authHeader()}).then((response) => {
       return response.data;
     });
 };
@@ -15,25 +15,25 @@ const marcarRecomendacionComoCompletada = (id,itemID) => {
 };
 
 const getInfoGamificacionPorId = (userID) => {   
-  return api.get("/api/user/getInfoGamificacionPorId",{params :{_id: userID}},{ headers: authHeader() }).then((response) => {
+  return api.get("/api/user/getInfoGamificacionPorId",{params :{_id: userID},headers: authHeader()}).then((response) => {
       return response.data;
     });
 };
 
 const getUltimosPesosUsuario = (userID) => {   
-  return api.get("/api/user/getUltimosPesosUsuario",{params :{_id: userID}},{ headers: authHeader() }).then((response) => {
+  return api.get("/api/user/getUltimosPesosUsuario",{params :{_id: userID},headers: authHeader()}).then((response) => {
       return response.data;
     });
 };
 
 const getRetosDiariosSegunNivel = (userID) => {   
-  return api.get("/api/user/getRetosDiariosDelUsuario",{params :{_id: userID}},{ headers: authHeader() }).then((response) => {
+  return api.get("/api/user/getRetosDiariosDelUsuario",{params :{_id: userID},headers: authHeader()}).then((response) => {
       return response.data;
     });
 };
 
 const sumarPuntuacionAUsuarioPorElemento = (id,_elemento) => {   
-  return api.post("/api/user/sumarPuntuacionAUsuarioPorElemento",{_id: id, elemento: _elemento},{ headers: authHeader() }).then((response) => {
+  return api.post("/api/user/sumarPuntuacionAUsuarioPorElemento",{_id: id, elemento: _elemento}).then((response) => {
       return response.data;
     });
 };

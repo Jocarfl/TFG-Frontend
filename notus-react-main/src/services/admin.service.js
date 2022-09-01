@@ -8,7 +8,7 @@ import authHeader from './auth-header';
   };
 
   const getPacientesVinculadosAlModerador = (id_mod) => {
-    return api.get("/api/admin/getPacientesVinculadosAlModerador",{params :{_id: id_mod}},{ headers: authHeader() }).then((response) => {
+    return api.get("/api/admin/getPacientesVinculadosAlModerador",{params :{_id: id_mod}, headers: authHeader()}).then((response) => {
         return response.data;
       });
   };

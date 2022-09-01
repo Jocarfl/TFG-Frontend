@@ -2,14 +2,14 @@ import api from "../api";
 import authHeader from "./auth-header";
 
   const getRegistroComidaDePacientePorFecha = (id,_date) => {
-    return api.get("/api/mod/getRegistroComidaDePacientePorFecha",{params :{_id: id, date:_date}},{ headers: authHeader() }).then((response) => {
+    return api.get("/api/mod/getRegistroComidaDePacientePorFecha",{params :{_id: id, date:_date},headers: authHeader()}).then((response) => {
         return response.data;
       });
   };
 
   const getHistorialPesoPaciente = (id) => {
     
-    return api.get("/api/mod/getHistorialPesoPaciente",{params :{_id: id}},{ headers: authHeader() }).then((response) => {
+    return api.get("/api/mod/getHistorialPesoPaciente",{params :{_id: id},headers: authHeader()}).then((response) => {
         return response.data;
       });
   };
@@ -28,7 +28,7 @@ import authHeader from "./auth-header";
 
   const getRecomendacionesPaciente = (id) => {
     
-    return api.get("/api/mod/getRecomendacionesDelPaciente",{params :{_id: id}},{ headers: authHeader() }).then((response) => {
+    return api.get("/api/mod/getRecomendacionesDelPaciente",{params :{_id: id}, headers: authHeader()}).then((response) => {
         return response.data;
       });
   };

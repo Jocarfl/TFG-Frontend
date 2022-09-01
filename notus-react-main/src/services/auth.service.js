@@ -1,4 +1,5 @@
 import api from "../api";
+import authHeader from './auth-header';
 
 const register = (username, email, password, first_name ,second_name, dni, born_date, roles, gender,height) => {
     return api.post("/api/auth/signup",{
@@ -12,7 +13,7 @@ const register = (username, email, password, first_name ,second_name, dni, born_
       roles,
       gender,
       height,
-    });
+    },{ headers: authHeader() });
   };
 
   const login = (username, password) => {
