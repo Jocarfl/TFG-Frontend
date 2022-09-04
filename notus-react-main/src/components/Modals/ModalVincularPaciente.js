@@ -69,7 +69,7 @@ return (
     <Popup
     trigger={<button className="button">
                 <span className="text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg">
-                    <i className="fas fa-plus"></i>
+                    <i name="botonVincular" className="fas fa-plus"></i>
                 </span>
             </button>}
             
