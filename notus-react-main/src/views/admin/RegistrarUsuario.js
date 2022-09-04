@@ -236,7 +236,7 @@ export default class Login extends Component {
       <div class ="relative flex flex-col min-w-0 break-words w-full mb-4 mt-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
         <div class="rounded-t bg-lightBlue-600 mb-0 px-6 py-6">
         <div className="text-center flex justify-between ">
-            <h6 className="text-blueGray-100 text-xl font-bold">Registrar Usuario</h6>
+            <h6 className="text-blueGray-100 text-xl font-bold" name="nombreRU">Registrar Usuario</h6>
             <button
               className="bg-red-500 text-white active:bg-red-100 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
               type="button"
@@ -299,7 +299,7 @@ export default class Login extends Component {
                   <Input
                 type="text"
                 class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                name="Nombre"
+                name="nombre"
                 placeholder="Nombre"
                 value={this.state.first_name}
                 onChange={this.onChangeFirstName}
@@ -314,7 +314,7 @@ export default class Login extends Component {
               <Input
                 type="text"
                 class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                name="password"
+                name="email"
                 placeholder="Email"
                 value={this.state.email}
                 onChange={this.onChangeEmail}
@@ -336,7 +336,7 @@ export default class Login extends Component {
                   <Input
                 type="text"
                 class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                name="password"
+                name="apellido"
                 placeholder="Apellido"
                 value={this.state.second_name}
                 onChange={this.onChangeSecondName}
@@ -368,10 +368,11 @@ export default class Login extends Component {
                   <label
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
+                    
                   >
                     GÉNERO
                   </label>
-                  <Select options={ optionsGenero } defaultValue={{ label: "Femenino", value: "femenino" }} value={this.state.gender} onChange={value =>this.onChangeGenero(value)}  /> 
+                  <Select name="genero" options={ optionsGenero } defaultValue={{ label: "Femenino", value: "femenino" }} value={this.state.gender} onChange={value =>this.onChangeGenero(value)}  /> 
                 </div>
               </div>
 
@@ -405,7 +406,7 @@ export default class Login extends Component {
                   >
                     ROL
                   </label>
-                  <Select options={ options } value={this.state.rol} onChange={this.onChangeRol} />
+                  <Select name ="rol" options={ options } value={this.state.rol} onChange={this.onChangeRol} />
                 </div>
               </div>
 
@@ -418,6 +419,7 @@ export default class Login extends Component {
                     FECHA NACIMIENTO
                   </label>
                   <DatePicker
+                  name="date"
         dateFormat="yyyy-MM-dd"
         renderCustomHeader={({
         date,
@@ -466,7 +468,7 @@ export default class Login extends Component {
 
             <div class="flex justify-center mt-4 pl-4">
               <button
-                
+                name="registrar"
                 class="bg-emerald-500 text-white active:bg--lightBlue-500 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
                 <span>Registrar</span>
               </button>
