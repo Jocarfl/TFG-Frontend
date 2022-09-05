@@ -57,7 +57,7 @@ export default function CardRetosDiarios({
                 }
               >
              
-             <button type="submit" onClick={() => marcarRetoCompletado(statId)} >
+             <button name="retoDiario" onClick={() => marcarRetoCompletado(statId)} >
                 <div  className={"text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 " + (completado !== true ? "bg-emerald-200 " : "bg-emerald-500 ") + " uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg"} >      
                 <i className="fas fa-check"></i>
                 </div>

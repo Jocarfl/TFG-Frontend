@@ -82,7 +82,7 @@ export default function ModalInfoPaciente ({setOpen,open,datos}) {
           &times;
         </button>
         <div className="header">
-          <h6 className="text-blueGray-700 text-xl font-bold">Pacientes vinculados a {datos.first_name}</h6>
+          <h6 className="text-blueGray-700 text-xl font-bold">Información de {datos.first_name}</h6>
         </div>
         <div className="content">
         <div className="container px-4 mx-auto">

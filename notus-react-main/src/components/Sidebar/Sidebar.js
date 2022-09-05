@@ -7,12 +7,7 @@ export default function Sidebar() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
 
   const logOut = () => {
-    AuthService.logout();
-    this.setState({
-      showModeratorBoard: false,
-      showAdminBoard: false,
-      currentUser: undefined,
-    });}
+    AuthService.logout();}
 
   const currentUser = AuthService.getCurrentUser();
 
@@ -106,7 +101,9 @@ export default function Sidebar() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
+                  name ="nutricion"
                   to="/user/nutricion"
+                  
                   
                 >
                   <i
@@ -131,6 +128,7 @@ export default function Sidebar() {
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
                   to="/user/recomendaciones"
+                  name = "recomendaciones"
                 >
                   <i
                     className={
@@ -163,7 +161,7 @@ export default function Sidebar() {
             {/* Navigation */}
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
-                <a href="/auth/login" className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block" onClick={logOut}>
+                <a href="/auth/login" name="cerrarSesion" className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block" onClick={logOut}>
                 <i className="fas fa-door-closed text-blueGray-400 mr-2 text-sm"></i>{" "}
                   Cerrar Sesión
                 </a>

@@ -48,7 +48,7 @@ export default function ModalInsertarPeso ({setMod}) {
 
 return (
     <Popup
-    trigger={<button className="button">
+    trigger={<button className="button" name="botonPeso">
                 <span className="text-xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 uppercase last:mr-0 mr-1 hover:bg-emerald-600 shadow-lg">
                     <i className="fas fa-plus"></i>
                 </span>
@@ -73,7 +73,7 @@ return (
           <label class="block text-gray-700 text-xl font-bold mb-2 mr-4" >Peso (kg)</label>
           <Input
               type="number"
-              name="cantidad"
+              name="numeroPeso"
               min="0"
               required
               onChange={onChangeWeight}

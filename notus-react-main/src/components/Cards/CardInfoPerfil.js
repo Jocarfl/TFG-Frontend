@@ -48,7 +48,7 @@ export default function  CardInfoPerfil () {
             <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4 flex justify-center">
                     <div className="relative">
-                        <button
+                        <button name="Avatar"
                         onClick={() => handleAvatarClicked()}>
                         <img
                             alt="Hola"   

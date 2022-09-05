@@ -33,7 +33,7 @@ const getRetosDiariosSegunNivel = (userID) => {
 };
 
 const sumarPuntuacionAUsuarioPorElemento = (id,_elemento) => {   
-  return api.post("/api/user/sumarPuntuacionAUsuarioPorElemento",{_id: id, elemento: _elemento}).then((response) => {
+  return api.post("/api/user/sumarPuntuacionAUsuarioPorElemento",{_id: id, elemento: _elemento},{ headers: authHeader() }).then((response) => {
       return response.data;
     });
 };
